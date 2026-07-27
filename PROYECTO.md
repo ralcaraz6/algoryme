@@ -149,3 +149,22 @@ Nada se despliega sin pasar esto. Está probado que hace falta:
   físico del formato), **decirlo en una frase y entregar la mejor alternativa**, no bloquear.
 - Los cambios de marca y de contenido se propagan a 18 páginas. Hazlo siempre con un script y
   **verifica el número de sustituciones**, no a mano.
+
+## 9. Autonomía
+
+El cliente ha autorizado trabajar sin pedirle permiso paso a paso. En la práctica:
+
+- **Commit y push directos a `main`.** No hace falta rama, ni PR, ni esperar visto bueno. `main`
+  es producción: lo que entra sale publicado en algoryme.com.
+- **Sin preguntar antes de mergear** ni antes de publicar un cambio ya pedido.
+- **Cuidado con el push.** El repositorio se suele clonar con `HEAD` en una rama de trabajo, no en
+  `main`. `git push origin main` empuja la `main` local —normalmente desactualizada— y responde
+  `Everything up-to-date` sin subir nada. Usa `git push origin HEAD:main` y **comprueba el rango
+  de commits** que imprime.
+- Lo que sigue mereciendo un aviso, no por permiso sino porque el cliente querría enterarse:
+  reescribir historia publicada (`push --force`), borrar trabajo sin fusionar, actuar fuera de
+  este repositorio (correos, servicios externos) y publicar afirmaciones sobre la empresa que no
+  se puedan verificar contra el código o contra un dato real. La regla de no inventar datos no la
+  levanta ninguna autorización.
+- La autonomía es para ejecutar, no para decidir por él. Si hay dos maneras razonables y la
+  elección es de criterio suyo, se elige la más conservadora, se hace, y se dice cuál se eligió.
