@@ -6,8 +6,9 @@
 | `algoryme-horizontal-tinta.png` | Uso general sobre fondo claro: documentos, presentaciones, facturas | 1600×400, transparente |
 | `algoryme-horizontal-blanco.png` | Sobre fondo oscuro o fotografía | 1600×400, transparente |
 | `algoryme-horizontal-siena.png` | Cuando el logo tiene que destacar solo, sin botones alrededor | 1600×400, transparente |
-| `algoryme-perfil-1024.png` | **Foto de perfil** (Google Workspace, LinkedIn, redes). Cuadrada: la plataforma la recorta en círculo | 1024×1024, fondo siena |
-| `algoryme-perfil-redondo-1024.png` | Igual pero ya recortada en círculo, con las esquinas transparentes. Para sitios que no recortan solos | 1024×1024, transparente |
+| `algoryme-perfil-nombre-1024.png` | **Foto de perfil** (Google Workspace, LinkedIn). Nombre completo apilado sobre siena. Cuadrada: la plataforma la recorta en círculo | 1024×1024 |
+| `algoryme-perfil-nombre-claro-1024.png` | Igual sobre fondo claro, para interfaces oscuras | 1024×1024 |
+| `algoryme-perfil-caret-1024.png` | Alternativa con solo el símbolo, para cuando el espacio baja de 32 px | 1024×1024 |
 
 ## Colores
 
@@ -16,7 +17,9 @@
 ## Cuándo el wordmark y cuándo el monograma
 
 - **Wordmark** (`ALGORYME` + cursor) solo en espacios anchos: cabecera, documentos, firma de correo.
-- **Monograma** (el caret) en cualquier sitio cuadrado o redondo, y siempre por debajo de 120 px. El wordmark metido en un círculo de 32 px no se lee.
+- **Wordmark apilado** (`ALGO` sobre `RYME`) en avatares redondos y cuadrados. Las dos mitades tienen cuatro letras, así que apiladas cuadran solas y las letras salen al doble de tamaño que en una línea.
+- **Nunca el wordmark en una línea dentro de un círculo**: a 32 px las letras quedan a la mitad y no se leen.
+- **Caret** solo por debajo de 32 px o cuando el nombre ya aparece al lado.
 
 ## Reglas
 
