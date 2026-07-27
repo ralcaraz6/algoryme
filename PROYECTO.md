@@ -95,6 +95,10 @@ El orden cuenta una historia de venta y no es casual:
 Páginas aparte: `casos.html` + 3 fichas de caso, `herramientas.html`, `formacion.html` + 4 cursos,
 el embudo del curso gratuito (3 páginas), `newsletter.html`, `legal.html`, `privacidad.html`, `404.html`.
 
+`herramientas.html` enlaza a **Rachea** y **Prospéctalo**, los dos productos de suscripción. Su
+código está en otros repositorios; el contexto para trabajar en ellos está en
+**[HERRAMIENTAS.md](HERRAMIENTAS.md)**.
+
 ## 5. La regla dura
 
 > **Ningún dato, cliente, logo o métrica de esta web puede ser inventado. Si un dato no está
