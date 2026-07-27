@@ -88,8 +88,8 @@ El orden cuenta una historia de venta y no es casual:
 4. **El trabajo interno** — cinco capacidades en una lista seleccionable con panel de vista previa.
 5. **Integraciones** — una sola fila de logos, alineada a la izquierda.
 6. **Cómo trabajamos** — línea de tiempo de cinco pasos hasta producción.
-7. **Casos de éxito** — ocho. Los tres primeros tienen página propia; los otros cinco son tarjetas
-   compactas bajo el epígrafe «Otros sistemas en producción», con sector, título y resumen.
+7. **Casos de éxito** — tres tarjetas ilustradas y un botón a `casos.html`. La home enseña una
+   muestra, no el catálogo: si crece aquí, la página se hace interminable.
 8. **El equipo** y **el fundador**.
 9. **FAQ**, **CTA de reserva** y **contacto**.
 
@@ -118,11 +118,17 @@ Es la regla que más veces ha tenido que aplicarse, y a veces contra lo que se p
 Si en el futuro hay más proyectos que contar, la estructura ya está montada: añadir un caso es
 rellenar contenido en `content.json` y generar su página.
 
-En julio de 2026 el cliente aportó cinco proyectos más. Se añadieron **solo como tarjeta** (sector,
-título y resumen), sin página propia: de ellos se sabe qué hacen y para qué sector, pero no la
-situación de partida, el resultado ni el stack, y rellenar esos campos habría sido inventarlos.
-Cuando lleguen los detalles reales de alguno, ascenderlo a página completa es rellenar `situation`,
-`built`, `how`, `outcome` y `stack` en su entrada de `content.json` y clonar una ficha existente.
+En julio de 2026 el cliente aportó cinco proyectos más, hasta ocho. De ellos se sabe qué hacen y
+para qué sector, pero no la situación de partida, el resultado ni el stack, así que **no tienen
+página propia**: rellenar esos campos habría sido inventarlos. Cuando lleguen los detalles reales de
+alguno, ascenderlo es rellenar `situation`, `built`, `how`, `outcome` y `stack` en su entrada de
+`content.json`, clonar una ficha existente y añadir el enlace en su fila del índice.
+
+**Dónde vive cada cosa:** la home enseña tres casos y un botón; `casos.html` es el índice completo,
+una fila por caso con «Ver más» que despliega en el sitio (`#casesList`, un abierto a la vez, mismo
+patrón que las FAQ). Las tres filas con ficha añaden dentro «Ver el caso completo». Esta división
+es deliberada y la pidió el cliente: la home no debe crecer con cada caso nuevo. Añadir un caso es
+una entrada en `content.json` y una fila en `casos.html`; la home no se toca.
 
 ## 6. Verificación antes de publicar
 

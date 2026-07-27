@@ -482,7 +482,8 @@
       ],
       "more": "Ver el caso",
       "allCta": "Ver todos los casos",
-      "moreHeading": "Otros sistemas en producción"
+      "expand": "Ver más",
+      "fullCase": "Ver el caso completo"
     },
     "founder": {
       "kicker": "Quién está detrás",
@@ -1433,7 +1434,8 @@
       ],
       "more": "See the case",
       "allCta": "See all case studies",
-      "moreHeading": "Other systems in production"
+      "expand": "See more",
+      "fullCase": "See the full case"
     },
     "founder": {
       "kicker": "Who is behind this",
