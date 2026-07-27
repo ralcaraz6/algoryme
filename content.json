@@ -448,10 +448,41 @@
             "Screening",
             "Valoración automática"
           ]
+        },
+        {
+          "sector": "Finanzas",
+          "tag": "Finanzas",
+          "title": "CRM de ventas con facturación automática",
+          "summary": "Una financiera llevaba los contactos en un sitio y la facturación en otro. Hoy trabaja sobre una sola plataforma que envía los correos de seguimiento y emite las facturas sin que nadie las prepare."
+        },
+        {
+          "sector": "Producción",
+          "tag": "Producción",
+          "title": "Elección automática del transportista más barato",
+          "summary": "Una productora de vitaminas elegía transportista pedido a pedido. Un algoritmo lee cada pedido y decide con cuál sale más barato, según destino, volumen y urgencia."
+        },
+        {
+          "sector": "Cuidados",
+          "tag": "Cuidados",
+          "title": "Detección de situaciones de riesgo en el cuidado de mayores",
+          "summary": "Un marketplace de cuidadores de personas mayores no tenía forma de saber qué profesionales atravesaban situaciones difíciles con sus clientes. Un modelo de lenguaje las detecta y permite ofrecerles acompañamiento."
+        },
+        {
+          "sector": "Producción",
+          "tag": "Producción",
+          "title": "Predicción de direcciones de entrega incorrectas",
+          "summary": "En la misma productora de vitaminas, las direcciones mal escritas se descubrían cuando fallaba la entrega. Un modelo predictivo señala cuáles tienen probabilidad de estar mal antes de que el pedido salga."
+        },
+        {
+          "sector": "Arte",
+          "tag": "Arte",
+          "title": "Tienda online para un artista independiente",
+          "summary": "Una tienda online para que un artista independiente venda sus cuadros directamente, con su propio catálogo y su proceso de compra."
         }
       ],
       "more": "Ver el caso",
-      "allCta": "Ver todos los casos"
+      "allCta": "Ver todos los casos",
+      "moreHeading": "Otros sistemas en producción"
     },
     "founder": {
       "kicker": "Quién está detrás",
@@ -1368,10 +1399,41 @@
             "Screening",
             "Automated valuation"
           ]
+        },
+        {
+          "sector": "Finance",
+          "tag": "Finance",
+          "title": "Sales CRM with automated invoicing",
+          "summary": "A finance firm kept its contacts in one place and its invoicing in another. Today it works on a single platform that sends the follow-up emails and issues the invoices with nobody preparing them."
+        },
+        {
+          "sector": "Manufacturing",
+          "tag": "Manufacturing",
+          "title": "Automatic pick of the cheapest carrier",
+          "summary": "A vitamin manufacturer chose a carrier order by order. An algorithm reads each order and works out which carrier comes out cheapest, based on destination, volume and urgency."
+        },
+        {
+          "sector": "Care",
+          "tag": "Care",
+          "title": "Risk detection in elderly care",
+          "summary": "A marketplace for carers of older people had no way of knowing which professionals were going through difficult situations with their clients. A language model spots them, so support can be offered."
+        },
+        {
+          "sector": "Manufacturing",
+          "tag": "Manufacturing",
+          "title": "Predicting incorrect delivery addresses",
+          "summary": "At the same vitamin manufacturer, mistyped addresses only surfaced when a delivery failed. A predictive model flags the ones likely to be wrong before the order ships."
+        },
+        {
+          "sector": "Art",
+          "tag": "Art",
+          "title": "Online store for an independent artist",
+          "summary": "An online store so an independent artist can sell his paintings directly, with his own catalogue and checkout."
         }
       ],
       "more": "See the case",
-      "allCta": "See all case studies"
+      "allCta": "See all case studies",
+      "moreHeading": "Other systems in production"
     },
     "founder": {
       "kicker": "Who is behind this",

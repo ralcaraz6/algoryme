@@ -88,7 +88,8 @@ El orden cuenta una historia de venta y no es casual:
 4. **El trabajo interno** — cinco capacidades en una lista seleccionable con panel de vista previa.
 5. **Integraciones** — una sola fila de logos, alineada a la izquierda.
 6. **Cómo trabajamos** — línea de tiempo de cinco pasos hasta producción.
-7. **Casos de éxito** — tres, cada uno con su página propia.
+7. **Casos de éxito** — ocho. Los tres primeros tienen página propia; los otros cinco son tarjetas
+   compactas bajo el epígrafe «Otros sistemas en producción», con sector, título y resumen.
 8. **El equipo** y **el fundador**.
 9. **FAQ**, **CTA de reserva** y **contacto**.
 
@@ -116,6 +117,12 @@ Es la regla que más veces ha tenido que aplicarse, y a veces contra lo que se p
 
 Si en el futuro hay más proyectos que contar, la estructura ya está montada: añadir un caso es
 rellenar contenido en `content.json` y generar su página.
+
+En julio de 2026 el cliente aportó cinco proyectos más. Se añadieron **solo como tarjeta** (sector,
+título y resumen), sin página propia: de ellos se sabe qué hacen y para qué sector, pero no la
+situación de partida, el resultado ni el stack, y rellenar esos campos habría sido inventarlos.
+Cuando lleguen los detalles reales de alguno, ascenderlo a página completa es rellenar `situation`,
+`built`, `how`, `outcome` y `stack` en su entrada de `content.json` y clonar una ficha existente.
 
 ## 6. Verificación antes de publicar
 
