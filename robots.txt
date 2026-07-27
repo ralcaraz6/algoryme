@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ralcaraz6.github.io/algoryme/sitemap.xml
+Sitemap: https://algoryme.com/sitemap.xml
