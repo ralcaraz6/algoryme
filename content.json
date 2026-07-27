@@ -52,6 +52,22 @@
       "herramientas": {
         "title": "Herramientas: nuestro software en producción | Algoryme",
         "description": "Software propio de Algoryme en producción: Rachea, tareas y hábitos con modo foco, y Prospéctalo, pipeline de ventas para autónomos."
+      },
+      "casos": {
+        "title": "Casos de éxito: sistemas de IA en producción | Algoryme",
+        "description": "Proyectos de inteligencia artificial y automatización construidos a medida y desplegados en la infraestructura de cada cliente: inmobiliario, finanzas y análisis de mercados."
+      },
+      "caso0": {
+        "title": "Plataforma de inversión inmobiliaria | Algoryme",
+        "description": "Un inversor recibía oportunidades de decenas de proveedores por correo y hoja de cálculo. Hoy entra en una plataforma y ve las veinte que le encajan."
+      },
+      "caso1": {
+        "title": "Briefing diario para los socios de un fondo | Algoryme",
+        "description": "Cada mañana a las 7:00 los socios abren el correo y tienen la cartera analizada y las oportunidades del día, sin que nadie haya tocado nada."
+      },
+      "caso2": {
+        "title": "Análisis global de renta variable | Algoryme",
+        "description": "Una plataforma con la renta variable cotizada del mundo y sus informes financieros, para hacer screening y valorar una compañía en minutos."
       }
     },
     "en": {
@@ -106,6 +122,22 @@
       "herramientas": {
         "title": "Tools: our software in production | Algoryme",
         "description": "Algoryme' own software in production: Rachea, a task manager with focus mode, and Prospéctalo, a sales pipeline for freelancers."
+      },
+      "casos": {
+        "title": "Case studies: AI systems in production | Algoryme",
+        "description": "AI and automation projects custom-built and deployed on each client's own infrastructure: real estate, finance and market analysis."
+      },
+      "caso0": {
+        "title": "Real-estate investment platform | Algoryme",
+        "description": "An investor used to receive opportunities from dozens of providers by email and spreadsheet. Today they open a platform and see the twenty that fit."
+      },
+      "caso1": {
+        "title": "Daily briefing for a fund's partners | Algoryme",
+        "description": "Every morning at 7:00 the partners open their email to find the portfolio analysed and the day's opportunities, with nobody having touched a thing."
+      },
+      "caso2": {
+        "title": "Global equity analysis | Algoryme",
+        "description": "A platform holding the world's listed equities and their financial reports, to screen and value a company in minutes."
       }
     }
   },
@@ -330,30 +362,64 @@
     "cases": {
       "kicker": "Casos de éxito",
       "heading": "Sistemas que ya están en producción",
-      "sub": "Tres sistemas reales, funcionando hoy en producción.",
+      "sub": "Sistemas construidos a medida y funcionando en producción, cada uno sobre la infraestructura de su dueño.",
       "note": "",
       "items": [
         {
           "sector": "Inmobiliario",
-          "title": "Plataforma de inversión",
+          "title": "Plataforma de inversión inmobiliaria",
           "summary": "El cliente recibe oportunidades de inversión de varios proveedores. Construimos una plataforma que le muestra las 20 más interesantes según sus filtros.",
           "bullets": [
             "Valoraciones de catastro y precio por metro cuadrado vía API",
             "Ranking de oportunidades según sus propios criterios",
             "Informes de inversión en tiempo real para enseñar a inversores"
           ],
-          "tag": "Inmobiliario"
+          "tag": "Inmobiliario",
+          "slug": "plataforma-inversion-inmobiliaria",
+          "lead": "Un inversor recibía oportunidades de decenas de proveedores por correo y hoja de cálculo. Hoy entra en una plataforma y ve las veinte que le encajan.",
+          "situation": "Las oportunidades llegaban en formatos distintos, de fuentes distintas y sin criterio común. Filtrarlas a mano consumía días y las buenas se enfriaban antes de poder analizarlas.",
+          "built": "Una plataforma que ingiere las oportunidades de todos los proveedores, las normaliza y las puntúa contra los criterios de inversión del cliente. Encima, un generador de informes para enseñar cada operación a sus inversores.",
+          "how": [
+            "Ingesta de oportunidades desde varios proveedores en un único formato",
+            "Valoraciones de catastro y precio por metro cuadrado consultadas por API",
+            "Ranking según los criterios de inversión propios del cliente",
+            "Informes de inversión generados en el momento para presentar a terceros"
+          ],
+          "outcome": "El cliente pasa de revisar listados dispersos a abrir una pantalla con las oportunidades ya filtradas y ordenadas, y a sacar el informe de cualquiera de ellas en un clic.",
+          "stack": [
+            "Integración por API",
+            "Datos de catastro",
+            "Scoring a medida",
+            "Generación de informes"
+          ]
         },
         {
           "sector": "Finanzas",
-          "title": "Briefing diario para los socios",
+          "title": "Briefing diario para los socios de un fondo",
           "summary": "Un sistema en producción que envía cada mañana a las 7:00 un correo a los socios del fondo. Incluye rendimiento de cartera y oportunidades detectadas por IA.",
           "bullets": [
             "Análisis automático con las reglas propias del fondo",
             "Envío programado sin intervención manual",
             "Rendimiento de cartera y oportunidades en el mismo correo"
           ],
-          "tag": "Finanzas"
+          "tag": "Finanzas",
+          "slug": "briefing-diario-fondo",
+          "lead": "Cada mañana a las 7:00 los socios abren el correo y tienen la cartera analizada y las oportunidades del día, sin que nadie haya tocado nada.",
+          "situation": "Preparar el resumen diario ocupaba la primera hora de alguien del equipo: mirar posiciones, cruzar noticias, escribir el correo. Un trabajo repetitivo que además dependía de que esa persona estuviera disponible.",
+          "built": "Un sistema que corre solo de madrugada, analiza la cartera con las reglas propias del fondo, busca oportunidades y compone el correo que reciben los socios a las 7:00.",
+          "how": [
+            "Análisis automático de la cartera con las reglas del fondo",
+            "Detección de oportunidades sobre las fuentes que ya seguían",
+            "Redacción del correo en el tono y el formato de la casa",
+            "Envío programado, sin intervención manual"
+          ],
+          "outcome": "El briefing llega todos los días a la misma hora y esa primera hora del equipo vuelve a ser suya. En producción desde entonces, sin mantenimiento diario.",
+          "stack": [
+            "Ejecución programada",
+            "Reglas de negocio propias",
+            "Modelos de lenguaje",
+            "Envío automático"
+          ]
         },
         {
           "sector": "Plataforma propia",
@@ -364,9 +430,28 @@
             "Screening por criterios fundamentales",
             "Valoración rápida de acciones"
           ],
-          "tag": "Mercados"
+          "tag": "Mercados",
+          "slug": "analisis-renta-variable",
+          "lead": "Una plataforma con la renta variable cotizada del mundo y sus informes financieros, para hacer screening y valorar una compañía en minutos.",
+          "situation": "Analizar una compañía obligaba a saltar entre fuentes, descargar informes y rehacer los mismos cálculos una y otra vez. Comparar varias a la vez era directamente inviable.",
+          "built": "Un sistema propio que reúne las cotizadas y sus informes financieros en un solo sitio, permite filtrar por criterios fundamentales y devuelve una valoración rápida de cualquier compañía.",
+          "how": [
+            "Cobertura global de compañías cotizadas y sus informes financieros",
+            "Screening por criterios fundamentales combinables",
+            "Valoración rápida a partir de los datos ya normalizados",
+            "Base sobre la que montar análisis nuevos sin rehacer la ingesta"
+          ],
+          "outcome": "Lo que era una tarde de trabajo por compañía se resuelve en minutos, y comparar varias a la vez deja de ser un problema. Es nuestra propia herramienta y la usamos a diario.",
+          "stack": [
+            "Ingesta de datos de mercado",
+            "Normalización",
+            "Screening",
+            "Valoración automática"
+          ]
         }
-      ]
+      ],
+      "more": "Ver el caso",
+      "allCta": "Ver todos los casos"
     },
     "founder": {
       "kicker": "Quién está detrás",
@@ -664,8 +749,6 @@
         ]
       },
       "rights": "© 2026 Algoryme",
-      "operated": "Algoryme es una marca de Rogelio Alcaraz",
-      "location": "En remoto para toda España",
       "legalNotice": "Aviso legal",
       "privacy": "Privacidad",
       "whatsappLabel": "WhatsApp"
@@ -881,31 +964,10 @@
         }
       ]
     },
-    "kpis": {
-      "items": [
-        {
-          "n": "95%",
-          "t": "de los pilotos de IA no llega a producción*"
-        },
-        {
-          "n": "6",
-          "t": "especialistas en el equipo"
-        },
-        {
-          "n": "3",
-          "t": "sistemas nuestros en producción"
-        },
-        {
-          "n": "100%",
-          "t": "del código y los datos, en tu infraestructura"
-        }
-      ],
-      "source": "* MIT, «The GenAI Divide: State of AI in Business» (2025)."
-    },
     "problem": {
       "kicker": "El problema",
-      "heading": "¿Por qué fracasa el 95% de los proyectos de IA?",
-      "sub": "Casi ninguno devuelve nada, según la investigación del MIT. Las herramientas genéricas prometen mucho y encajan poco.",
+      "heading": "¿Por qué casi ningún proyecto de IA llega a producción?",
+      "sub": "Lo vemos en casi todas las empresas con las que nos sentamos: pilotos que deslumbran en una demo y nunca llegan al trabajo del día a día.",
       "risks": [
         {
           "title": "Hecha para todos, no encaja con nadie",
@@ -979,6 +1041,24 @@
           ]
         }
       ]
+    },
+    "caseDetail": {
+      "crumb": "Casos",
+      "situation": "El punto de partida",
+      "built": "Qué construimos",
+      "how": "Cómo funciona",
+      "outcome": "Qué cambió",
+      "stack": "Tecnología",
+      "confidential": "Cliente confidencial. Publicamos el problema y la solución, nunca datos ni nombres del cliente.",
+      "back": "Todos los casos",
+      "next": "Siguiente caso",
+      "ctaHeading": "¿Tienes un proceso parecido?",
+      "ctaSub": "Cuéntanoslo en media hora y te decimos si tiene sentido automatizarlo."
+    },
+    "casesPage": {
+      "kicker": "Casos",
+      "heading": "Sistemas que ya están en producción",
+      "sub": "Cada proyecto empieza con un proceso que alguien hacía a mano y termina en un sistema desplegado en la infraestructura del cliente."
     }
   },
   "en": {
@@ -995,7 +1075,7 @@
     },
     "hero": {
       "eyebrow": "AI consultancy",
-      "headline": "{{Artificial intelligence}} consultancy for companies",
+      "headline": "{{AI}} consultancy for companies",
       "sub": "Someone on your team copies data between spreadsheets and rebuilds the same old report by hand, and a customer's left waiting. We handle it {{on the infrastructure you already run, and your data stays in-house}}.",
       "cta1": "Book a 30-minute call",
       "cta2": "View case studies"
@@ -1044,7 +1124,7 @@
     },
     "applications": {
       "kicker": "Applications",
-      "heading": "Where artificial intelligence fits in your business",
+      "heading": "Where AI fits in your business",
       "sub": "Eight fronts where AI fits into the real work of a business.",
       "items": [
         {
@@ -1202,30 +1282,64 @@
     "cases": {
       "kicker": "Case studies",
       "heading": "Systems already running in production",
-      "sub": "Three real systems, running in production today.",
+      "sub": "Custom-built systems running in production, each on its owner's own infrastructure.",
       "note": "",
       "items": [
         {
           "sector": "Real estate",
-          "title": "Investment platform",
+          "title": "Real-estate investment platform",
           "summary": "The client receives investment opportunities from several providers. We built a platform that surfaces the 20 most interesting ones according to his filters.",
           "bullets": [
             "Cadastral valuations and price per square metre pulled through APIs",
             "Opportunities ranked against his own criteria",
             "Real-time investment reports to show to investors"
           ],
-          "tag": "Real estate"
+          "tag": "Real estate",
+          "slug": "plataforma-inversion-inmobiliaria",
+          "lead": "An investor used to receive opportunities from dozens of providers by email and spreadsheet. Today they open a platform and see the twenty that fit.",
+          "situation": "Opportunities arrived in different formats, from different sources, with no common criteria. Filtering them by hand took days, and the good ones went cold before they could be analysed.",
+          "built": "A platform that ingests opportunities from every provider, normalises them and scores them against the client's own investment criteria. On top, a report generator to present each deal to their investors.",
+          "how": [
+            "Ingestion of opportunities from several providers into a single format",
+            "Land-registry valuations and price per square metre pulled via API",
+            "Ranking against the client's own investment criteria",
+            "Investment reports generated on the spot to present to third parties"
+          ],
+          "outcome": "The client went from reviewing scattered listings to opening one screen with the opportunities already filtered and ranked, and pulling the report for any of them in one click.",
+          "stack": [
+            "API integration",
+            "Land-registry data",
+            "Custom scoring",
+            "Report generation"
+          ]
         },
         {
           "sector": "Finance",
-          "title": "Daily briefing for the partners",
+          "title": "Daily briefing for a fund's partners",
           "summary": "A production system that emails the fund's partners every morning at 7:00. It covers portfolio performance and opportunities detected by AI.",
           "bullets": [
             "Automated analysis using the fund's own rules",
             "Scheduled delivery with no manual step",
             "Portfolio performance and opportunities in the same email"
           ],
-          "tag": "Finance"
+          "tag": "Finance",
+          "slug": "briefing-diario-fondo",
+          "lead": "Every morning at 7:00 the partners open their email to find the portfolio analysed and the day's opportunities, with nobody having touched a thing.",
+          "situation": "Preparing the daily summary took the first hour of someone's day: checking positions, cross-referencing news, writing the email. Repetitive work that also depended on that person being available.",
+          "built": "A system that runs on its own overnight, analyses the portfolio using the fund's own rules, looks for opportunities and composes the email the partners receive at 7:00.",
+          "how": [
+            "Automatic portfolio analysis using the fund's own rules",
+            "Opportunity detection across the sources they already followed",
+            "Copy written in the house tone and format",
+            "Scheduled delivery, with no manual step"
+          ],
+          "outcome": "The briefing lands at the same time every day and the team gets that first hour back. In production ever since, with no daily upkeep.",
+          "stack": [
+            "Scheduled execution",
+            "Own business rules",
+            "Language models",
+            "Automated delivery"
+          ]
         },
         {
           "sector": "In-house platform",
@@ -1236,9 +1350,28 @@
             "Screening on fundamental criteria",
             "Fast valuation of shares"
           ],
-          "tag": "Markets"
+          "tag": "Markets",
+          "slug": "analisis-renta-variable",
+          "lead": "A platform holding the world's listed equities and their financial reports, to screen and value a company in minutes.",
+          "situation": "Analysing a company meant jumping between sources, downloading reports and redoing the same calculations over and over. Comparing several at once was simply not viable.",
+          "built": "An in-house system that brings listed companies and their financial reports into one place, lets you filter on fundamental criteria and returns a quick valuation for any company.",
+          "how": [
+            "Global coverage of listed companies and their financial reports",
+            "Screening on combinable fundamental criteria",
+            "Fast valuation from already-normalised data",
+            "A base to build new analyses on without redoing the ingestion"
+          ],
+          "outcome": "What used to be an afternoon's work per company now takes minutes, and comparing several at once stops being a problem. It's our own tool and we use it daily.",
+          "stack": [
+            "Market data ingestion",
+            "Normalisation",
+            "Screening",
+            "Automated valuation"
+          ]
         }
-      ]
+      ],
+      "more": "See the case",
+      "allCta": "See all case studies"
     },
     "founder": {
       "kicker": "Who is behind this",
@@ -1310,7 +1443,7 @@
     "newsletter": {
       "kicker": "Newsletter",
       "heading": "Applied AI for business, once a week",
-      "sub": "Every Friday at 12:00 we send a short round-up of what is new in artificial intelligence for companies. What changed and what it means for your business.",
+      "sub": "Every Friday at 12:00 we send a short round-up of what is new in AI for companies. What changed and what it means for your business.",
       "placeholder": "Your work email",
       "button": "Subscribe",
       "note": "One email a week. Unsubscribe in one click.",
@@ -1470,7 +1603,7 @@
       "items": [
         {
           "q": "What is an AI agent?",
-          "a": "An AI agent is a system that takes an objective, decides which steps to take and executes them against your real tools: your CRM, your inbox, your database. Unlike a model that only generates text, an agent acts: it looks things up, cross-checks them, writes into your systems and flags anything that needs a human decision. It is the piece that turns artificial intelligence into work actually completed."
+          "a": "An AI agent is a system that takes an objective, decides which steps to take and executes them against your real tools: your CRM, your inbox, your database. Unlike a model that only generates text, an agent acts: it looks things up, cross-checks them, writes into your systems and flags anything that needs a human decision. It is the piece that turns AI into work actually completed."
         },
         {
           "q": "How is that different from a chatbot?",
@@ -1536,8 +1669,6 @@
         ]
       },
       "rights": "© 2026 Algoryme",
-      "operated": "Algoryme is a brand of Rogelio Alcaraz",
-      "location": "Remote across Spain",
       "legalNotice": "Legal notice",
       "privacy": "Privacy",
       "whatsappLabel": "WhatsApp"
@@ -1753,31 +1884,10 @@
         }
       ]
     },
-    "kpis": {
-      "items": [
-        {
-          "n": "95%",
-          "t": "of AI pilots never reach production*"
-        },
-        {
-          "n": "6",
-          "t": "specialists on the team"
-        },
-        {
-          "n": "3",
-          "t": "of our systems in production"
-        },
-        {
-          "n": "100%",
-          "t": "of the code and the data, on your infrastructure"
-        }
-      ],
-      "source": "* MIT, “The GenAI Divide: State of AI in Business” (2025)."
-    },
     "problem": {
       "kicker": "The problem",
-      "heading": "Why do 95% of AI projects fail?",
-      "sub": "Almost none of them return anything, according to MIT research. Off-the-shelf tools promise a lot and fit very little.",
+      "heading": "Why do almost no AI projects reach production?",
+      "sub": "We see it in almost every company we sit down with: pilots that dazzle in a demo and never make it into the daily work.",
       "risks": [
         {
           "title": "Built for everyone, fits no one",
@@ -1851,6 +1961,24 @@
           ]
         }
       ]
+    },
+    "caseDetail": {
+      "crumb": "Case studies",
+      "situation": "The starting point",
+      "built": "What we built",
+      "how": "How it works",
+      "outcome": "What changed",
+      "stack": "Technology",
+      "confidential": "Confidential client. We publish the problem and the solution, never the client's data or name.",
+      "back": "All case studies",
+      "next": "Next case",
+      "ctaHeading": "Got a process like this one?",
+      "ctaSub": "Tell us about it in half an hour and we'll tell you whether automating it makes sense."
+    },
+    "casesPage": {
+      "kicker": "Case studies",
+      "heading": "Systems already in production",
+      "sub": "Every project starts with a process someone was doing by hand and ends as a system deployed on the client's own infrastructure."
     }
   }
 }
