@@ -27,10 +27,10 @@
 <meta name="twitter:title" content="Briefing diario para los socios de un fondo | Algoryme">
 <meta name="twitter:description" content="Cada mañana a las 7:00 los socios abren el correo y tienen la cartera analizada y las oportunidades del día, sin que nadie haya tocado nada.">
 <meta name="twitter:image" content="https://algoryme.com/og-image.png">
-<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%20width='32'%20height='32'%3E%3Crect%20x='0'%20y='0'%20width='32'%20height='32'%20rx='7'%20fill='%23B5401C'/%3E%3Cpath%20d='M16%206.5%20L24%2025.5%20L20.2%2025.5%20L18.6%2021.4%20L13.4%2021.4%20L11.8%2025.5%20L8%2025.5%20Z'%20fill='%23FCFBF7'/%3E%3Crect%20x='13.4'%20y='16.2'%20width='5.2'%20height='2.8'%20rx='1.4'%20fill='%23B5401C'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%20width%3D%2732%27%20height%3D%2732%27%3E%3Crect%20width%3D%2732%27%20height%3D%2732%27%20rx%3D%277%27%20fill%3D%27%23B5401C%27%2F%3E%3Cpath%20d%3D%27M9%2021.5%20L16%2010.8%20L23%2021.5%27%20fill%3D%27none%27%20stroke%3D%27%23FEFCF8%27%20stroke-width%3D%274.6%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%2F%3E%3C%2Fsvg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Chivo:wght@900&family=Sora:wght@400;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","@id":"https://algoryme.com/#organization","name":"Algoryme","alternateName":"Algoryme — Consultoría de IA","url":"https://algoryme.com/","email":"info@algoryme.com","telephone":"+34605621826","description":"Consultoría de IA en España. Diseñamos e implementamos agentes autónomos y automatización con IA en tu propia infraestructura. Reserva una llamada de 30 minutos.","image":"https://algoryme.com/og-image.png","priceRange":"\u20ac\u20ac","areaServed":{"@type":"Country","name":"ES"},"address":{"@type":"PostalAddress","addressCountry":"ES"},"founder":{"@type":"Person","name":"Rogelio Alcaraz","jobTitle":"Director de Algoryme","sameAs":["https://www.linkedin.com/in/rogelioalcaraz/"]},"knowsAbout":["Inteligencia artificial","Agentes de IA","Automatización de procesos","IA generativa","Análisis de datos","Formación en IA para empresas"],"sameAs":["https://www.linkedin.com/in/rogelioalcaraz/"]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://algoryme.com/"}, {"@type": "ListItem", "position": 2, "name": "Casos", "item": "https://algoryme.com/casos.html"}, {"@type": "ListItem", "position": 3, "name": "Briefing diario para los socios de un fondo", "item": "https://algoryme.com/caso-briefing-diario-fondo.html"}]}</script>
 <style>
@@ -119,21 +119,16 @@ h3{font-size:1.06rem;line-height:1.35;font-weight:600;letter-spacing:-.008em}
 
 /* ---------- wordmark ---------- */
 
-
-
 /* ===== Algoryme wordmark: humanist lowercase + tracked mono ===== */
-.logo{display:inline-flex;align-items:baseline;text-decoration:none;font-size:21px;white-space:nowrap;font-family:var(--sans);line-height:1;color:var(--ink);font-synthesis:none}
-.lw-a{font-weight:600;letter-spacing:-.042em;text-transform:lowercase}
-.lw-b{font-weight:600;letter-spacing:-.042em;text-transform:lowercase;color:var(--sienna)}
+.logo{display:inline-block;text-decoration:none;font-size:20px;white-space:nowrap;font-family:'Chivo',var(--sans);line-height:1;color:var(--ink);font-synthesis:none}
+.lw-a{font-weight:900;letter-spacing:-.035em;text-transform:uppercase}
+.lw-cur{display:inline-block;width:.5em;height:.9em;background:currentColor;margin-left:.15em;vertical-align:-.08em;border-radius:1px}
+
 .logo-footer{font-size:22px}
-.logo--mono .lw-b{color:currentColor}
+.logo--mono .lw-cur{background:currentColor}
 /* dark surfaces: sienna lifted for contrast on ink */
 .on-ink .logo,.cta-band .logo,.site-footer.dark .logo{color:var(--paper)}
 .on-ink .lw-a,.cta-band .lw-a,.site-footer.dark .lw-a{color:var(--paper)}
-.on-ink .lw-b,.cta-band .lw-b,.site-footer.dark .lw-b{color:#E9835F}
-
-
-
 /* ---------- header ---------- */
 /* NOTE: no backdrop-filter here — it would make the header the containing block
    for the position:fixed mobile menu and collapse it to the header's height. */
@@ -471,7 +466,6 @@ h3{font-size:1.06rem;line-height:1.35;font-weight:600;letter-spacing:-.008em}
   .slot-list{grid-template-columns:repeat(3,1fr)}
 }
 
-
 /* ============ FOUNDER SPLIT (photo + copy) ============ */
 .founder-split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
 .role-chip{display:inline-block;background:var(--green,#31513F);color:#fff;font:500 13px/1 var(--mono);letter-spacing:.06em;padding:9px 16px;border-radius:999px;margin-bottom:22px}
@@ -521,8 +515,6 @@ p,li,.sub,.privacy-note,.founder-bio,.step p,.app-card p,.case-card p,figcaption
 /* ============ EQUIPO ============ */
 .team-grid{list-style:none;margin:40px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .tm-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-card);padding:24px}
-
-
 
 .tm-name{font-weight:600;font-size:17px}
 .tm-role{font:500 11.5px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--sienna);margin:4px 0 10px}
@@ -580,9 +572,6 @@ body.modal-open .wa-fab,body.menu-open .wa-fab{display:none}
 .tm-avatar span{font:600 22px var(--mono);color:var(--sienna)}
 .tm-photo{object-fit:cover;object-position:50% 22%;border:1px solid var(--line);background:var(--cream)}
 
-
-
-
 /* ============ CASOS ============ */
 .cs-index{list-style:none;margin:0;padding:0;display:grid;gap:18px}
 .cs-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:26px;align-items:center;
@@ -603,14 +592,27 @@ body.modal-open .wa-fab,body.menu-open .wa-fab{display:none}
 .cd-block p{color:var(--muted);max-width:60ch}
 .cd-how{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:11px}
 .cd-how li{position:relative;padding-left:27px;font-size:15px}
-.cd-how li::before{content:"";position:absolute;left:0;top:7px;width:12px;height:7px;
-  border-left:2px solid var(--sienna);border-bottom:2px solid var(--sienna);transform:rotate(-45deg)}
+.cd-how li::before{content:"";position:absolute;left:0;top:5px;width:8px;height:13px;background:var(--sienna);border-radius:2px}
 .cd-side{background:var(--cream);border:1px solid var(--line);border-radius:var(--radius-card);padding:24px 22px;position:sticky;top:96px}
 .cd-side h2{font:500 11.5px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
 .cd-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
 .cd-note{font-size:13px;color:var(--muted);line-height:1.55;padding-top:16px;border-top:1px solid var(--line)}
 .cd-nav{display:flex;flex-wrap:wrap;gap:14px;margin-top:52px;padding-top:26px;border-top:1px solid var(--line)}
 @media (max-width:900px){.cd-body{grid-template-columns:1fr;gap:34px}.cd-side{position:static}}
+
+/* ============ EL CURSOR COMO SISTEMA ============ */
+main h2::after{content:"";display:inline-block;width:.34em;height:.72em;background:var(--sienna);
+  border-radius:2px;margin-left:.24em;vertical-align:-.02em}
+/* en el articulado legal el cursor sobra y además fuerza saltos de línea en móvil */
+.legal-body h2::after{content:none}
+
+.band-cta .sec-head h2::after,.sub-invert ~ * h2::after{background:var(--sienna)}
+/* el cursor parpadea mientras el formulario se envía (el botón ya se deshabilita solo) */
+@keyframes al-blink{0%,49%{opacity:1}50%,100%{opacity:.2}}
+button.btn[type="submit"]:disabled::after{content:"";display:inline-block;width:8px;height:15px;
+  background:currentColor;border-radius:1px;margin-left:10px;vertical-align:-2px;
+  animation:al-blink 1s steps(1,end) infinite}
+@media (prefers-reduced-motion:reduce){button.btn[type="submit"]:disabled::after{animation:none}}
 </style>
 <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
 <style>
@@ -694,7 +696,7 @@ body.modal-open .wa-fab,body.menu-open .wa-fab{display:none}
 <div id="pageRoot">
 <header class="site-nav">
   <div class="container nav-inner">
-    <a class="logo" href="index.html" aria-label="Algoryme"><span class="lw-a">algo</span><span class="lw-b">ryme</span></a>
+    <a class="logo" href="index.html" aria-label="Algoryme"><span class="lw-a">ALGORYME</span><span class="lw-cur" aria-hidden="true"></span></a>
     <nav class="nav-links" aria-label="Principal">
 <a href="casos.html" data-i18n="nav.cases">Casos</a>
 <a href="herramientas.html" data-i18n="nav.tools">Herramientas</a>
@@ -790,7 +792,7 @@ body.modal-open .wa-fab,body.menu-open .wa-fab{display:none}
 <footer class="site-footer">
   <div class="container footer-grid">
     <div class="footer-brand">
-      <span class="logo logo-footer"><span class="lw-a">algo</span><span class="lw-b">ryme</span></span>
+      <span class="logo logo-footer"><span class="lw-a">ALGORYME</span><span class="lw-cur" aria-hidden="true"></span></span>
       <p class="footer-blurb" data-i18n="footer.blurb">Consultoría de inteligencia artificial. Diseñamos e implementamos agentes y automatizaciones que se despliegan en tu propia infraestructura.</p>
       <ul class="footer-contact">
         <li><a href="mailto:info@algoryme.com">info@algoryme.com</a></li>
@@ -1566,7 +1568,6 @@ if (form){
     });
   });
 }
-
 
 /* ==================== COURSE / TRAINING INFO FORM ==================== */
 var infoForm = document.getElementById('infoForm');
