@@ -2,110 +2,110 @@
   "meta": {
     "es": {
       "home": {
-        "title": "Consultoría de IA para empresas | Action Labs",
+        "title": "Consultoría de IA para empresas | Algoryme",
         "description": "Diseñamos e implementamos agentes de IA y automatizaciones en tu propia infraestructura. Consultoría de IA en España. Reserva una llamada."
       },
       "formacion": {
-        "title": "Formación en IA para empresas | Action Labs",
+        "title": "Formación en IA para empresas | Algoryme",
         "description": "Cursos de IA y ChatGPT para empresas: formación práctica, online o presencial, adaptada a los procesos reales de tu equipo. Pide propuesta sin compromiso."
       },
       "cursoChatgpt": {
-        "title": "Curso de ChatGPT para empresas | Action Labs",
+        "title": "Curso de ChatGPT para empresas | Algoryme",
         "description": "Curso de ChatGPT para empresas: prompts, casos de uso reales por departamento y buenas prácticas de seguridad. 4 h, online o presencial."
       },
       "cursoIa": {
-        "title": "Curso de IA: fundamentos aplicados | Action Labs",
+        "title": "Curso de IA: fundamentos aplicados | Algoryme",
         "description": "Curso de IA para equipos no técnicos: qué es un modelo, qué es un agente y cómo aplicar la inteligencia artificial a tu negocio. 6 h en dos sesiones."
       },
       "formacionEmpresas": {
-        "title": "Formación en IA para empresas a medida | Action Labs",
+        "title": "Formación en IA para empresas a medida | Algoryme",
         "description": "Programa de formación en IA para empresas diseñado sobre tus procesos, tus datos y tus herramientas. Contenido a medida, online o presencial."
       },
       "formacionClaude": {
-        "title": "Formación en Claude para equipos | Action Labs",
+        "title": "Formación en Claude para equipos | Algoryme",
         "description": "Formación en Claude: proyectos, artefactos, análisis de documentos y automatización con la API. 4 h de práctica con casos de tu empresa."
       },
       "newsletter": {
-        "title": "Newsletter de IA aplicada a empresas | Action Labs",
+        "title": "Newsletter de IA aplicada a empresas | Algoryme",
         "description": "Cada viernes a las 12:00, un resumen breve de novedades de inteligencia artificial aplicada a empresas. Sin ruido y sin humo."
       },
       "legal": {
-        "title": "Aviso legal y privacidad | Action Labs",
-        "description": "Aviso legal, política de privacidad y tratamiento de datos de Action Labs, consultoría de inteligencia artificial en España."
+        "title": "Aviso legal y privacidad | Algoryme",
+        "description": "Aviso legal, política de privacidad y tratamiento de datos de Algoryme, consultoría de inteligencia artificial en España."
       },
       "privacidad": {
-        "title": "Política de privacidad | Action Labs",
-        "description": "Cómo trata Action Labs los datos que envías por el formulario de contacto, la reserva de llamada y la newsletter."
+        "title": "Política de privacidad | Algoryme",
+        "description": "Cómo trata Algoryme los datos que envías por el formulario de contacto, la reserva de llamada y la newsletter."
       },
       "cursoTareas": {
-        "title": "Curso gratis: crea tu gestor de tareas con Claude | Action Labs",
+        "title": "Curso gratis: crea tu gestor de tareas con Claude | Algoryme",
         "description": "Curso gratuito en español: construye tu propia plataforma de gestión de tareas con Claude en menos de una hora, sin saber programar."
       },
       "cursoTareasAcceso": {
-        "title": "Tu curso gratis | Action Labs",
+        "title": "Tu curso gratis | Algoryme",
         "description": "Vídeo y prompts del curso para crear tu plataforma de gestión de tareas con Claude."
       },
       "cursoTareasRegistro": {
-        "title": "Accede al curso gratis | Action Labs",
+        "title": "Accede al curso gratis | Algoryme",
         "description": "Deja tu nombre y tu email y entra directamente al curso gratuito para crear tu plataforma de gestión de tareas con Claude."
       },
       "herramientas": {
-        "title": "Herramientas: nuestro software en producción | Action Labs",
-        "description": "Software propio de Action Labs en producción: Pulpo Action 3, gestor de tareas con modo foco, y Prospecta Pulpo 4, pipeline de ventas para autónomos."
+        "title": "Herramientas: nuestro software en producción | Algoryme",
+        "description": "Software propio de Algoryme en producción: Rachea, tareas y hábitos con modo foco, y Prospéctalo, pipeline de ventas para autónomos."
       }
     },
     "en": {
       "home": {
-        "title": "AI consultancy for companies | Action Labs",
+        "title": "AI consultancy for companies | Algoryme",
         "description": "AI consultancy based in Spain. We design and build autonomous agents and AI automation on your own infrastructure. Book a 30-minute call."
       },
       "formacion": {
-        "title": "AI training for companies | Action Labs",
+        "title": "AI training for companies | Algoryme",
         "description": "AI and ChatGPT courses for companies: practical training, online or on site, built around how your team actually works. Ask for a proposal."
       },
       "cursoChatgpt": {
-        "title": "ChatGPT course for companies | Action Labs",
+        "title": "ChatGPT course for companies | Algoryme",
         "description": "ChatGPT course for companies: prompting, real use cases by department and security good practice. 4 hours, online or on site."
       },
       "cursoIa": {
-        "title": "AI course: applied fundamentals | Action Labs",
+        "title": "AI course: applied fundamentals | Algoryme",
         "description": "AI course for non-technical teams: what a model is, what an agent is and how to apply AI to your business. 6 hours across two sessions."
       },
       "formacionEmpresas": {
-        "title": "Custom AI training for companies | Action Labs",
+        "title": "Custom AI training for companies | Algoryme",
         "description": "An AI training programme built on your processes, your data and your tools. Fully tailored content, online or on site."
       },
       "formacionClaude": {
-        "title": "Claude training for teams | Action Labs",
+        "title": "Claude training for teams | Algoryme",
         "description": "Claude training: projects, artifacts, document analysis and automation with the API. 4 hours of hands-on work with your own cases."
       },
       "newsletter": {
-        "title": "Applied AI newsletter for business | Action Labs",
+        "title": "Applied AI newsletter for business | Algoryme",
         "description": "Every Friday at 12:00, a short round-up of what actually matters in AI for companies. No noise, no hype."
       },
       "legal": {
-        "title": "Legal notice and privacy | Action Labs",
-        "description": "Legal notice, privacy policy and data handling for Action Labs, an AI consultancy based in Spain."
+        "title": "Legal notice and privacy | Algoryme",
+        "description": "Legal notice, privacy policy and data handling for Algoryme, an AI consultancy based in Spain."
       },
       "privacidad": {
-        "title": "Privacy policy | Action Labs",
-        "description": "How Action Labs handles the data you send through the contact form, the call booking and the newsletter."
+        "title": "Privacy policy | Algoryme",
+        "description": "How Algoryme handles the data you send through the contact form, the call booking and the newsletter."
       },
       "cursoTareas": {
-        "title": "Free course: build your task manager with Claude | Action Labs",
+        "title": "Free course: build your task manager with Claude | Algoryme",
         "description": "Free course: build your own task management platform with Claude in under an hour, no coding required."
       },
       "cursoTareasAcceso": {
-        "title": "Your free course | Action Labs",
+        "title": "Your free course | Algoryme",
         "description": "Video and prompts for building your task management platform with Claude."
       },
       "cursoTareasRegistro": {
-        "title": "Get the free course | Action Labs",
+        "title": "Get the free course | Algoryme",
         "description": "Leave your name and email and go straight into the free course to build your own task management platform with Claude."
       },
       "herramientas": {
-        "title": "Tools: our software in production | Action Labs",
-        "description": "Action Labs' own software in production: Pulpo Action 3, a task manager with focus mode, and Prospecta Pulpo 4, a sales pipeline for freelancers."
+        "title": "Tools: our software in production | Algoryme",
+        "description": "Algoryme' own software in production: Rachea, a task manager with focus mode, and Prospéctalo, a sales pipeline for freelancers."
       }
     }
   },
@@ -280,32 +280,38 @@
     },
     "process": {
       "kicker": "Cómo trabajamos",
-      "heading": "De la primera llamada a un sistema en producción",
-      "sub": "Un método corto y sin sorpresas. Sabes qué se entrega y cuándo en cada fase.",
+      "heading": "El camino hasta un sistema en producción",
+      "sub": "No entregamos prototipos: entregamos sistemas que aguantan el trabajo real.",
       "steps": [
         {
           "num": "01",
-          "title": "Auditoría de oportunidades",
-          "text": "Miramos tus procesos y detectamos dónde la IA aporta más con menos riesgo. Salimos con una propuesta priorizada.",
-          "when": "1-2 semanas"
+          "title": "Diagnóstico",
+          "when": "1-2 semanas",
+          "text": "Miramos tus procesos y salimos con una lista de oportunidades priorizada por impacto y riesgo."
         },
         {
           "num": "02",
-          "title": "Diseño y construcción",
-          "text": "Elegimos modelo, arquitectura e integraciones, y construimos el agente sobre tus datos reales.",
-          "when": "3-8 semanas según alcance"
+          "title": "Demo de tu caso",
+          "when": "1 semana",
+          "text": "Te enseñamos funcionando el caso que más te interesa, antes de que te comprometas a nada."
         },
         {
           "num": "03",
-          "title": "Despliegue en tu infraestructura",
-          "text": "Lo dejamos corriendo en tu nube o tu servidor, documentado, con accesos y código en tus manos.",
-          "when": "Días"
+          "title": "Piloto con tus datos",
+          "when": "3-6 semanas",
+          "text": "Una prueba acotada sobre tus datos reales, con criterios de éxito acordados de antemano."
         },
         {
           "num": "04",
+          "title": "Producción",
+          "when": "Según alcance",
+          "text": "Desplegado en tu infraestructura, integrado en la operación y documentado. El código es tuyo."
+        },
+        {
+          "num": "05",
           "title": "Mejora continua",
-          "text": "Medimos, ajustamos y ampliamos. Puedes llevarlo tu equipo o seguir con nosotros por horas.",
-          "when": "Continuo y opcional"
+          "when": "Continuo y opcional",
+          "text": "Medimos, ajustamos y ampliamos. Puede llevarlo tu equipo o seguir con nosotros."
         }
       ]
     },
@@ -364,12 +370,12 @@
     },
     "founder": {
       "kicker": "Quién está detrás",
-      "heading": "Soy Rogelio Alcaraz, director de Action Labs",
+      "heading": "Soy Rogelio Alcaraz, director de Algoryme",
       "name": "Rogelio Alcaraz",
-      "role": "Director de Action Labs",
-      "bio": "Llevo más de diez años trabajando con datos y hoy soy analista de datos sénior en una plataforma europea con millones de usuarios. He visto de cerca lo que separa un proyecto de IA que acaba en producción de una demo bonita que nadie usa. Monté Action Labs porque demasiadas empresas están comprando cajas negras que no controlan ni entienden. Aquí construimos sobre tu infraestructura, te explicamos cada decisión y te dejamos el sistema en la mano.",
+      "role": "Director de Algoryme",
+      "bio": "Llevo más de diez años trabajando con datos y hoy soy analista de datos sénior en una plataforma europea con millones de usuarios. He visto de cerca lo que separa un proyecto de IA que acaba en producción de una demo bonita que nadie usa. Monté Algoryme porque demasiadas empresas están comprando cajas negras que no controlan ni entienden. Aquí construimos sobre tu infraestructura, te explicamos cada decisión y te dejamos el sistema en la mano.",
       "roleChip": "Director",
-      "photoAlt": "Rogelio Alcaraz, director de Action Labs"
+      "photoAlt": "Rogelio Alcaraz, director de Algoryme"
     },
     "booking": {
       "title": "Reserva una llamada de 30 minutos",
@@ -417,7 +423,7 @@
           "title": "Llamada reservada",
           "text": "Te confirmamos por email en menos de 24 horas con el enlace de la videollamada."
         },
-        "error": "No hemos podido reservar la llamada. Escríbenos a ralcaraz.canals@gmail.com y lo resolvemos."
+        "error": "No hemos podido reservar la llamada. Escríbenos a info@algoryme.com y lo resolvemos."
       }
     },
     "emailCapture": {
@@ -427,7 +433,7 @@
       "button": "Que me escriban",
       "note": "Respondemos en menos de 24 horas. Sin compromiso.",
       "success": "Recibido. Te escribimos en menos de 24 horas.",
-      "error": "Algo ha fallado. Prueba de nuevo o escribe a ralcaraz.canals@gmail.com."
+      "error": "Algo ha fallado. Prueba de nuevo o escribe a info@algoryme.com."
     },
     "newsletter": {
       "kicker": "Newsletter",
@@ -529,7 +535,7 @@
         "submit": "Pedir propuesta",
         "submitting": "Enviando...",
         "success": "Propuesta en camino. Te escribimos en menos de 24 horas.",
-        "error": "No se ha podido enviar. Escríbenos a ralcaraz.canals@gmail.com."
+        "error": "No se ha podido enviar. Escríbenos a info@algoryme.com."
       },
       "backToAll": "Ver toda la formación",
       "otherCourses": "Otros cursos"
@@ -553,7 +559,7 @@
         },
         {
           "label": "Email",
-          "value": "ralcaraz.canals@gmail.com",
+          "value": "info@algoryme.com",
           "note": "Respondemos en menos de 24 horas.",
           "action": "Enviar email"
         }
@@ -582,7 +588,7 @@
           "title": "Mensaje enviado",
           "text": "Gracias. Te respondemos en menos de 24 horas laborables."
         },
-        "error": "No se ha podido enviar. Escríbenos a ralcaraz.canals@gmail.com.",
+        "error": "No se ha podido enviar. Escríbenos a info@algoryme.com.",
         "privacyNote": "Usamos tus datos solo para responderte. Nunca los compartimos con terceros."
       }
     },
@@ -635,7 +641,7 @@
     "footer": {
       "blurb": "Consultoría de inteligencia artificial. Diseñamos e implementamos agentes y automatizaciones que se despliegan en tu propia infraestructura.",
       "contactHeading": "Contacto",
-      "email": "ralcaraz.canals@gmail.com",
+      "email": "info@algoryme.com",
       "phone": "+34605621826",
       "phoneDisplay": "+34 605 62 18 26",
       "whatsapp": "https://wa.me/34605621826?text=Hola%2C%20te%20escribo%20desde%20la%20web%20de%20Action%20Labs.",
@@ -657,8 +663,8 @@
           "Newsletter"
         ]
       },
-      "rights": "© 2026 Action Labs",
-      "operated": "Action Labs es una marca de Rogelio Alcaraz",
+      "rights": "© 2026 Algoryme",
+      "operated": "Algoryme es una marca de Rogelio Alcaraz",
       "location": "En remoto para toda España",
       "legalNotice": "Aviso legal",
       "privacy": "Privacidad",
@@ -862,16 +868,115 @@
       "sub": "No solo montamos sistemas para clientes: también publicamos nuestras propias herramientas. Estas dos están vivas y se pagan solas.",
       "items": [
         {
-          "name": "Pulpo Action 3",
-          "desc": "Gestor de tareas con ocho brazos. Captura en una línea, modo foco con temporizador y racha diaria.",
+          "name": "Rachea",
+          "desc": "Tareas y hábitos en la misma herramienta. Tablero con modo foco, y rejilla de días con rachas.",
           "tag": "Productividad",
-          "cta": "Ver Pulpo Action 3"
+          "cta": "Ver Rachea"
         },
         {
-          "name": "Prospecta Pulpo 4",
+          "name": "Prospéctalo",
           "desc": "Pipeline de ventas para autónomos. Cada oportunidad lleva un próximo paso: sin él, no es un cliente, es un recuerdo.",
           "tag": "Ventas",
-          "cta": "Ver Prospecta Pulpo 4"
+          "cta": "Ver Prospéctalo"
+        }
+      ]
+    },
+    "kpis": {
+      "items": [
+        {
+          "n": "95%",
+          "t": "de los pilotos de IA no llega a producción*"
+        },
+        {
+          "n": "6",
+          "t": "especialistas en el equipo"
+        },
+        {
+          "n": "3",
+          "t": "sistemas nuestros en producción"
+        },
+        {
+          "n": "100%",
+          "t": "del código y los datos, en tu infraestructura"
+        }
+      ],
+      "source": "* MIT, «The GenAI Divide: State of AI in Business» (2025)."
+    },
+    "problem": {
+      "kicker": "El problema",
+      "heading": "¿Por qué fracasa el 95% de los proyectos de IA?",
+      "sub": "Casi ninguno devuelve nada, según la investigación del MIT. Las herramientas genéricas prometen mucho y encajan poco.",
+      "risks": [
+        {
+          "title": "Hecha para todos, no encaja con nadie",
+          "text": "Una solución general no baja al detalle de cómo trabaja tu empresa de verdad."
+        },
+        {
+          "title": "Congelada el día que la compras",
+          "text": "Tu proceso cambia cada trimestre. El producto que contrataste, no."
+        },
+        {
+          "title": "Una demo no es un sistema",
+          "text": "Impresiona en la reunión y se cae el primer día con tus datos reales."
+        }
+      ],
+      "close": "Lo que necesitas es IA que aprenda de tu equipo y viva dentro de tu operación."
+    },
+    "backoffice": {
+      "kicker": "El trabajo interno",
+      "heading": "IA que se encarga del trabajo que nadie quiere hacer",
+      "sub": "Para que tu equipo dedique el día a lo que de verdad importa.",
+      "status": "Se despliega en tu nube o en tu servidor",
+      "items": [
+        {
+          "slug": "atencion",
+          "name": "Atención y respuestas",
+          "tagline": "Responde a tus clientes y a tu equipo con tus manuales y tu tono.",
+          "bullets": [
+            "Conectado a tu CRM",
+            "Escala a una persona cuando toca",
+            "Disponible a cualquier hora"
+          ]
+        },
+        {
+          "slug": "informes",
+          "name": "Informes automáticos",
+          "tagline": "El informe que alguien rehace a mano cada lunes, generado y enviado solo.",
+          "bullets": [
+            "Con tus fuentes de datos",
+            "A la hora que tú digas",
+            "En el formato de siempre"
+          ]
+        },
+        {
+          "slug": "datos",
+          "name": "Datos entre sistemas",
+          "tagline": "Se acabó copiar de una hoja a otra: los datos viajan y se validan solos.",
+          "bullets": [
+            "CRM, ERP y hojas de cálculo",
+            "Validación por reglas",
+            "Aviso cuando algo no cuadra"
+          ]
+        },
+        {
+          "slug": "documentos",
+          "name": "Documentos y facturas",
+          "tagline": "Lee, clasifica y extrae lo que importa de cada documento que entra.",
+          "bullets": [
+            "Facturas, albaranes y contratos",
+            "Extracción de campos",
+            "Revisión solo por excepción"
+          ]
+        },
+        {
+          "slug": "agentes",
+          "name": "Agentes a medida",
+          "tagline": "Tareas encadenadas que hoy hace una persona, delegadas a un agente.",
+          "bullets": [
+            "Sobre las herramientas que ya usas",
+            "Con permisos acotados",
+            "Trazabilidad de cada paso"
+          ]
         }
       ]
     }
@@ -1047,32 +1152,38 @@
     },
     "process": {
       "kicker": "How we work",
-      "heading": "From first call to a system in production",
-      "sub": "A short method with no surprises. You know what gets delivered and when at every stage.",
+      "heading": "The path to a system in production",
+      "sub": "We don't hand over prototypes: we hand over systems that survive real work.",
       "steps": [
         {
           "num": "01",
-          "title": "Opportunity audit",
-          "text": "We look at your processes and find where AI gives most return for least risk. You get a prioritised proposal.",
-          "when": "1-2 weeks"
+          "title": "Diagnosis",
+          "when": "1-2 weeks",
+          "text": "We look at your processes and come back with a list of opportunities ranked by impact and risk."
         },
         {
           "num": "02",
-          "title": "Design and build",
-          "text": "We choose model, architecture and integrations, then build the agent against your real data.",
-          "when": "3-8 weeks depending on scope"
+          "title": "Demo of your case",
+          "when": "1 week",
+          "text": "We show you the case you care about most, working, before you commit to anything."
         },
         {
           "num": "03",
-          "title": "Deployment on your infrastructure",
-          "text": "We leave it running on your cloud or server, documented, with access and code in your hands.",
-          "when": "Days"
+          "title": "Pilot on your data",
+          "when": "3-6 weeks",
+          "text": "A scoped trial on your real data, with success criteria agreed up front."
         },
         {
           "num": "04",
+          "title": "Production",
+          "when": "Depends on scope",
+          "text": "Deployed on your infrastructure, integrated into operations and documented. The code is yours."
+        },
+        {
+          "num": "05",
           "title": "Continuous improvement",
-          "text": "We measure, tune and extend. Your team can take it over or keep working with us by the hour.",
-          "when": "Ongoing and optional"
+          "when": "Ongoing and optional",
+          "text": "We measure, tune and extend. Your team can take it over, or we stay on."
         }
       ]
     },
@@ -1131,12 +1242,12 @@
     },
     "founder": {
       "kicker": "Who is behind this",
-      "heading": "I'm Rogelio Alcaraz, director of Action Labs",
+      "heading": "I'm Rogelio Alcaraz, director of Algoryme",
       "name": "Rogelio Alcaraz",
-      "role": "Director of Action Labs",
-      "bio": "I have spent more than ten years working with data and I am currently a senior data analyst at a European platform with millions of users. I have seen up close what separates an AI project that reaches production from a pretty demo nobody ends up using. I started Action Labs because too many companies are buying black boxes they neither control nor understand. Here we build on your infrastructure, explain every decision and hand you the system.",
+      "role": "Director of Algoryme",
+      "bio": "I have spent more than ten years working with data and I am currently a senior data analyst at a European platform with millions of users. I have seen up close what separates an AI project that reaches production from a pretty demo nobody ends up using. I started Algoryme because too many companies are buying black boxes they neither control nor understand. Here we build on your infrastructure, explain every decision and hand you the system.",
       "roleChip": "Director",
-      "photoAlt": "Rogelio Alcaraz, director of Action Labs"
+      "photoAlt": "Rogelio Alcaraz, director of Algoryme"
     },
     "booking": {
       "title": "Book a 30-minute call",
@@ -1184,7 +1295,7 @@
           "title": "Call booked",
           "text": "We'll confirm by email within 24 hours with the video-call link."
         },
-        "error": "We could not book the call. Email ralcaraz.canals@gmail.com and we will sort it out."
+        "error": "We could not book the call. Email info@algoryme.com and we will sort it out."
       }
     },
     "emailCapture": {
@@ -1194,7 +1305,7 @@
       "button": "Have them email me",
       "note": "We reply within 24 hours. No commitment.",
       "success": "Got it. We will write to you within 24 hours.",
-      "error": "Something went wrong. Try again or email ralcaraz.canals@gmail.com."
+      "error": "Something went wrong. Try again or email info@algoryme.com."
     },
     "newsletter": {
       "kicker": "Newsletter",
@@ -1296,7 +1407,7 @@
         "submit": "Request a proposal",
         "submitting": "Sending...",
         "success": "Proposal on its way. We'll get back to you within 24 hours.",
-        "error": "It could not be sent. Email us at ralcaraz.canals@gmail.com."
+        "error": "It could not be sent. Email us at info@algoryme.com."
       },
       "backToAll": "See all training",
       "otherCourses": "Other courses"
@@ -1320,7 +1431,7 @@
         },
         {
           "label": "Email",
-          "value": "ralcaraz.canals@gmail.com",
+          "value": "info@algoryme.com",
           "note": "We reply within 24 hours.",
           "action": "Send an email"
         }
@@ -1349,7 +1460,7 @@
           "title": "Message sent",
           "text": "Thank you. We will reply within 24 working hours."
         },
-        "error": "It could not be sent. Email us at ralcaraz.canals@gmail.com.",
+        "error": "It could not be sent. Email us at info@algoryme.com.",
         "privacyNote": "We use your details only to reply to you. We never share them with third parties."
       }
     },
@@ -1402,7 +1513,7 @@
     "footer": {
       "blurb": "AI consultancy. We design and build agents and automations that are deployed on your own infrastructure.",
       "contactHeading": "Contact",
-      "email": "ralcaraz.canals@gmail.com",
+      "email": "info@algoryme.com",
       "phone": "+34605621826",
       "phoneDisplay": "+34 605 62 18 26",
       "whatsapp": "https://wa.me/34605621826?text=Hi%2C%20I%27m%20writing%20from%20the%20Action%20Labs%20website.",
@@ -1424,8 +1535,8 @@
           "Newsletter"
         ]
       },
-      "rights": "© 2026 Action Labs",
-      "operated": "Action Labs is a brand of Rogelio Alcaraz",
+      "rights": "© 2026 Algoryme",
+      "operated": "Algoryme is a brand of Rogelio Alcaraz",
       "location": "Remote across Spain",
       "legalNotice": "Legal notice",
       "privacy": "Privacy",
@@ -1629,16 +1740,115 @@
       "sub": "We don't just build systems for clients: we also ship our own tools. These two are live and pay for themselves.",
       "items": [
         {
-          "name": "Pulpo Action 3",
-          "desc": "A task manager with eight arms. One-line capture, focus mode with a timer and a daily streak.",
+          "name": "Rachea",
+          "desc": "Tasks and habits in one tool. A board with focus mode, plus a grid of days with streaks.",
           "tag": "Productivity",
-          "cta": "See Pulpo Action 3"
+          "cta": "See Rachea"
         },
         {
-          "name": "Prospecta Pulpo 4",
+          "name": "Prospéctalo",
           "desc": "A sales pipeline for freelancers. Every opportunity carries a next step: without one, it's not a client, it's a memory.",
           "tag": "Sales",
-          "cta": "See Prospecta Pulpo 4"
+          "cta": "See Prospéctalo"
+        }
+      ]
+    },
+    "kpis": {
+      "items": [
+        {
+          "n": "95%",
+          "t": "of AI pilots never reach production*"
+        },
+        {
+          "n": "6",
+          "t": "specialists on the team"
+        },
+        {
+          "n": "3",
+          "t": "of our systems in production"
+        },
+        {
+          "n": "100%",
+          "t": "of the code and the data, on your infrastructure"
+        }
+      ],
+      "source": "* MIT, “The GenAI Divide: State of AI in Business” (2025)."
+    },
+    "problem": {
+      "kicker": "The problem",
+      "heading": "Why do 95% of AI projects fail?",
+      "sub": "Almost none of them return anything, according to MIT research. Off-the-shelf tools promise a lot and fit very little.",
+      "risks": [
+        {
+          "title": "Built for everyone, fits no one",
+          "text": "A general solution never gets down to how your company actually works."
+        },
+        {
+          "title": "Frozen the day you buy it",
+          "text": "Your process changes every quarter. The product you signed up for doesn't."
+        },
+        {
+          "title": "A demo is not a system",
+          "text": "It impresses in the meeting and falls over on day one with your real data."
+        }
+      ],
+      "close": "What you need is AI that learns from your team and lives inside your operation."
+    },
+    "backoffice": {
+      "kicker": "The internal work",
+      "heading": "AI that handles the work nobody wants to do",
+      "sub": "So your team can spend the day on what actually matters.",
+      "status": "Deployed in your cloud or on your server",
+      "items": [
+        {
+          "slug": "atencion",
+          "name": "Answers and support",
+          "tagline": "Replies to your customers and your team using your manuals and your tone.",
+          "bullets": [
+            "Connected to your CRM",
+            "Hands over to a person when needed",
+            "Available at any hour"
+          ]
+        },
+        {
+          "slug": "informes",
+          "name": "Automatic reports",
+          "tagline": "The report someone rebuilds by hand every Monday, generated and sent on its own.",
+          "bullets": [
+            "From your own data sources",
+            "At whatever time you choose",
+            "In your usual format"
+          ]
+        },
+        {
+          "slug": "datos",
+          "name": "Data between systems",
+          "tagline": "No more copying from one sheet to another: data travels and validates itself.",
+          "bullets": [
+            "CRM, ERP and spreadsheets",
+            "Rule-based validation",
+            "An alert when something doesn't add up"
+          ]
+        },
+        {
+          "slug": "documentos",
+          "name": "Documents and invoices",
+          "tagline": "Reads, sorts and extracts what matters from every document that comes in.",
+          "bullets": [
+            "Invoices, delivery notes, contracts",
+            "Field extraction",
+            "Review by exception only"
+          ]
+        },
+        {
+          "slug": "agentes",
+          "name": "Custom agents",
+          "tagline": "Chained tasks a person does today, handed over to an agent.",
+          "bullets": [
+            "On the tools you already use",
+            "With tightly scoped permissions",
+            "Every step traceable"
+          ]
         }
       ]
     }

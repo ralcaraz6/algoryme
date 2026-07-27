@@ -1,32 +1,17 @@
-# Action Labs — Web
+# Algoryme
 
-Web comercial de **Action Labs**: consultoría e implementación de IA para empresas (agentes, automatizaciones y sistemas de datos), desplegado en la infraestructura del cliente.
+Web de **Algoryme**, consultoría de inteligencia artificial para empresas.
 
-## Páginas
+Sitio estático, sin build: cada página es un `.html` autocontenido con su CSS en línea
+y el diccionario de textos embebido. La única petición externa son las fuentes de Google.
 
-| Fichero | Contenido |
-|---|---|
-| `index.html` | Landing: hero, propiedad del stack, valor, agentes, 8 aplicaciones de IA, tecnologías, integraciones, proceso, casos reales, quién está detrás, FAQ, contacto |
-| `formacion.html` | Hub de formación |
-| `curso-chatgpt-empresas.html`, `curso-ia.html`, `formacion-ia-empresas.html`, `formacion-claude.html` | Páginas de curso con formulario de información |
-| `newsletter.html` | Suscripción (viernes 12:00) |
-| `legal.html` · `404.html` · `robots.txt` · `sitemap.xml` | Legal, error y SEO |
-| `content.json` | Textos ES/EN (el diccionario embebido en cada HTML debe mantenerse sincronizado) |
-| `build-assets/` | Logo/ilustraciones (`assets.json`), robots, 46 logos de software, 16 de IA, colores de marca |
+- **Textos**: `content.json` es la fuente de la verdad (ES/EN). Al editarlo hay que
+  re-embeber el diccionario minificado en las 14 páginas y re-hornear el texto estático español.
+- **Formularios**: se envían por AJAX a FormSubmit. El buzón real es privado; el email
+  visible en la web es `info@algoryme.com`.
+- **Despliegue**: GitHub Pages desde `main`.
 
-## Funcionamiento
+## Regla dura del proyecto
 
-- **Bilingüe ES/EN**, español por defecto, preferencia en `localStorage`, `?lang=en` para forzar.
-- **Calendario de reserva** propio (estilo Calendly) en modal: día laborable → hora (mañana/tarde) → formulario. Sin backend.
-- **Todos los envíos van a `ralcaraz.canals@gmail.com`** vía FormSubmit (reserva, contacto, captación de email, info de cursos, newsletter), cada uno con su asunto.
-  - ⚠️ **Activación pendiente**: el primer envío real dispara el correo de confirmación de FormSubmit; hay que hacer clic una vez.
-  - La confirmación al usuario **no es automática**: hay que responder al email (la web promete respuesta en 24 h).
-- **Contacto**: formulario, reserva de llamada, WhatsApp, teléfono y email, todos visibles.
-- **Regla del sitio**: ningún dato, cliente o métrica inventado.
-
-## Local
-
-```bash
-python3 -m http.server 5098
-# → http://localhost:5098
-```
+Ningún dato, cliente, logo o métrica de esta web puede ser inventado. Si un dato no está
+verificado, se omite o se formula de manera cualitativa. Las cifras de terceros van con su fuente.
