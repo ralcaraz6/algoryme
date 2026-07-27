@@ -20,14 +20,22 @@ Dos micro-SaaS de suscripción, hermanos, publicados por Algoryme.
 |---|---|---|
 | **Qué es** | Gestor de tareas **+ seguidor de hábitos** | Pipeline de ventas para autónomos |
 | **Dominio** | https://rachea.com | https://prospectalo.com |
-| **Repositorio (privado)** | `github.com/ralcaraz6/pulpo-action-3` | `github.com/ralcaraz6/prospecta-pulpo` |
+| **Repositorio (privado)** | `github.com/ralcaraz6/rachea` | `github.com/ralcaraz6/prospectalo` |
 | **Carpeta local** | `/Users/rogelio/tt/pulpo-action` | `/Users/rogelio/tt/prospecta-pulpo` |
 | **Precio** | 4,99 €/mes · 79 €/año | 4,99 €/mes · 79 €/año |
 
-**Los nombres de repositorio y carpeta (`pulpo-action`, `prospecta-pulpo`) son los antiguos.** Se
-conservaron al renombrar los productos para no romper el historial de git ni los despliegues. El
-código y las marcas ya son Rachea y Prospéctalo; solo los directorios llevan el nombre viejo. No los
-renombres.
+**Los repositorios se renombraron el 27-jul-2026** de `pulpo-action-3` y `prospecta-pulpo` a `rachea`
+y `prospectalo`. Dos cosas que conviene saber:
+
+- **Las carpetas locales siguen con el nombre viejo** (`pulpo-action`, `prospecta-pulpo`). Renombrar
+  el repositorio en GitHub no toca el directorio de tu máquina. Si las alineas, es un `mv` aparte.
+- **GitHub deja redirecciones** desde los nombres antiguos, así que un `clone` o un `push` con la URL
+  vieja sigue funcionando. Aun así, actualiza los remotos para no depender de ellas:
+  `git remote set-url origin https://github.com/ralcaraz6/rachea`. Y **no recrees los nombres
+  viejos**: si algún día existe otro repo llamado `pulpo-action-3`, la redirección se rompe.
+
+El nombre de Prospéctalo va **sin tilde** (`prospectalo`) porque GitHub solo admite ASCII en los
+nombres de repositorio; con tilde habría quedado `Prosp-ctalo`.
 
 La agencia matriz vive aparte, en este repositorio: `github.com/ralcaraz6/algoryme`, publicado en
 GitHub Pages. Su página `herramientas.html` enlaza a las dos.
@@ -71,7 +79,7 @@ public/araki.css         sistema de diseño compartido
 ### Arrancar en local
 
 ```bash
-cd pulpo-action        # o prospecta-pulpo
+cd pulpo-action        # o prospecta-pulpo (las carpetas conservan el nombre viejo)
 npm install
 npm run db:local       # crea la base de datos local
 npm run dev            # Rachea en :5090, Prospéctalo en :5091
