@@ -6,9 +6,10 @@
 | `algoryme-horizontal-tinta.png` | Uso general sobre fondo claro: documentos, presentaciones, facturas | 1600×400, transparente |
 | `algoryme-horizontal-blanco.png` | Sobre fondo oscuro o fotografía | 1600×400, transparente |
 | `algoryme-horizontal-siena.png` | Cuando el logo tiene que destacar solo, sin botones alrededor | 1600×400, transparente |
-| `algoryme-perfil-nombre-1024.png` | **Foto de perfil** (Google Workspace, LinkedIn). Nombre completo apilado sobre siena. Cuadrada: la plataforma la recorta en círculo | 1024×1024 |
-| `algoryme-perfil-nombre-claro-1024.png` | Igual sobre fondo claro, para interfaces oscuras | 1024×1024 |
-| `algoryme-perfil-caret-1024.png` | Alternativa con solo el símbolo, para cuando el espacio baja de 32 px | 1024×1024 |
+| `algoryme-perfil-horizontal.png` | **Foto de perfil** (Google Workspace, LinkedIn). Wordmark en una línea sobre papel. Cuadrada: la plataforma la recorta en círculo | 1024×1024 |
+| `algoryme-perfil-horizontal-blanco.png` | Igual, fondo casi blanco: algo más de contraste | 1024×1024 |
+| `algoryme-perfil-horizontal-siena.png` | Igual, fondo siena con letras claras | 1024×1024 |
+| `algoryme-perfil-caret-1024.png` | Alternativa con solo el símbolo, para cuando el espacio es muy pequeño | 1024×1024 |
 
 ## Colores
 
@@ -17,9 +18,8 @@
 ## Cuándo el wordmark y cuándo el monograma
 
 - **Wordmark** (`ALGORYME` + cursor) solo en espacios anchos: cabecera, documentos, firma de correo.
-- **Wordmark apilado** (`ALGO` sobre `RYME`) en avatares redondos y cuadrados. Las dos mitades tienen cuatro letras, así que apiladas cuadran solas y las letras salen al doble de tamaño que en una línea.
-- **Nunca el wordmark en una línea dentro de un círculo**: a 32 px las letras quedan a la mitad y no se leen.
-- **Caret** solo por debajo de 32 px o cuando el nombre ya aparece al lado.
+- En avatares redondos, el wordmark va **en una línea ocupando el 90 % del diámetro**. La línea pasa por el centro del círculo, que es su parte más ancha, así que ahí cabe casi entero.
+- **Caret** solo cuando el espacio es muy pequeño o el nombre ya aparece escrito al lado.
 
 ## Reglas
 
