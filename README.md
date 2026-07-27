@@ -10,6 +10,7 @@ En producción: **https://algoryme.com**
 | **[PROYECTO.md](PROYECTO.md)** | Qué es, cómo está construido, las trampas conocidas y lo que queda pendiente. **Léelo antes de tocar nada.** |
 | **[MARCA.md](MARCA.md)** | Guía de marca: logo, color, tipografía, tono de voz y el sistema del cursor. |
 | [marca/LEEME.md](marca/LEEME.md) | Qué fichero de logo usar en cada sitio. |
+| [HERRAMIENTAS.md](HERRAMIENTAS.md) | Contexto de **Rachea** y **Prospéctalo**, los dos productos de suscripción. Su código vive en otros repositorios; aquí solo se enlazan. |
 
 ## En dos líneas
 
