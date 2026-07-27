@@ -574,12 +574,6 @@ body.modal-open .wa-fab,body.menu-open .wa-fab{display:none}
 .tm-photo{object-fit:cover;object-position:50% 22%;border:1px solid var(--line);background:var(--cream)}
 
 /* ============ EL CURSOR COMO SISTEMA ============ */
-main h2::after{content:"";display:inline-block;width:.34em;height:.72em;background:var(--sienna);
-  border-radius:2px;margin-left:.24em;vertical-align:-.02em}
-/* en el articulado legal el cursor sobra y además fuerza saltos de línea en móvil */
-.legal-body h2::after{content:none}
-
-.band-cta .sec-head h2::after,.sub-invert ~ * h2::after{background:var(--sienna)}
 /* el cursor parpadea mientras el formulario se envía (el botón ya se deshabilita solo) */
 @keyframes al-blink{0%,49%{opacity:1}50%,100%{opacity:.2}}
 button.btn[type="submit"]:disabled::after{content:"";display:inline-block;width:8px;height:15px;

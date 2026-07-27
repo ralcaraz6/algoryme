@@ -112,17 +112,18 @@ Los titulares llevan `text-wrap: balance` y `letter-spacing` negativo.
 Es lo que hace que el cursor sea marca y no un guiño de programador. **Significa que algo está a
 punto de pasar**, que es exactamente lo que vende la agencia.
 
-Aparece en cinco sitios:
+Aparece en cuatro sitios:
 
 1. **En el logo**, al final del wordmark.
 2. **Como favicon y monograma**, convertido en caret.
 3. **Como viñeta de las listas**, en lugar de un check genérico. Bloque siena de 8 × 13 px.
-4. **Al final de los titulares de sección**, como el cursor que queda tras escribir la frase.
-5. **Parpadeando en el botón mientras se envía un formulario**, en lugar de una ruedecita.
+4. **Parpadeando en el botón mientras se envía un formulario**, en lugar de una ruedecita.
    Está enganchado a `:disabled`, así que funciona en los siete formularios sin JavaScript propio.
 
-**Excepción:** no aparece en el articulado legal (`.legal-body`). Además de que ahí la decoración
-sobra, empujaba titulares a dos líneas en móvil y dejaba el cursor solo en la segunda.
+**No va en los titulares de sección.** Lo llevaron durante un tiempo (`main h2::after`), y se
+retiró: a ese tamaño el bloque no se lee como un cursor sino como un rectángulo suelto pegado al
+signo de interrogación. El cursor funciona donde es pequeño y tiene un porqué —cerrar el logo,
+marcar una viñeta, indicar espera—, no como remate decorativo de cada titular.
 
 ---
 
