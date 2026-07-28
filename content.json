@@ -155,7 +155,7 @@
     },
     "hero": {
       "eyebrow": "Desarrollo de producto para empresas",
-      "headline": "Construimos el software que te hace {{ganar más o gastar menos}}",
+      "headline": "Queremos impulsar {{tu negocio}}",
       "sub": "Cada proceso que tu equipo hace a mano es tiempo y dinero que se escapan. Diseñamos el sistema que lo hace solo, {{en tu propia infraestructura}}, y lo dejamos funcionando en producción. No una demo bonita: algo que aguanta.",
       "cta1": "Reserva una llamada de 30 minutos",
       "cta2": "Ver proyectos"
@@ -1111,7 +1111,7 @@
     },
     "hero": {
       "eyebrow": "Product development for companies",
-      "headline": "We build the software that {{earns or saves you money}}",
+      "headline": "We want to grow {{your business}}",
       "sub": "Every process your team does by hand is time and money leaking out. We design the system that does it for you, {{on your own infrastructure}}, and leave it running in production. Not a slick demo: something that holds up.",
       "cta1": "Book a 30-minute call",
       "cta2": "View case studies"
