@@ -62,6 +62,10 @@ en el histórico de la sesión; si no lo tienes, es un recorrido con un parser d
   `BreadcrumbList` de la plantilla. Hay que reescribir esos tres a mano en cada página nueva.
 - **Los `curl` en bucle** desde el entorno de Claude se topan con límites de red y devuelven vacío.
   Para verificar en producción, usa el navegador o fija una IP con `--resolve`.
+- **Las transiciones CSS quedan congeladas** en Chrome headless con `--virtual-time-budget`: al
+  medir con `getComputedStyle` justo después de un clic devuelve el valor *inicial*, no el final,
+  y parece que la regla no se aplica. Antes de dar por roto un estado (`.open`, `:hover`), inyecta
+  `*{transition:none!important}` y vuelve a medir. Pasó con el icono +/− del índice de proyectos.
 - **Las capturas de pantalla del navegador integrado** dan tiempo de espera agotado con estas
   páginas. Alternativa que funciona: Chrome en modo headless
   (`--headless --screenshot --window-size=W,H`, y `--default-background-color=00000000` para
@@ -109,7 +113,7 @@ para que la home sea más corta y directa):
    sección a la que apunta **Servicios** en la navegación (`#aplicaciones`); si le cambias el `id`,
    se rompe el enlace en las 18 páginas. El kicker dice «Servicios»; antes decía «El trabajo interno».
 4. **Cómo trabajamos** — línea de tiempo de cinco pasos hasta producción.
-5. **Casos de éxito** — tres tarjetas ilustradas y un botón a `casos.html`. La home enseña una
+5. **Proyectos** — tres tarjetas ilustradas y un botón a `casos.html`. La home enseña una
    muestra, no el catálogo: si crece aquí, la página se hace interminable.
 6. **El equipo** y **el fundador**.
 7. **FAQ** y **contacto**. El contacto es **un solo panel**: formulario a la izquierda y las tres
@@ -127,6 +131,23 @@ el embudo del curso gratuito (3 páginas), `newsletter.html`, `legal.html`, `pri
 `herramientas.html` enlaza a **Rachea** y **Prospéctalo**, los dos productos de suscripción. Su
 código está en otros repositorios; el contexto para trabajar en ellos está en
 **[HERRAMIENTAS.md](HERRAMIENTAS.md)**.
+
+### Proyectos (antes «Casos de éxito»)
+
+En julio de 2026 el cliente los renombró a **Proyectos**. El cambio es solo de etiqueta: los
+ficheros siguen llamándose `casos.html` y `caso-*.html`, y las claves de `content.json` siguen
+siendo `cases`, `casesPage` y `caseDetail`. **No renombres los ficheros**: las URLs están indexadas
+y no hay redirecciones montadas.
+
+Cada proyecto se cuenta con tres bloques fijos —**El problema**, **La solución**, **El resultado**—
+tanto en el índice desplegable de `casos.html` como en las fichas completas. Las etiquetas viven en
+`cases.labels`.
+
+**Cinco de los ocho proyectos no tienen resultado publicado**, y es deliberado: de ellos se conoce
+el problema y la solución, pero no el resultado medido, y la regla dura prohíbe inventarlo. El
+bloque «El resultado» solo se pinta si el proyecto tiene `outcome`; los que no lo tienen sencillamente
+no lo muestran, sin hueco ni texto de relleno. Cuando el cliente aporte los resultados reales, basta
+con rellenar `outcome` en su entrada de `content.json`.
 
 ## 5. La regla dura
 

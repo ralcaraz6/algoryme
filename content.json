@@ -54,7 +54,7 @@
         "description": "Software propio de Algoryme en producción: Rachea, tareas y hábitos con modo foco, y Prospéctalo, pipeline de ventas para autónomos."
       },
       "casos": {
-        "title": "Casos de éxito: sistemas de IA en producción | Algoryme",
+        "title": "Proyectos: sistemas de IA en producción | Algoryme",
         "description": "Proyectos de inteligencia artificial y automatización construidos a medida y desplegados en la infraestructura de cada cliente: inmobiliario, finanzas y análisis de mercados."
       },
       "caso0": {
@@ -145,7 +145,7 @@
     "nav": {
       "services": "Servicios",
       "applications": "Aplicaciones",
-      "cases": "Casos de éxito",
+      "cases": "Proyectos",
       "formacion": "Formación",
       "newsletter": "Newsletter",
       "contact": "Contacto",
@@ -158,7 +158,7 @@
       "headline": "Consultoría en {{Inteligencia Artificial}} para empresas",
       "sub": "Alguien de tu equipo copia datos entre hojas y rehace a mano el informe de siempre, y el cliente sin respuesta. Lo resolvemos {{sobre la infraestructura que ya usas, sin que tus datos salgan de casa}}.",
       "cta1": "Reserva una llamada de 30 minutos",
-      "cta2": "Ver casos de éxito"
+      "cta2": "Ver proyectos"
     },
     "ownership": {
       "kicker": "Tu stack, no el nuestro",
@@ -360,7 +360,7 @@
       "moreChip": "y muchas más"
     },
     "cases": {
-      "kicker": "Casos de éxito",
+      "kicker": "Proyectos",
       "heading": "Sistemas que ya están en producción",
       "sub": "Sistemas construidos a medida y funcionando en producción, cada uno sobre la infraestructura de su dueño.",
       "note": "",
@@ -453,37 +453,52 @@
           "sector": "Finanzas",
           "tag": "Finanzas",
           "title": "CRM de ventas con facturación automática",
-          "summary": "Una financiera llevaba los contactos en un sitio y la facturación en otro. Hoy trabaja sobre una sola plataforma que envía los correos de seguimiento y emite las facturas sin que nadie las prepare."
+          "summary": "Una financiera llevaba los contactos en un sitio y la facturación en otro. Hoy trabaja sobre una sola plataforma que envía los correos de seguimiento y emite las facturas sin que nadie las prepare.",
+          "situation": "Una financiera llevaba los contactos en una herramienta y la facturación en otra, y tanto los correos de seguimiento como las facturas se preparaban a mano.",
+          "built": "Una única plataforma con los contactos dentro, que envía sola los correos de seguimiento y emite las facturas desde la ficha del cliente."
         },
         {
           "sector": "Producción",
           "tag": "Producción",
           "title": "Elección automática del transportista más barato",
-          "summary": "Una productora de vitaminas elegía transportista pedido a pedido. Un algoritmo lee cada pedido y decide con cuál sale más barato, según destino, volumen y urgencia."
+          "summary": "Una productora de vitaminas elegía transportista pedido a pedido. Un algoritmo lee cada pedido y decide con cuál sale más barato, según destino, volumen y urgencia.",
+          "situation": "Una productora de vitaminas elegía transportista pedido a pedido, comparando tarifas a mano en cada envío.",
+          "built": "Un algoritmo que lee cada pedido y calcula con qué transportista sale más barato, cruzando destino, volumen y urgencia."
         },
         {
           "sector": "Cuidados",
           "tag": "Cuidados",
           "title": "Detección de situaciones de riesgo en el cuidado de mayores",
-          "summary": "Un marketplace de cuidadores de personas mayores no tenía forma de saber qué profesionales atravesaban situaciones difíciles con sus clientes. Un modelo de lenguaje las detecta y permite ofrecerles acompañamiento."
+          "summary": "Un marketplace de cuidadores de personas mayores no tenía forma de saber qué profesionales atravesaban situaciones difíciles con sus clientes. Un modelo de lenguaje las detecta y permite ofrecerles acompañamiento.",
+          "situation": "Un marketplace de cuidadores de personas mayores no tenía forma de saber qué profesionales atravesaban situaciones difíciles con sus clientes.",
+          "built": "Un modelo de lenguaje que analiza las interacciones entre cuidador y cliente y señala los casos de tensión, para poder ofrecer acompañamiento."
         },
         {
           "sector": "Producción",
           "tag": "Producción",
           "title": "Predicción de direcciones de entrega incorrectas",
-          "summary": "En la misma productora de vitaminas, las direcciones mal escritas se descubrían cuando fallaba la entrega. Un modelo predictivo señala cuáles tienen probabilidad de estar mal antes de que el pedido salga."
+          "summary": "En la misma productora de vitaminas, las direcciones mal escritas se descubrían cuando fallaba la entrega. Un modelo predictivo señala cuáles tienen probabilidad de estar mal antes de que el pedido salga.",
+          "situation": "En la misma productora de vitaminas, las direcciones de entrega mal escritas solo se descubrían cuando la entrega ya había fallado.",
+          "built": "Un modelo predictivo, alimentado con consultas automatizadas sobre el histórico de pedidos, que señala qué direcciones tienen probabilidad de estar mal antes de que el pedido salga."
         },
         {
           "sector": "Arte",
           "tag": "Arte",
           "title": "Tienda online para un artista independiente",
-          "summary": "Una tienda online para que un artista independiente venda sus cuadros directamente, con su propio catálogo y su proceso de compra."
+          "summary": "Una tienda online para que un artista independiente venda sus cuadros directamente, con su propio catálogo y su proceso de compra.",
+          "situation": "Un artista independiente necesitaba un canal propio para vender sus cuadros.",
+          "built": "Una tienda online con su catálogo de obra y el proceso de compra completo."
         }
       ],
-      "more": "Ver el caso",
-      "allCta": "Ver todos los casos",
+      "more": "Ver el proyecto",
+      "allCta": "Ver todos los proyectos",
       "expand": "Ver más",
-      "fullCase": "Ver el caso completo"
+      "fullCase": "Ver el proyecto completo",
+      "labels": {
+        "problem": "El problema",
+        "solution": "La solución",
+        "result": "El resultado"
+      }
     },
     "founder": {
       "kicker": "Quién está detrás",
@@ -758,7 +773,7 @@
           "Automatización de procesos",
           "Auditoría de oportunidades",
           "Análisis de datos",
-          "Casos de éxito"
+          "Proyectos"
         ],
         "resources": [
           "Formación en IA para empresas",
@@ -1063,20 +1078,20 @@
       ]
     },
     "caseDetail": {
-      "crumb": "Casos",
-      "situation": "El punto de partida",
-      "built": "Qué construimos",
+      "crumb": "Proyectos",
+      "situation": "El problema",
+      "built": "La solución",
       "how": "Cómo funciona",
-      "outcome": "Qué cambió",
+      "outcome": "El resultado",
       "stack": "Tecnología",
       "confidential": "Cliente confidencial. Publicamos el problema y la solución, nunca datos ni nombres del cliente.",
-      "back": "Todos los casos",
-      "next": "Siguiente caso",
+      "back": "Todos los proyectos",
+      "next": "Siguiente proyecto",
       "ctaHeading": "¿Tienes un proceso parecido?",
       "ctaSub": "Cuéntanoslo en media hora y te decimos si tiene sentido automatizarlo."
     },
     "casesPage": {
-      "kicker": "Casos",
+      "kicker": "Proyectos",
       "heading": "Sistemas que ya están en producción",
       "sub": "Cada proyecto empieza con un proceso que alguien hacía a mano y termina en un sistema desplegado en la infraestructura del cliente."
     }
@@ -1085,7 +1100,7 @@
     "nav": {
       "services": "Services",
       "applications": "Applications",
-      "cases": "Case studies",
+      "cases": "Projects",
       "formacion": "Training",
       "newsletter": "Newsletter",
       "contact": "Contact",
@@ -1300,7 +1315,7 @@
       "moreChip": "and many more"
     },
     "cases": {
-      "kicker": "Case studies",
+      "kicker": "Projects",
       "heading": "Systems already running in production",
       "sub": "Custom-built systems running in production, each on its owner's own infrastructure.",
       "note": "",
@@ -1393,37 +1408,52 @@
           "sector": "Finance",
           "tag": "Finance",
           "title": "Sales CRM with automated invoicing",
-          "summary": "A finance firm kept its contacts in one place and its invoicing in another. Today it works on a single platform that sends the follow-up emails and issues the invoices with nobody preparing them."
+          "summary": "A finance firm kept its contacts in one place and its invoicing in another. Today it works on a single platform that sends the follow-up emails and issues the invoices with nobody preparing them.",
+          "situation": "A finance firm kept its contacts in one tool and its invoicing in another, and both the follow-up emails and the invoices were prepared by hand.",
+          "built": "A single platform holding the contacts, which sends the follow-up emails on its own and issues invoices straight from the client record."
         },
         {
           "sector": "Manufacturing",
           "tag": "Manufacturing",
           "title": "Automatic pick of the cheapest carrier",
-          "summary": "A vitamin manufacturer chose a carrier order by order. An algorithm reads each order and works out which carrier comes out cheapest, based on destination, volume and urgency."
+          "summary": "A vitamin manufacturer chose a carrier order by order. An algorithm reads each order and works out which carrier comes out cheapest, based on destination, volume and urgency.",
+          "situation": "A vitamin manufacturer picked a carrier order by order, comparing rates by hand on every shipment.",
+          "built": "An algorithm that reads each order and works out which carrier comes out cheapest, weighing destination, volume and urgency."
         },
         {
           "sector": "Care",
           "tag": "Care",
           "title": "Risk detection in elderly care",
-          "summary": "A marketplace for carers of older people had no way of knowing which professionals were going through difficult situations with their clients. A language model spots them, so support can be offered."
+          "summary": "A marketplace for carers of older people had no way of knowing which professionals were going through difficult situations with their clients. A language model spots them, so support can be offered.",
+          "situation": "A marketplace for carers of older people had no way of knowing which professionals were going through difficult situations with their clients.",
+          "built": "A language model that reads the interactions between carer and client and flags the tense cases, so support can be offered."
         },
         {
           "sector": "Manufacturing",
           "tag": "Manufacturing",
           "title": "Predicting incorrect delivery addresses",
-          "summary": "At the same vitamin manufacturer, mistyped addresses only surfaced when a delivery failed. A predictive model flags the ones likely to be wrong before the order ships."
+          "summary": "At the same vitamin manufacturer, mistyped addresses only surfaced when a delivery failed. A predictive model flags the ones likely to be wrong before the order ships.",
+          "situation": "At the same vitamin manufacturer, mistyped delivery addresses only came to light once a delivery had already failed.",
+          "built": "A predictive model, fed by automated queries over the order history, that flags which addresses are likely to be wrong before the order ships."
         },
         {
           "sector": "Art",
           "tag": "Art",
           "title": "Online store for an independent artist",
-          "summary": "An online store so an independent artist can sell his paintings directly, with his own catalogue and checkout."
+          "summary": "An online store so an independent artist can sell his paintings directly, with his own catalogue and checkout.",
+          "situation": "An independent artist needed a channel of his own to sell his paintings.",
+          "built": "An online store with his catalogue of work and the full checkout process."
         }
       ],
-      "more": "See the case",
+      "more": "See the project",
       "allCta": "See all case studies",
       "expand": "See more",
-      "fullCase": "See the full case"
+      "fullCase": "See the full project",
+      "labels": {
+        "problem": "The problem",
+        "solution": "The solution",
+        "result": "The result"
+      }
     },
     "founder": {
       "kicker": "Who is behind this",
@@ -1698,7 +1728,7 @@
           "Process automation",
           "Opportunity audit",
           "Data analysis",
-          "Case studies"
+          "Projects"
         ],
         "resources": [
           "AI training for companies",
@@ -2003,20 +2033,20 @@
       ]
     },
     "caseDetail": {
-      "crumb": "Case studies",
-      "situation": "The starting point",
-      "built": "What we built",
+      "crumb": "Projects",
+      "situation": "The problem",
+      "built": "The solution",
       "how": "How it works",
-      "outcome": "What changed",
+      "outcome": "The result",
       "stack": "Technology",
       "confidential": "Confidential client. We publish the problem and the solution, never the client's data or name.",
       "back": "All case studies",
-      "next": "Next case",
+      "next": "Next project",
       "ctaHeading": "Got a process like this one?",
       "ctaSub": "Tell us about it in half an hour and we'll tell you whether automating it makes sense."
     },
     "casesPage": {
-      "kicker": "Case studies",
+      "kicker": "Projects",
       "heading": "Systems already in production",
       "sub": "Every project starts with a process someone was doing by hand and ends as a system deployed on the client's own infrastructure."
     }
