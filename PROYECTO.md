@@ -69,10 +69,18 @@ en el histórico de la sesión; si no lo tienes, es un recorrido con un parser d
 
 ### Formularios
 
-Los 7 formularios envían por AJAX a FormSubmit. **El buzón de destino es privado y no coincide con
-el email visible.** Al tocar emails, cambia solo lo visible y preserva los endpoints
-`formsubmit.co/ajax/...`. Truco: sustituye el endpoint por un token antes de reemplazar y
-restáuralo después, y comprueba que el número de endpoints no varía.
+Los 7 formularios y la reserva de llamada envían por AJAX a FormSubmit. Desde julio de 2026 el
+buzón de destino es **`info@algoryme.com`**, el mismo que se muestra en la web (antes iba a una
+gmail personal). Están en 19 sitios: la constante `ENDPOINT` de cada una de las 18 páginas, más un
+`fetch` con la dirección escrita a mano en `curso-tareas-claude-registro.html`. Si vuelves a
+cambiar de buzón, no basta con la constante: busca `formsubmit.co/ajax/` y cuenta 19.
+
+**Cambiar el buzón no basta con tocar el código.** FormSubmit no entrega a una dirección nueva
+hasta que alguien confirma desde ella: el primer envío devuelve error y dispara un correo de
+activación al buzón de destino. Hasta que se pulsa ese enlace, **todos los formularios fallan en
+producción**. El orden correcto es desplegar, enviar un formulario cualquiera y activar en el
+minuto siguiente. Desde el entorno de Claude no se puede disparar: el proxy bloquea la salida a
+`formsubmit.co`.
 
 FormSubmit devuelve `200` con `success:false` cuando marca algo como spam, y `4xx` si el buzón no
 está activado. **Hay que mirar la respuesta**, porque `fetch` solo rechaza ante fallo de red. Esto

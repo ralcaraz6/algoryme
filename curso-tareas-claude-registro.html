@@ -945,7 +945,7 @@ var META_EXTRA = {"es":{"notFound":{"title":"Página no encontrada | Algoryme","
   for (var k in META_EXTRA[L]) CONTENT.meta[L][k] = META_EXTRA[L][k];
 });
 
-var ENDPOINT = 'https://formsubmit.co/ajax/ralcaraz.canals@gmail.com';
+var ENDPOINT = 'https://formsubmit.co/ajax/info@algoryme.com';
 var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 /* ==================== I18N ENGINE ==================== */
@@ -1682,7 +1682,7 @@ Array.prototype.forEach.call(document.querySelectorAll('.lang-btn'), function(bt
     if(!name){ document.getElementById('fc-name').focus(); return; }
     if(!okEmail){ document.getElementById('fc-email').focus(); return; }
     btn.disabled=true; lbl.textContent=resolve('freeCourse.form.submitting')||'...';
-    fetch('https://formsubmit.co/ajax/ralcaraz.canals@gmail.com',{
+    fetch('https://formsubmit.co/ajax/info@algoryme.com',{
       method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},
       body:JSON.stringify({nombre:name,email:email,curso:'Gestor de tareas con Claude (gratis)',
         idioma:lang,origen:'pagina registro curso gratis',
