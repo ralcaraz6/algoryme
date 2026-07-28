@@ -99,23 +99,27 @@ a la casilla marcable, el patrón anterior era un `input[type=checkbox]` obligat
 
 ## 4. Estructura de la home
 
-El orden cuenta una historia de venta y no es casual:
+El orden cuenta una historia de venta y no es casual (recortado en jul-2026 a petición del cliente,
+para que la home sea más corta y directa):
 
 1. **Hero** — el problema del cliente en una frase, con la promesa de infraestructura en negrita.
-2. **El problema** — por qué casi ningún proyecto de IA llega a producción, con tres riesgos.
-3. **Tu stack, no el nuestro** — la respuesta a ese problema. Es el diferencial de la marca.
-4. **El trabajo interno** — cinco capacidades en una lista seleccionable con panel de vista previa.
-   Es la sección a la que apunta **Servicios** en la navegación (`#aplicaciones`); si le cambias el
-   `id`, se rompe el enlace en las 18 páginas.
-5. **Integraciones** — una sola fila de logos, alineada a la izquierda.
-6. **Cómo trabajamos** — línea de tiempo de cinco pasos hasta producción.
-7. **Casos de éxito** — tres tarjetas ilustradas y un botón a `casos.html`. La home enseña una
+2. **Tu stack, no el nuestro** — el diferencial de la marca. Única sección con fondo crema; el resto
+   de la página es papel y se organiza por contenido, no por alternancia de color.
+3. **Servicios** — cinco capacidades en una lista seleccionable con panel de vista previa. Es la
+   sección a la que apunta **Servicios** en la navegación (`#aplicaciones`); si le cambias el `id`,
+   se rompe el enlace en las 18 páginas. El kicker dice «Servicios»; antes decía «El trabajo interno».
+4. **Cómo trabajamos** — línea de tiempo de cinco pasos hasta producción.
+5. **Casos de éxito** — tres tarjetas ilustradas y un botón a `casos.html`. La home enseña una
    muestra, no el catálogo: si crece aquí, la página se hace interminable.
-8. **El equipo** y **el fundador**.
-9. **FAQ**, **CTA de reserva** y **contacto**. El contacto es **un solo panel**: formulario a la
-   izquierda y las tres vías (llamada, WhatsApp, email) a la derecha, dentro del mismo marco. Antes
-   eran dos bloques separados con un «O escríbenos aquí» en medio y el cliente lo leía como dos
-   secciones distintas. Si añades algo aquí, que entre en el panel.
+6. **El equipo** y **el fundador**.
+7. **FAQ** y **contacto**. El contacto es **un solo panel**: formulario a la izquierda y las tres
+   vías (llamada, WhatsApp, email) a la derecha, dentro del mismo marco. La reserva de llamada de 30
+   minutos vive aquí (columna derecha) y en el header; no hay una sección de reserva aparte.
+
+**Secciones que existieron y se quitaron** (su CSS puede seguir presente, inofensivo): «El problema»
+(los tres riesgos del 95%), «Integraciones» (la fila de logos) y el **CTA de reserva** independiente
+(el `band-cta` con el formulario «Prefieres email» / `emailCapture`). El JS del `emailCapture` sigue
+en las páginas pero está protegido con `if (capForm)`, así que no hace nada al faltar el markup.
 
 Páginas aparte: `casos.html` + 3 fichas de caso, `herramientas.html`, `formacion.html` + 4 cursos,
 el embudo del curso gratuito (3 páginas), `newsletter.html`, `legal.html`, `privacidad.html`, `404.html`.

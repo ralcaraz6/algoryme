@@ -1005,7 +1005,7 @@
       "close": "Lo que necesitas es IA que aprenda de tu equipo y viva dentro de tu operación."
     },
     "backoffice": {
-      "kicker": "El trabajo interno",
+      "kicker": "Servicios",
       "heading": "IA que se encarga del trabajo que nadie quiere hacer",
       "sub": "Para que tu equipo dedique el día a lo que de verdad importa.",
       "status": "Se despliega en tu nube o en tu servidor",
@@ -1945,7 +1945,7 @@
       "close": "What you need is AI that learns from your team and lives inside your operation."
     },
     "backoffice": {
-      "kicker": "The internal work",
+      "kicker": "Services",
       "heading": "AI that handles the work nobody wants to do",
       "sub": "So your team can spend the day on what actually matters.",
       "status": "Deployed in your cloud or on your server",
