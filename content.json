@@ -805,17 +805,15 @@
       "bookShort": "Agendar llamada"
     },
     "heroPanel": {
-      "inLabel": "Lo que ya usas",
-      "coreTitle": "Tu solución de IA a medida",
-      "coreSub": "agentes, automatizaciones o software, en tu infraestructura",
-      "outLabel": "Lo que recibes",
-      "outs": [
-        "Cada mensaje respondido en segundos",
-        "El CRM y los datos siempre al día",
-        "Informes y avisos sin que nadie los prepare"
+      "fixed": "Se encarga",
+      "words": [
+        "de los informes.",
+        "de las facturas.",
+        "del CRM.",
+        "de las respuestas."
       ],
-      "moreTools": "y muchas más",
-      "moreOuts": "y todo lo que tu proceso necesite"
+      "foot": "Todos los días. Sin que nadie lo lance.",
+      "alt": "Se encarga de los informes, de las facturas, del CRM y de las respuestas. Todos los días, sin que nadie lo lance."
     },
     "team": {
       "kicker": "El equipo",
@@ -1761,17 +1759,15 @@
       "bookShort": "Book a call"
     },
     "heroPanel": {
-      "inLabel": "What you already use",
-      "coreTitle": "Your custom AI solution",
-      "coreSub": "agents, automations or software, on your infrastructure",
-      "outLabel": "What you get",
-      "outs": [
-        "Every message answered in seconds",
-        "CRM and data always up to date",
-        "Reports and alerts nobody has to prepare"
+      "fixed": "It handles",
+      "words": [
+        "your reports.",
+        "your invoices.",
+        "your CRM.",
+        "your replies."
       ],
-      "moreTools": "and many more",
-      "moreOuts": "and whatever else your process needs"
+      "foot": "Every day. Nobody has to launch it.",
+      "alt": "It handles your reports, your invoices, your CRM and your replies. Every day, without anyone launching it."
     },
     "team": {
       "kicker": "The team",

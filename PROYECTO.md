@@ -115,6 +115,13 @@ El orden cuenta una historia de venta y no es casual (recortado en jul-2026 a pe
 para que la home sea más corta y directa):
 
 1. **Hero** — el problema del cliente en una frase, con la promesa de infraestructura en negrita.
+   El panel de la derecha (`.heropanel`) es **la frase que rota**: «Se encarga» + una palabra que
+   cambia sola cada 4 s entre cuatro tareas reales. Sustituyó al diagrama de flujo con logos en
+   jul-2026, por petición de minimalismo. ⚠️ **Cada palabra es su propia clave i18n**
+   (`heroPanel.words.0..3`) para que rote también en inglés, y **la quinta repite la primera**
+   para que el bucle cierre sin salto: si añades o quitas palabras, hay que tocar el `@keyframes
+   hp-roll` y el duplicado. La altura de `.hp-rotor` y de `.hp-word` deben coincidir (`--hp-h`),
+   o el carrusel se desalinea.
 2. **Tu stack, no el nuestro** — el diferencial de la marca. Única sección con fondo crema; el resto
    de la página es papel y se organiza por contenido, no por alternancia de color.
 3. **Servicios** — cinco capacidades en una lista seleccionable con panel de vista previa. Es la
