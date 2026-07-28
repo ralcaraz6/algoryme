@@ -7,10 +7,16 @@ Documento de contexto para retomar el trabajo. Si eres una IA que empieza una se
 
 ## 1. Qué es
 
-**Algoryme** es la consultoría de inteligencia artificial de Rogelio Alcaraz. Diseña e implementa
-agentes, automatizaciones y software a medida para empresas, con una promesa central que atraviesa
-toda la comunicación: **todo se despliega en la infraestructura del cliente**. Sus datos, sus
-modelos, su código, sin dependencia del proveedor.
+**Algoryme** desarrolla software a medida para empresas: sistemas, automatizaciones y agentes que
+les hacen **ganar más o gastar menos**. Posicionamiento premium orientado a resultado de negocio
+(reenfocado en jul-2026 desde «consultoría de IA»: la IA es el medio, no el producto). Promesa
+central que atraviesa toda la comunicación: **todo se despliega en la infraestructura del cliente**,
+en producción, no en demos. Sus datos, sus modelos, su código, sin dependencia del proveedor.
+
+**Regla de posicionamiento:** premium se construye con verdad, no con cifras inventadas. Nunca
+números de resultados de clientes sin fuente ni permiso (ver la regla dura, §5). Las palancas premium
+son reales: autoridad (años con datos, plataformas con millones de usuarios), «producción no demos»,
+riesgo compartido (diagnóstico primero) y escasez (pocos proyectos a la vez).
 
 Equipo de seis personas. No es una agencia grande y la web no debe fingir que lo es.
 
@@ -92,8 +98,10 @@ ya está implementado; no lo quites.
 
 **El formulario de contacto pide cuatro cosas**: nombre, email, teléfono (opcional) y mensaje.
 Empresa y «qué te interesa» se quitaron en julio de 2026 por petición del cliente, para bajar la
-fricción. El modal de reserva de llamada **sí sigue pidiendo empresa**, y es obligatoria: son dos
-formularios distintos y se tocaron por separado.
+fricción. El modal de reserva de llamada pide nombre, email, teléfono (opcional) y mensaje — la **empresa se
+quitó en jul-2026** (antes era obligatoria). El botón que abre el modal en el header dice **«Agendar
+llamada»** (`ui.bookShort`); el CTA descriptivo «Reserva una llamada de 30 minutos» (`ui.bookCta`)
+se mantiene en el hero y otros sitios.
 
 **Consentimiento:** se retiró la casilla «He leído y acepto la política de privacidad», también a
 petición del cliente. En su lugar queda un aviso permanente bajo el formulario con enlace a la

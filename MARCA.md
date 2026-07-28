@@ -110,6 +110,8 @@ sección, notas al pie). Ayuda a que la marca se lea como de ingeniería.
 
 Los titulares llevan `text-wrap: balance` y `letter-spacing` negativo.
 
+Excepción a «mono para notas al pie»: el **aviso de consentimiento** bajo los botones («Al enviar aceptas nuestra política de privacidad») va en **Sora**, no en mono. En monoespaciada parecía un error de sistema pegado al botón; en sans se lee como microcopy de diseño.
+
 ---
 
 ## 5. El cursor como sistema
@@ -172,7 +174,8 @@ resolver problemas de empresa, y los agentes son uno de los medios.
 - **Email:** `info@algoryme.com`
 - **WhatsApp Business:** +34 605 62 18 26, con botón flotante en toda la web
 - **LinkedIn:** linkedin.com/in/rogelioalcaraz
-- **CTA principal, siempre el mismo:** «Reserva una llamada de 30 minutos»
+- **CTA:** «Agendar llamada» en el botón del header (corto, directo); «Reserva una llamada de 30
+  minutos» como CTA descriptivo en el hero y el resto.
 
 ---
 

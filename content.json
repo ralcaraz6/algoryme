@@ -2,8 +2,8 @@
   "meta": {
     "es": {
       "home": {
-        "title": "Consultoría de IA para empresas | Algoryme",
-        "description": "Diseñamos e implementamos agentes de IA y automatizaciones en tu propia infraestructura. Consultoría de IA en España. Reserva una llamada."
+        "title": "Desarrollo de software a medida para empresas | Algoryme",
+        "description": "Construimos software y automatizaciones a medida que ayudan a tu empresa a ganar más o gastar menos. En tu propia infraestructura y en producción. España."
       },
       "formacion": {
         "title": "Formación en IA para empresas | Algoryme",
@@ -72,8 +72,8 @@
     },
     "en": {
       "home": {
-        "title": "AI consultancy for companies | Algoryme",
-        "description": "AI consultancy based in Spain. We design and build autonomous agents and AI automation on your own infrastructure. Book a 30-minute call."
+        "title": "Custom software development for companies | Algoryme",
+        "description": "We build custom software and automations that help your company earn more or spend less. On your own infrastructure, in production. Spain."
       },
       "formacion": {
         "title": "AI training for companies | Algoryme",
@@ -154,9 +154,9 @@
       "tools": "Herramientas"
     },
     "hero": {
-      "eyebrow": "Consultoría de IA",
-      "headline": "Consultoría en {{Inteligencia Artificial}} para empresas",
-      "sub": "Alguien de tu equipo copia datos entre hojas y rehace a mano el informe de siempre, y el cliente sin respuesta. Lo resolvemos {{sobre la infraestructura que ya usas, sin que tus datos salgan de casa}}.",
+      "eyebrow": "Desarrollo de producto para empresas",
+      "headline": "Construimos el software que te hace {{ganar más o gastar menos}}",
+      "sub": "Cada proceso que tu equipo hace a mano es tiempo y dinero que se escapan. Diseñamos el sistema que lo hace solo, {{en tu propia infraestructura}}, y lo dejamos funcionando en producción. No una demo bonita: algo que aguanta.",
       "cta1": "Reserva una llamada de 30 minutos",
       "cta2": "Ver proyectos"
     },
@@ -313,7 +313,7 @@
     "process": {
       "kicker": "Cómo trabajamos",
       "heading": "El camino hasta un sistema en producción",
-      "sub": "No entregamos prototipos: entregamos sistemas que aguantan el trabajo real.",
+      "sub": "No entregamos prototipos: entregamos sistemas que aguantan el trabajo real. Empezamos por un diagnóstico y, si no vemos un retorno claro, te lo decimos antes de que gastes.",
       "steps": [
         {
           "num": "01",
@@ -675,7 +675,7 @@
     "contact": {
       "kicker": "Contacto",
       "heading": "Hablemos de tu proceso",
-      "sub": "La primera llamada es de diagnóstico. Si tu caso no necesita IA, te lo diremos.",
+      "sub": "Trabajamos con pocos proyectos a la vez para hacerlos bien. La primera llamada es de diagnóstico: si tu caso no lo vale, te lo diremos.",
       "ways": [
         {
           "label": "Llamada de 30 minutos",
@@ -801,7 +801,8 @@
       "bookCta": "Reserva una llamada de 30 minutos",
       "privacyLink": "política de privacidad",
       "waFloat": "Escríbenos por WhatsApp",
-      "consentPre": "Al enviar aceptas nuestra"
+      "consentPre": "Al enviar aceptas nuestra",
+      "bookShort": "Agendar llamada"
     },
     "heroPanel": {
       "inLabel": "Lo que ya usas",
@@ -1109,9 +1110,9 @@
       "tools": "Tools"
     },
     "hero": {
-      "eyebrow": "AI consultancy",
-      "headline": "{{AI}} consultancy for companies",
-      "sub": "Someone on your team copies data between spreadsheets and rebuilds the same old report by hand, and a customer's left waiting. We handle it {{on the infrastructure you already run, and your data stays in-house}}.",
+      "eyebrow": "Product development for companies",
+      "headline": "We build the software that {{earns or saves you money}}",
+      "sub": "Every process your team does by hand is time and money leaking out. We design the system that does it for you, {{on your own infrastructure}}, and leave it running in production. Not a slick demo: something that holds up.",
       "cta1": "Book a 30-minute call",
       "cta2": "View case studies"
     },
@@ -1268,7 +1269,7 @@
     "process": {
       "kicker": "How we work",
       "heading": "The path to a system in production",
-      "sub": "We don't hand over prototypes: we hand over systems that survive real work.",
+      "sub": "We don’t ship prototypes: we ship systems that survive real work. We start with a diagnosis, and if we don’t see a clear return, we tell you before you spend.",
       "steps": [
         {
           "num": "01",
@@ -1630,7 +1631,7 @@
     "contact": {
       "kicker": "Contact",
       "heading": "Let's talk about your process",
-      "sub": "The first call is a diagnosis. If your case does not need AI, we will say so.",
+      "sub": "We take on few projects at a time so we do them well. The first call is a diagnosis: if your case isn’t worth it, we’ll tell you.",
       "ways": [
         {
           "label": "30-minute call",
@@ -1756,7 +1757,8 @@
       "bookCta": "Book a 30-minute call",
       "privacyLink": "privacy policy",
       "waFloat": "Message us on WhatsApp",
-      "consentPre": "By sending this you accept our"
+      "consentPre": "By sending this you accept our",
+      "bookShort": "Book a call"
     },
     "heroPanel": {
       "inLabel": "What you already use",
