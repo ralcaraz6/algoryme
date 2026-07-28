@@ -35,7 +35,12 @@ Es además la más compacta y contundente de las que se probaron.
 ### El monograma
 
 Un **caret**: la A sin travesaño, que es a la vez la inicial y el símbolo de cursor (`^`, que en
-programación se llama precisamente *caret*). Va en blanco sobre cuadrado siena.
+programación se llama precisamente *caret*), en blanco.
+
+- **Favicon**: sobre cuadrado **tinta** (`#211D18`), para pegar con el logo, que también es tinta. Un
+  favicon negro se difumina en navegadores con tema oscuro, pero el caret blanco sigue legible; se
+  aceptó ese peaje a cambio de coherencia con el logo.
+- **Avatar de perfil** (LinkedIn, redes): sobre cuadrado **siena**, que da más presencia en un círculo.
 
 Se usa solo cuando el espacio es muy pequeño o cuando el nombre ya aparece escrito al lado.
 
