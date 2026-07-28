@@ -145,7 +145,7 @@
     "nav": {
       "services": "Servicios",
       "applications": "Aplicaciones",
-      "cases": "Casos",
+      "cases": "Casos de éxito",
       "formacion": "Formación",
       "newsletter": "Newsletter",
       "contact": "Contacto",
@@ -682,23 +682,11 @@
         }
       ],
       "form": {
-        "heading": "O escríbenos aquí",
         "sub": "Cuanto más concreto sea el proceso que quieres resolver, más útil será nuestra respuesta.",
         "name": "Nombre y apellidos",
         "email": "Email de trabajo",
-        "company": "Empresa",
         "phone": "Teléfono (opcional)",
-        "interest": "Qué te interesa",
-        "interestOptions": [
-          "Agentes de IA a medida",
-          "Automatización de procesos",
-          "Análisis y explotación de datos",
-          "Formación para mi equipo",
-          "Auditoría de oportunidades",
-          "Otra cosa"
-        ],
         "message": "Cuéntanos tu caso",
-        "consent": "He leído y acepto la política de privacidad.",
         "submit": "Enviar mensaje",
         "submitting": "Enviando...",
         "success": {
@@ -1634,23 +1622,11 @@
         }
       ],
       "form": {
-        "heading": "Or write to us here",
         "sub": "The more specific the process you want to solve, the more useful our answer will be.",
         "name": "Full name",
         "email": "Work email",
-        "company": "Company",
         "phone": "Phone (optional)",
-        "interest": "What you are interested in",
-        "interestOptions": [
-          "Custom AI agents",
-          "Process automation",
-          "Data analysis and reporting",
-          "Training for my team",
-          "Opportunity audit",
-          "Something else"
-        ],
         "message": "Tell us about your case",
-        "consent": "I have read and accept the privacy policy.",
         "submit": "Send message",
         "submitting": "Sending...",
         "success": {

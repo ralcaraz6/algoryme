@@ -86,6 +86,17 @@ FormSubmit devuelve `200` con `success:false` cuando marca algo como spam, y `4x
 está activado. **Hay que mirar la respuesta**, porque `fetch` solo rechaza ante fallo de red. Esto
 ya está implementado; no lo quites.
 
+**El formulario de contacto pide cuatro cosas**: nombre, email, teléfono (opcional) y mensaje.
+Empresa y «qué te interesa» se quitaron en julio de 2026 por petición del cliente, para bajar la
+fricción. El modal de reserva de llamada **sí sigue pidiendo empresa**, y es obligatoria: son dos
+formularios distintos y se tocaron por separado.
+
+**Consentimiento:** se retiró la casilla «He leído y acepto la política de privacidad», también a
+petición del cliente. En su lugar queda un aviso permanente bajo el formulario con enlace a la
+política. Es una decisión suya y está tomada a conciencia; si algún día un asesor legal pide volver
+a la casilla marcable, el patrón anterior era un `input[type=checkbox]` obligatorio validado en el
+`submit`.
+
 ## 4. Estructura de la home
 
 El orden cuenta una historia de venta y no es casual:
@@ -94,12 +105,17 @@ El orden cuenta una historia de venta y no es casual:
 2. **El problema** — por qué casi ningún proyecto de IA llega a producción, con tres riesgos.
 3. **Tu stack, no el nuestro** — la respuesta a ese problema. Es el diferencial de la marca.
 4. **El trabajo interno** — cinco capacidades en una lista seleccionable con panel de vista previa.
+   Es la sección a la que apunta **Servicios** en la navegación (`#aplicaciones`); si le cambias el
+   `id`, se rompe el enlace en las 18 páginas.
 5. **Integraciones** — una sola fila de logos, alineada a la izquierda.
 6. **Cómo trabajamos** — línea de tiempo de cinco pasos hasta producción.
 7. **Casos de éxito** — tres tarjetas ilustradas y un botón a `casos.html`. La home enseña una
    muestra, no el catálogo: si crece aquí, la página se hace interminable.
 8. **El equipo** y **el fundador**.
-9. **FAQ**, **CTA de reserva** y **contacto**.
+9. **FAQ**, **CTA de reserva** y **contacto**. El contacto es **un solo panel**: formulario a la
+   izquierda y las tres vías (llamada, WhatsApp, email) a la derecha, dentro del mismo marco. Antes
+   eran dos bloques separados con un «O escríbenos aquí» en medio y el cliente lo leía como dos
+   secciones distintas. Si añades algo aquí, que entre en el panel.
 
 Páginas aparte: `casos.html` + 3 fichas de caso, `herramientas.html`, `formacion.html` + 4 cursos,
 el embudo del curso gratuito (3 páginas), `newsletter.html`, `legal.html`, `privacidad.html`, `404.html`.
