@@ -1048,7 +1048,7 @@
     },
     "backoffice": {
       "kicker": "Servicios",
-      "heading": "IA que se encarga del trabajo que nadie quiere hacer",
+      "heading": "Software a medida para el trabajo que frena a tu equipo",
       "sub": "Para que tu equipo dedique el día a lo que de verdad importa.",
       "status": "Se despliega en tu nube o en tu servidor",
       "items": [
@@ -2032,7 +2032,7 @@
     },
     "backoffice": {
       "kicker": "Services",
-      "heading": "AI that handles the work nobody wants to do",
+      "heading": "Custom software for the work that holds your team back",
       "sub": "So your team can spend the day on what actually matters.",
       "status": "Deployed in your cloud or on your server",
       "items": [
