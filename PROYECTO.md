@@ -115,15 +115,18 @@ El orden cuenta una historia de venta y no es casual (recortado en jul-2026 a pe
 para que la home sea más corta y directa):
 
 1. **Hero** — el problema del cliente en una frase, con la promesa de infraestructura en negrita.
-   El panel de la derecha (`.heropanel`) es **una frase rotunda + una barra corriendo**: arriba
-   `heroPanel.lead` («Se encarga de todo.»), y debajo un marquee (`.hp-marquee`/`.hp-track`) que
-   desfila de izquierda a derecha `heroPanel.items` (informes, facturas, CRM, respuestas...), «todo
-   lo que hace». Idea de una amiga de Roge, jul-2026; sustituyó a la palabra que rotaba, que a su
-   vez sustituyó al diagrama de logos. ⚠️ **Los items del track se pintan dos veces** (el segundo
-   grupo con `.hp-dup aria-hidden`) para que el bucle cierre sin salto: la animación `hp-run` mueve
-   el track de `-50%` a `0`, así que las dos mitades tienen que ser idénticas. Cada item es su clave
-   i18n (`heroPanel.items.N`) y funciona igual en inglés. El texto accesible va en `#hpAlt` (sr-only)
-   porque el marquee es decorativo; con `prefers-reduced-motion` el track se para y se envuelve.
+   El copy va **centrado** (una sola columna, `.hero-copy`) y debajo, **a ancho completo**, la
+   banda `.hero-band`: el titular `heroPanel.lead` en mayúsculas («NOS ENCARGAMOS DE TODO») y un
+   marquee (`.hb-marquee`/`.hb-track`) que desfila de izquierda a derecha `heroPanel.items`
+   (informes, facturas, CRM...), «todo lo que hacemos». Evolución del feedback de una amiga de Roge
+   (jul-2026): se quitó la tarjeta blanca de la derecha, se movió la barra debajo del welcome copy,
+   se pasó a mayúsculas y a primera persona («se encarga» → «nos encargamos»). ⚠️ **Los items del
+   track se pintan dos veces** (el segundo grupo con `.hb-dup aria-hidden`) para que el bucle cierre
+   sin salto: la animación `hb-run` mueve el track de `-50%` a `0`, así que las dos mitades tienen
+   que ser idénticas. Cada item es su clave i18n (`heroPanel.items.N`) y funciona igual en inglés
+   (las mayúsculas son `text-transform`, no van en el texto). El texto accesible va en `#hpAlt`
+   (sr-only) porque el marquee es decorativo; con `prefers-reduced-motion` el track se para y se
+   envuelve.
 2. **Servicios** — **seis** capacidades en una lista seleccionable con panel de vista previa
    (`backoffice.items`). Es la sección a la que apunta **Servicios** en la navegación
    (`#aplicaciones`); si le cambias el `id`, se rompe el enlace en las 18 páginas. El kicker dice

@@ -833,7 +833,7 @@
       "bookShort": "Agendar llamada"
     },
     "heroPanel": {
-      "lead": "Se encarga de todo.",
+      "lead": "Nos encargamos de todo.",
       "items": [
         "Informes",
         "Facturas",
@@ -845,7 +845,7 @@
         "Seguimiento"
       ],
       "foot": "Todos los días. Sin que nadie lo lance.",
-      "alt": "Se encarga de todo: informes, facturas, CRM, respuestas, documentos, datos, agendas y seguimiento. Todos los días, sin que nadie lo lance."
+      "alt": "Nos encargamos de todo: informes, facturas, CRM, respuestas, documentos, datos, agendas y seguimiento. Todos los días, sin que nadie lo lance."
     },
     "team": {
       "kicker": "El equipo",
@@ -1827,7 +1827,7 @@
       "bookShort": "Book a call"
     },
     "heroPanel": {
-      "lead": "It handles it all.",
+      "lead": "We take care of it all.",
       "items": [
         "Reports",
         "Invoices",
@@ -1839,7 +1839,7 @@
         "Follow-ups"
       ],
       "foot": "Every day. Nobody has to launch it.",
-      "alt": "It handles it all: reports, invoices, CRM, replies, documents, data, scheduling and follow-ups. Every day, without anyone launching it."
+      "alt": "We take care of it all: reports, invoices, CRM, replies, documents, data, scheduling and follow-ups. Every day, without anyone launching it."
     },
     "team": {
       "kicker": "The team",
