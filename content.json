@@ -833,15 +833,19 @@
       "bookShort": "Agendar llamada"
     },
     "heroPanel": {
-      "fixed": "Se encarga",
-      "words": [
-        "de los informes.",
-        "de las facturas.",
-        "del CRM.",
-        "de las respuestas."
+      "lead": "Se encarga de todo.",
+      "items": [
+        "Informes",
+        "Facturas",
+        "CRM",
+        "Respuestas",
+        "Documentos",
+        "Datos",
+        "Agendas",
+        "Seguimiento"
       ],
       "foot": "Todos los días. Sin que nadie lo lance.",
-      "alt": "Se encarga de los informes, de las facturas, del CRM y de las respuestas. Todos los días, sin que nadie lo lance."
+      "alt": "Se encarga de todo: informes, facturas, CRM, respuestas, documentos, datos, agendas y seguimiento. Todos los días, sin que nadie lo lance."
     },
     "team": {
       "kicker": "El equipo",
@@ -1817,15 +1821,19 @@
       "bookShort": "Book a call"
     },
     "heroPanel": {
-      "fixed": "It handles",
-      "words": [
-        "your reports.",
-        "your invoices.",
-        "your CRM.",
-        "your replies."
+      "lead": "It handles it all.",
+      "items": [
+        "Reports",
+        "Invoices",
+        "CRM",
+        "Replies",
+        "Documents",
+        "Data",
+        "Scheduling",
+        "Follow-ups"
       ],
       "foot": "Every day. Nobody has to launch it.",
-      "alt": "It handles your reports, your invoices, your CRM and your replies. Every day, without anyone launching it."
+      "alt": "It handles it all: reports, invoices, CRM, replies, documents, data, scheduling and follow-ups. Every day, without anyone launching it."
     },
     "team": {
       "kicker": "The team",

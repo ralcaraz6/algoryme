@@ -115,13 +115,15 @@ El orden cuenta una historia de venta y no es casual (recortado en jul-2026 a pe
 para que la home sea más corta y directa):
 
 1. **Hero** — el problema del cliente en una frase, con la promesa de infraestructura en negrita.
-   El panel de la derecha (`.heropanel`) es **la frase que rota**: «Se encarga» + una palabra que
-   cambia sola cada 4 s entre cuatro tareas reales. Sustituyó al diagrama de flujo con logos en
-   jul-2026, por petición de minimalismo. ⚠️ **Cada palabra es su propia clave i18n**
-   (`heroPanel.words.0..3`) para que rote también en inglés, y **la quinta repite la primera**
-   para que el bucle cierre sin salto: si añades o quitas palabras, hay que tocar el `@keyframes
-   hp-roll` y el duplicado. La altura de `.hp-rotor` y de `.hp-word` deben coincidir (`--hp-h`),
-   o el carrusel se desalinea.
+   El panel de la derecha (`.heropanel`) es **una frase rotunda + una barra corriendo**: arriba
+   `heroPanel.lead` («Se encarga de todo.»), y debajo un marquee (`.hp-marquee`/`.hp-track`) que
+   desfila de izquierda a derecha `heroPanel.items` (informes, facturas, CRM, respuestas...), «todo
+   lo que hace». Idea de una amiga de Roge, jul-2026; sustituyó a la palabra que rotaba, que a su
+   vez sustituyó al diagrama de logos. ⚠️ **Los items del track se pintan dos veces** (el segundo
+   grupo con `.hp-dup aria-hidden`) para que el bucle cierre sin salto: la animación `hp-run` mueve
+   el track de `-50%` a `0`, así que las dos mitades tienen que ser idénticas. Cada item es su clave
+   i18n (`heroPanel.items.N`) y funciona igual en inglés. El texto accesible va en `#hpAlt` (sr-only)
+   porque el marquee es decorativo; con `prefers-reduced-motion` el track se para y se envuelve.
 2. **Servicios** — **seis** capacidades en una lista seleccionable con panel de vista previa
    (`backoffice.items`). Es la sección a la que apunta **Servicios** en la navegación
    (`#aplicaciones`); si le cambias el `id`, se rompe el enlace en las 18 páginas. El kicker dice
