@@ -122,25 +122,33 @@ para que la home sea más corta y directa):
    para que el bucle cierre sin salto: si añades o quitas palabras, hay que tocar el `@keyframes
    hp-roll` y el duplicado. La altura de `.hp-rotor` y de `.hp-word` deben coincidir (`--hp-h`),
    o el carrusel se desalinea.
-2. **Tu stack, no el nuestro** — el diferencial de la marca. Única sección con fondo crema; el resto
-   de la página es papel y se organiza por contenido, no por alternancia de color.
-3. **Servicios** — cinco capacidades en una lista seleccionable con panel de vista previa. Es la
-   sección a la que apunta **Servicios** en la navegación (`#aplicaciones`); si le cambias el `id`,
-   se rompe el enlace en las 18 páginas. El kicker dice «Servicios»; antes decía «El trabajo interno».
-4. **Cómo trabajamos** — línea de tiempo de cinco pasos hasta producción.
-5. **Proyectos** — tres tarjetas ilustradas y un botón a `casos.html`. La home enseña una
-   muestra, no el catálogo: si crece aquí, la página se hace interminable.
-6. **El equipo** y **el fundador**.
-7. **FAQ** y **contacto**. El contacto es **un solo panel**: formulario a la izquierda y las tres
+2. **Servicios** — **seis** capacidades en una lista seleccionable con panel de vista previa
+   (`backoffice.items`). Es la sección a la que apunta **Servicios** en la navegación
+   (`#aplicaciones`); si le cambias el `id`, se rompe el enlace en las 18 páginas. El kicker dice
+   «Servicios»; antes decía «El trabajo interno». El panel se rellena por JS desde `backoffice.items.N`
+   (nombre, tagline, bullets, icono clonado de la pestaña): para añadir un servicio hay que crear el
+   `<li>` con su `data-bo="N"` **y** la entrada N en `content.json`. La sexta, «Aplicaciones y webs
+   a medida», se añadió en jul-2026 porque es de lo que más pregunta la gente.
+3. **Cómo trabajamos** — línea de tiempo de cinco pasos hasta producción.
+4. **Proyectos** — tres tarjetas ilustradas y un botón a `casos.html`. La home enseña una
+   muestra, no el catálogo: si crece aquí, la página se hace interminable. El trío destacado
+   (índices 0-2 de `cases.items`) es **inmobiliario, finanzas y producción**: en jul-2026 el 3º pasó
+   de «renta variable» (mercados) a «transportista más barato» para no duplicar el sesgo financiero;
+   renta variable bajó al índice 3 y conserva su ficha (`caso-analisis-renta-variable.html`, ahora
+   `PAGE_META = 'caso3'`). ⚠️ Las ilustraciones de tarjeta y el `PAGE_META`/`data-i18n` de cada ficha
+   van **atados al índice**: si reordenas `cases.items`, hay que renumerar las fichas y sus enlaces.
+5. **El equipo** y **el fundador**.
+6. **FAQ** y **contacto**. El contacto es **un solo panel**: formulario a la izquierda y las tres
    vías (llamada, WhatsApp, email) a la derecha, dentro del mismo marco. La reserva de llamada de 30
    minutos vive aquí (columna derecha) y en el header; no hay una sección de reserva aparte.
 
 **Secciones que existieron y se quitaron** (su CSS puede seguir presente, inofensivo): «El problema»
-(los tres riesgos del 95%), «Integraciones» (la fila de logos) y el **CTA de reserva** independiente
+(los tres riesgos del 95%), «Tu stack, no el nuestro» (`band-own`, el diferencial de propiedad;
+retirada en jul-2026), «Integraciones» (la fila de logos) y el **CTA de reserva** independiente
 (el `band-cta` con el formulario «Prefieres email» / `emailCapture`). El JS del `emailCapture` sigue
 en las páginas pero está protegido con `if (capForm)`, así que no hace nada al faltar el markup.
 
-Páginas aparte: `casos.html` + 3 fichas de caso, `herramientas.html`, `formacion.html` + 4 cursos,
+Páginas aparte: `casos.html` + 4 fichas de caso, `herramientas.html`, `formacion.html` + 4 cursos,
 el embudo del curso gratuito (3 páginas), `newsletter.html`, `legal.html`, `privacidad.html`, `404.html`.
 
 `herramientas.html` enlaza a **Rachea** y **Prospéctalo**, los dos productos de suscripción. Su
@@ -158,7 +166,7 @@ Cada proyecto se cuenta con tres bloques fijos —**El problema**, **La solució
 tanto en el índice desplegable de `casos.html` como en las fichas completas. Las etiquetas viven en
 `cases.labels`.
 
-**Cinco de los ocho proyectos no tienen resultado publicado**, y es deliberado: de ellos se conoce
+**Cuatro de los ocho proyectos no tienen resultado publicado**, y es deliberado: de ellos se conoce
 el problema y la solución, pero no el resultado medido, y la regla dura prohíbe inventarlo. El
 bloque «El resultado» solo se pinta si el proyecto tiene `outcome`; los que no lo tienen sencillamente
 no lo muestran, sin hueco ni texto de relleno. Cuando el cliente aporte los resultados reales, basta

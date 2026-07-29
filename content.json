@@ -66,6 +66,10 @@
         "description": "Cada mañana a las 7:00 los socios abren el correo y tienen la cartera analizada y las oportunidades del día, sin que nadie haya tocado nada."
       },
       "caso2": {
+        "title": "Elección automática del transportista más barato | Algoryme",
+        "description": "Una productora de vitaminas elegía transportista a mano en cada pedido. Hoy un algoritmo lee cada pedido y decide con cuál sale más barato, según destino, volumen y urgencia."
+      },
+      "caso3": {
         "title": "Análisis global de renta variable | Algoryme",
         "description": "Una plataforma con la renta variable cotizada del mundo y sus informes financieros, para hacer screening y valorar una compañía en minutos."
       }
@@ -136,6 +140,10 @@
         "description": "Every morning at 7:00 the partners open their email to find the portfolio analysed and the day's opportunities, with nobody having touched a thing."
       },
       "caso2": {
+        "title": "Automatic choice of the cheapest carrier | Algoryme",
+        "description": "A vitamin manufacturer chose a carrier by hand on every order. Now an algorithm reads each order and decides which one ships cheapest, by destination, volume and urgency."
+      },
+      "caso3": {
         "title": "Global equity analysis | Algoryme",
         "description": "A platform holding the world's listed equities and their financial reports, to screen and value a company in minutes."
       }
@@ -422,6 +430,34 @@
           ]
         },
         {
+          "sector": "Producción",
+          "tag": "Producción",
+          "title": "Elección automática del transportista más barato",
+          "summary": "Una productora de vitaminas elegía transportista pedido a pedido. Un algoritmo lee cada pedido y decide con cuál sale más barato, según destino, volumen y urgencia.",
+          "bullets": [
+            "Compara las tarifas de todos los transportistas",
+            "Decide por destino, volumen y urgencia",
+            "Sin comparar nada a mano en cada envío"
+          ],
+          "slug": "transportista-mas-barato",
+          "lead": "Una productora de vitaminas elegía transportista a mano en cada pedido. Hoy un algoritmo lee cada pedido y decide con cuál sale más barato, según destino, volumen y urgencia.",
+          "situation": "Con cada pedido, alguien comparaba a mano las tarifas de varios transportistas para ver cuál salía más a cuenta. Un cálculo repetitivo que, por falta de tiempo, muchas veces se resolvía a ojo.",
+          "built": "Un algoritmo que lee cada pedido y calcula con qué transportista sale más barato, cruzando destino, volumen y urgencia con las tarifas de cada uno. La decisión deja de depender de que alguien tenga un rato.",
+          "how": [
+            "Lectura automática de cada pedido y sus características",
+            "Tarifas de todos los transportistas en una misma tabla",
+            "Cálculo del coste real por destino, volumen y urgencia",
+            "Recomendación del transportista más barato para cada envío"
+          ],
+          "outcome": "Cada pedido sale con el transportista más barato posible, sin que nadie compare tarifas. El ahorro se acumula envío a envío y la decisión es siempre la misma: la que cuesta menos.",
+          "stack": [
+            "Reglas de negocio propias",
+            "Cálculo de costes",
+            "Integración de tarifas",
+            "Decisión automatizada"
+          ]
+        },
+        {
           "sector": "Plataforma propia",
           "title": "Análisis global de renta variable",
           "summary": "Una plataforma con las acciones cotizadas del mundo y sus informes financieros. Permite hacer screening y valorar compañías rápido.",
@@ -456,14 +492,6 @@
           "summary": "Una financiera llevaba los contactos en un sitio y la facturación en otro. Hoy trabaja sobre una sola plataforma que envía los correos de seguimiento y emite las facturas sin que nadie las prepare.",
           "situation": "Una financiera llevaba los contactos en una herramienta y la facturación en otra, y tanto los correos de seguimiento como las facturas se preparaban a mano.",
           "built": "Una única plataforma con los contactos dentro, que envía sola los correos de seguimiento y emite las facturas desde la ficha del cliente."
-        },
-        {
-          "sector": "Producción",
-          "tag": "Producción",
-          "title": "Elección automática del transportista más barato",
-          "summary": "Una productora de vitaminas elegía transportista pedido a pedido. Un algoritmo lee cada pedido y decide con cuál sale más barato, según destino, volumen y urgencia.",
-          "situation": "Una productora de vitaminas elegía transportista pedido a pedido, comparando tarifas a mano en cada envío.",
-          "built": "Un algoritmo que lee cada pedido y calcula con qué transportista sale más barato, cruzando destino, volumen y urgencia."
         },
         {
           "sector": "Cuidados",
@@ -1073,6 +1101,16 @@
             "Con permisos acotados",
             "Trazabilidad de cada paso"
           ]
+        },
+        {
+          "slug": "aplicaciones",
+          "name": "Aplicaciones y webs a medida",
+          "tagline": "La herramienta interna o la web que tu negocio necesita, construida a tu medida.",
+          "bullets": [
+            "Portales y paneles internos",
+            "Webs y tiendas online",
+            "Integradas con tus sistemas"
+          ]
         }
       ]
     },
@@ -1376,6 +1414,34 @@
           ]
         },
         {
+          "sector": "Manufacturing",
+          "tag": "Manufacturing",
+          "title": "Automatic choice of the cheapest carrier",
+          "summary": "A vitamin manufacturer picked a carrier order by order. An algorithm reads each order and decides which one ships cheapest, by destination, volume and urgency.",
+          "bullets": [
+            "Compares every carrier's rates",
+            "Decides by destination, volume and urgency",
+            "No comparing rates by hand on each order"
+          ],
+          "slug": "transportista-mas-barato",
+          "lead": "A vitamin manufacturer chose a carrier by hand on every order. Now an algorithm reads each order and decides which one ships cheapest, by destination, volume and urgency.",
+          "situation": "On every order, someone compared several carriers' rates by hand to see which came out cheaper. Repetitive work that, for lack of time, often got settled by eye.",
+          "built": "An algorithm that reads each order and works out which carrier ships it cheapest, crossing destination, volume and urgency against each one's rates. The decision no longer depends on someone having a spare moment.",
+          "how": [
+            "Automatic reading of each order and its characteristics",
+            "Every carrier's rates in a single table",
+            "Real cost worked out by destination, volume and urgency",
+            "The cheapest carrier recommended for each shipment"
+          ],
+          "outcome": "Every order ships with the cheapest possible carrier, with nobody comparing rates. The saving adds up shipment by shipment and the decision is always the same: the one that costs less.",
+          "stack": [
+            "Own business rules",
+            "Cost calculation",
+            "Rate integration",
+            "Automated decision"
+          ]
+        },
+        {
           "sector": "In-house platform",
           "title": "Global equity analysis",
           "summary": "A platform covering the world's listed stocks and their financial reports. It supports screening and fast company valuation.",
@@ -1410,14 +1476,6 @@
           "summary": "A finance firm kept its contacts in one place and its invoicing in another. Today it works on a single platform that sends the follow-up emails and issues the invoices with nobody preparing them.",
           "situation": "A finance firm kept its contacts in one tool and its invoicing in another, and both the follow-up emails and the invoices were prepared by hand.",
           "built": "A single platform holding the contacts, which sends the follow-up emails on its own and issues invoices straight from the client record."
-        },
-        {
-          "sector": "Manufacturing",
-          "tag": "Manufacturing",
-          "title": "Automatic pick of the cheapest carrier",
-          "summary": "A vitamin manufacturer chose a carrier order by order. An algorithm reads each order and works out which carrier comes out cheapest, based on destination, volume and urgency.",
-          "situation": "A vitamin manufacturer picked a carrier order by order, comparing rates by hand on every shipment.",
-          "built": "An algorithm that reads each order and works out which carrier comes out cheapest, weighing destination, volume and urgency."
         },
         {
           "sector": "Care",
@@ -2026,6 +2084,16 @@
             "On the tools you already use",
             "With tightly scoped permissions",
             "Every step traceable"
+          ]
+        },
+        {
+          "slug": "aplicaciones",
+          "name": "Custom apps and websites",
+          "tagline": "The internal tool or website your business needs, built to fit.",
+          "bullets": [
+            "Internal portals and dashboards",
+            "Websites and online stores",
+            "Wired into your systems"
           ]
         }
       ]
