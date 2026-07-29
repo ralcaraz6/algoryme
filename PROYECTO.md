@@ -237,6 +237,18 @@ Nada se despliega sin pasar esto. Está probado que hace falta:
 - Los cambios de marca y de contenido se propagan a 18 páginas. Hazlo siempre con un script y
   **verifica el número de sustituciones**, no a mano.
 
+## 8b. Analítica y cookies
+
+- **Google Analytics 4** (`G-G9NT4L51DD`) está en el `<head>` de las 19 páginas, justo tras el
+  `<meta charset>`, con **Consent Mode v2**: por defecto `analytics_storage:'denied'`. No mide nada
+  hasta que el visitante acepta.
+- El **banner de cookies** (`#ckBanner`, clases `ck-*`) vive antes del `<script>` principal de cada
+  página; sus textos son `cookie.*` en `content.json` (ES/EN). Guarda la decisión en `localStorage`
+  bajo `algoryme-consent` (`granted`/`denied`); al aceptar hace `gtag('consent','update',...)`.
+- Si algún día se quita GA, hay que **revertir la política de privacidad**: el apartado de cookies
+  (estático en `privacidad.html` y en el dict `EXTRAS` de las 18 páginas) afirma que SÍ se usa
+  Google Analytics con consentimiento. Ese texto es la fuente de verdad legal.
+
 ## 9. Autonomía
 
 El cliente ha autorizado trabajar sin pedirle permiso paso a paso. En la práctica:
