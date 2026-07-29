@@ -1137,7 +1137,7 @@
       "sub": "Cada proyecto empieza con un proceso que alguien hacía a mano y termina en un sistema desplegado en la infraestructura del cliente."
     },
     "cookie": {
-      "text": "Usamos cookies de analítica (Google Analytics) para entender cómo se usa la web. Puedes aceptarlas o rechazarlas.",
+      "text": "Usamos cookies para entender cómo se usa la web y mejorarla. Puedes aceptarlas o rechazarlas.",
       "accept": "Aceptar",
       "reject": "Rechazar",
       "privacy": "Política de privacidad"
@@ -2131,7 +2131,7 @@
       "sub": "Every project starts with a process someone was doing by hand and ends as a system deployed on the client's own infrastructure."
     },
     "cookie": {
-      "text": "We use analytics cookies (Google Analytics) to understand how the site is used. You can accept or reject them.",
+      "text": "We use cookies to understand how the site is used and improve it. You can accept or reject them.",
       "accept": "Accept",
       "reject": "Reject",
       "privacy": "Privacy policy"
