@@ -1453,6 +1453,29 @@ button.btn[type="submit"]:disabled::after{content:"";display:inline-block;width:
 })();
 </script>
 <script>
+/* ---- eventos GA4: funnel de captación ---- */
+(function(){
+  function ev(n,p){ try{ if(typeof gtag==='function') gtag('event', n, p||{}); }catch(e){} }
+  var FORMS = { bookForm:'reserva_llamada', contactForm:'contacto', infoForm:'formacion', fcForm:'curso_gratis', captureForm:'email' };
+  document.addEventListener('click', function(e){
+    var el = e.target && e.target.closest ? e.target.closest('a,button') : null;
+    if(!el) return;
+    var book = el.closest('[data-book]');
+    if(book){ ev('book_call_click', {ubicacion:(book.getAttribute('data-book-src')||'web')}); return; }
+    var href = el.getAttribute('href')||'';
+    if(href.indexOf('wa.me')>-1 || (el.closest && el.closest('[data-wa-fab]'))){ ev('whatsapp_click', {}); return; }
+    var mm = href.match(/^caso-(.*)\.html$/); if(mm){ ev('project_click', {proyecto:mm[1]}); return; }
+    if(el.classList && el.classList.contains('lang-btn')){ ev('language_switch', {idioma:(el.getAttribute('data-lang')||'')}); return; }
+  }, true);
+  document.addEventListener('submit', function(e){
+    var f = e.target; if(!f || f.tagName!=='FORM') return;
+    if(f.checkValidity && !f.checkValidity()) return;      /* ignora envíos incompletos */
+    if(f.id==='nlForm'){ ev('newsletter_signup', {}); return; }
+    ev('generate_lead', {formulario:(FORMS[f.id]||'otro')});
+  }, true);
+})();
+</script>
+<script>
 (function(){
 'use strict';
 
