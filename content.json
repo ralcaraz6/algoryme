@@ -576,7 +576,7 @@
         "email": "Email de trabajo",
         "company": "Empresa",
         "phone": "Teléfono (opcional)",
-        "message": "Cuéntanos brevemente qué quieres resolver",
+        "message": "¿Qué proceso os está frenando? (opcional)",
         "submitting": "Reservando...",
         "submit": "Confirmar llamada",
         "success": {
@@ -1059,7 +1059,7 @@
         {
           "slug": "atencion",
           "name": "Atención y respuestas",
-          "tagline": "Responde a tus clientes y a tu equipo con tus manuales y tu tono.",
+          "tagline": "Responde a clientes y equipo, con tu tono.",
           "bullets": [
             "Conectado a tu CRM",
             "Escala a una persona cuando toca",
@@ -1069,7 +1069,7 @@
         {
           "slug": "informes",
           "name": "Informes automáticos",
-          "tagline": "El informe que alguien rehace a mano cada lunes, generado y enviado solo.",
+          "tagline": "El informe del lunes, hecho y enviado solo.",
           "bullets": [
             "Con tus fuentes de datos",
             "A la hora que tú digas",
@@ -1079,7 +1079,7 @@
         {
           "slug": "datos",
           "name": "Datos entre sistemas",
-          "tagline": "Se acabó copiar de una hoja a otra: los datos viajan y se validan solos.",
+          "tagline": "Los datos viajan y se validan solos.",
           "bullets": [
             "CRM, ERP y hojas de cálculo",
             "Validación por reglas",
@@ -1089,7 +1089,7 @@
         {
           "slug": "documentos",
           "name": "Documentos y facturas",
-          "tagline": "Lee, clasifica y extrae lo que importa de cada documento que entra.",
+          "tagline": "Lee y extrae cada documento que entra.",
           "bullets": [
             "Facturas, albaranes y contratos",
             "Extracción de campos",
@@ -1099,7 +1099,7 @@
         {
           "slug": "agentes",
           "name": "Agentes a medida",
-          "tagline": "Tareas encadenadas que hoy hace una persona, delegadas a un agente.",
+          "tagline": "Tareas encadenadas, delegadas a un agente.",
           "bullets": [
             "Sobre las herramientas que ya usas",
             "Con permisos acotados",
@@ -1109,7 +1109,7 @@
         {
           "slug": "aplicaciones",
           "name": "Aplicaciones y webs a medida",
-          "tagline": "La herramienta interna o la web que tu negocio necesita, construida a tu medida.",
+          "tagline": "La herramienta o web que tu negocio necesita.",
           "bullets": [
             "Portales y paneles internos",
             "Webs y tiendas online",
@@ -1593,7 +1593,7 @@
         "email": "Work email",
         "company": "Company",
         "phone": "Phone (optional)",
-        "message": "Tell us briefly what you want to solve",
+        "message": "What's slowing your team down? (optional)",
         "submitting": "Booking...",
         "submit": "Confirm call",
         "success": {
@@ -2076,7 +2076,7 @@
         {
           "slug": "atencion",
           "name": "Answers and support",
-          "tagline": "Replies to your customers and your team using your manuals and your tone.",
+          "tagline": "Answers clients and team, in your tone.",
           "bullets": [
             "Connected to your CRM",
             "Hands over to a person when needed",
@@ -2086,7 +2086,7 @@
         {
           "slug": "informes",
           "name": "Automatic reports",
-          "tagline": "The report someone rebuilds by hand every Monday, generated and sent on its own.",
+          "tagline": "Monday's report, built and sent on its own.",
           "bullets": [
             "From your own data sources",
             "At whatever time you choose",
@@ -2096,7 +2096,7 @@
         {
           "slug": "datos",
           "name": "Data between systems",
-          "tagline": "No more copying from one sheet to another: data travels and validates itself.",
+          "tagline": "Data travels and validates itself.",
           "bullets": [
             "CRM, ERP and spreadsheets",
             "Rule-based validation",
@@ -2106,7 +2106,7 @@
         {
           "slug": "documentos",
           "name": "Documents and invoices",
-          "tagline": "Reads, sorts and extracts what matters from every document that comes in.",
+          "tagline": "Reads and extracts every incoming document.",
           "bullets": [
             "Invoices, delivery notes, contracts",
             "Field extraction",
@@ -2116,7 +2116,7 @@
         {
           "slug": "agentes",
           "name": "Custom agents",
-          "tagline": "Chained tasks a person does today, handed over to an agent.",
+          "tagline": "Chained tasks, handed to an agent.",
           "bullets": [
             "On the tools you already use",
             "With tightly scoped permissions",
@@ -2126,7 +2126,7 @@
         {
           "slug": "aplicaciones",
           "name": "Custom apps and websites",
-          "tagline": "The internal tool or website your business needs, built to fit.",
+          "tagline": "The tool or website your business needs.",
           "bullets": [
             "Internal portals and dashboards",
             "Websites and online stores",
