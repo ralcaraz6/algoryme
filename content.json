@@ -1141,6 +1141,29 @@
       "accept": "Aceptar",
       "reject": "Rechazar",
       "privacy": "Política de privacidad"
+    },
+    "compare": {
+      "kicker": "Por qué nosotros",
+      "heading": "Algoryme frente a otros desarrolladores de IA",
+      "sub": "La diferencia no está en el modelo que usamos, sino en lo que te queda cuando terminamos.",
+      "usName": "Con Algoryme",
+      "themName": "Lo habitual en el sector",
+      "us": [
+        "Se despliega en tu infraestructura: el sistema es tuyo",
+        "El código es tuyo desde el primer día, documentado",
+        "Llega a producción y aguanta el trabajo real",
+        "Tus datos se quedan donde tú decides",
+        "Pocos proyectos a la vez, sénior de principio a fin",
+        "Empezamos por un diagnóstico; si no hay retorno, te lo decimos"
+      ],
+      "them": [
+        "Una caja negra en la nube del proveedor",
+        "Código cerrado: dependes de ellos para cualquier cambio",
+        "Una demo que impresiona y se cae con tus datos reales",
+        "Tus datos suben a plataformas ajenas",
+        "Muchos clientes en paralelo y perfiles que rotan",
+        "Presupuesto directo, sin mirar si de verdad tiene sentido"
+      ]
     }
   },
   "en": {
@@ -2135,6 +2158,29 @@
       "accept": "Accept",
       "reject": "Reject",
       "privacy": "Privacy policy"
+    },
+    "compare": {
+      "kicker": "Why us",
+      "heading": "Algoryme versus other AI developers",
+      "sub": "The difference isn't the model we use, it's what you're left with when we're done.",
+      "usName": "With Algoryme",
+      "themName": "The usual in the industry",
+      "us": [
+        "Deployed on your own infrastructure: the system is yours",
+        "The code is yours from day one, documented",
+        "It reaches production and holds up under real work",
+        "Your data stays where you decide",
+        "A few projects at a time, senior from start to finish",
+        "We start with a diagnosis; if there's no return, we tell you"
+      ],
+      "them": [
+        "A black box in the provider's cloud",
+        "Closed code: you depend on them for any change",
+        "A demo that impresses and breaks with your real data",
+        "Your data goes up to someone else's platform",
+        "Many clients in parallel and rotating juniors",
+        "A quote up front, without checking whether it makes sense"
+      ]
     }
   }
 }

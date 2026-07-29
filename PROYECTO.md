@@ -147,6 +147,13 @@ para que la home sea más corta y directa):
    vías (llamada, WhatsApp, email) a la derecha, dentro del mismo marco. La reserva de llamada de 30
    minutos vive aquí (columna derecha) y en el header; no hay una sección de reserva aparte.
 
+**Encabezados centrados y comparativa** (jul-2026, feedback de Noémi): los encabezados de sección
+(`.sec-head`) van **centrados**, igual que el hero. Y entre «Cómo trabajamos» y «Proyectos» hay una
+sección **comparativa** (`#comparativa`, claves `compare.*`, clases `.vs-*`): dos columnas, «Con
+Algoryme» (destacada, filete siena) frente a «Lo habitual en el sector» (apagada). El contraste es
+**cualitativo y honesto**: no nombra competidores ni inventa datos, solo enfrenta la forma de
+trabajar de Algoryme (ya presente en el resto de la web) con el patrón habitual del sector.
+
 **Secciones que existieron y se quitaron** (su CSS puede seguir presente, inofensivo): «El problema»
 (los tres riesgos del 95%), «Tu stack, no el nuestro» (`band-own`, el diferencial de propiedad;
 retirada en jul-2026), «Integraciones» (la fila de logos) y el **CTA de reserva** independiente
