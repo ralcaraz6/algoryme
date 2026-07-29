@@ -1018,6 +1018,7 @@ button.btn[type="submit"]:disabled::after{content:"";display:inline-block;width:
     if(!el) return;
     var book = el.closest('[data-book]');
     if(book){ ev('book_call_click', {ubicacion:(book.getAttribute('data-book-src')||'web')}); return; }
+    var q = el.closest('.cs-q'); if(q){ var ti=q.querySelector('.cs-title'); ev('project_expand', {proyecto:(ti?ti.textContent.trim():'')}); return; }
     var href = el.getAttribute('href')||'';
     if(href.indexOf('wa.me')>-1 || (el.closest && el.closest('[data-wa-fab]'))){ ev('whatsapp_click', {}); return; }
     var mm = href.match(/^caso-(.*)\.html$/); if(mm){ ev('project_click', {proyecto:mm[1]}); return; }
