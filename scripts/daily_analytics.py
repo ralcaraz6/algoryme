@@ -30,8 +30,10 @@ from google.analytics.data_v1beta.types import (
 from googleapiclient.discovery import build
 
 TZ = ZoneInfo("Europe/Madrid")
-PROPERTY = os.environ.get("GA4_PROPERTY_ID", "547553833")
-MAIL_TO = os.environ.get("MAIL_TO", "info@algoryme.com")
+# `or` en vez de default de get(): el workflow pasa la variable siempre (vacía si no hay
+# secret), así que get() devolvería "" y hay que caer al valor por defecto igualmente.
+PROPERTY = os.environ.get("GA4_PROPERTY_ID") or "547553833"
+MAIL_TO = os.environ.get("MAIL_TO") or "info@algoryme.com"
 SCOPES = ["https://www.googleapis.com/auth/analytics.readonly",
           "https://www.googleapis.com/auth/gmail.send"]
 E = lambda s: H.escape(str(s), quote=False)
