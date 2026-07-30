@@ -13,24 +13,29 @@ Uso:
 Se abrirá el navegador para que inicies sesión como info@algoryme.com y autorices.
 Al final imprime los tres valores que hay que pegar como secrets en GitHub.
 """
+import sys, json
 from google_auth_oauthlib.flow import InstalledAppFlow
 
 SCOPES = ["https://www.googleapis.com/auth/analytics.readonly",
           "https://www.googleapis.com/auth/gmail.send"]
 
-client_id = input("client_id: ").strip()
-client_secret = input("client_secret: ").strip()
+# Pásale la ruta del JSON del cliente OAuth que descargaste:
+#   python3 scripts/get_token.py ~/Downloads/client_secret_XXX.json
+if len(sys.argv) > 1:
+    flow = InstalledAppFlow.from_client_secrets_file(sys.argv[1], SCOPES)
+    client_id = json.load(open(sys.argv[1]))["installed"]["client_id"]
+    client_secret = json.load(open(sys.argv[1]))["installed"]["client_secret"]
+else:
+    client_id = input("client_id: ").strip()
+    client_secret = input("client_secret: ").strip()
+    flow = InstalledAppFlow.from_client_config(
+        {"installed": {
+            "client_id": client_id, "client_secret": client_secret,
+            "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+            "token_uri": "https://oauth2.googleapis.com/token",
+            "redirect_uris": ["http://localhost"],
+        }}, SCOPES)
 
-flow = InstalledAppFlow.from_client_config(
-    {"installed": {
-        "client_id": client_id,
-        "client_secret": client_secret,
-        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-        "token_uri": "https://oauth2.googleapis.com/token",
-        "redirect_uris": ["http://localhost"],
-    }},
-    SCOPES,
-)
 creds = flow.run_local_server(port=0, access_type="offline", prompt="consent")
 
 if not creds.refresh_token:
