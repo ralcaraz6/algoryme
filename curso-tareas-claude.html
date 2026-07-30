@@ -10,7 +10,13 @@
   gtag('js', new Date());
   gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','wait_for_update':500});
   try{ if(localStorage.getItem('algoryme-consent')==='granted'){ gtag('consent','update',{'analytics_storage':'granted'}); } }catch(e){}
-  gtag('config','G-G9NT4L51DD');
+  var ALGO_NOTRACK=false;
+  try{var _q=new URLSearchParams(location.search);
+    if(_q.get('notrack')==='1'){localStorage.setItem('algoryme-notrack','1');}
+    if(_q.get('notrack')==='0'){localStorage.removeItem('algoryme-notrack');}
+    ALGO_NOTRACK=localStorage.getItem('algoryme-notrack')==='1';}catch(e){}
+  window.ALGO_NOTRACK=ALGO_NOTRACK;
+  if(!ALGO_NOTRACK){gtag('config','G-G9NT4L51DD');}
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Curso gratis: crea tu gestor de tareas con Claude | Algoryme</title>
@@ -970,7 +976,7 @@ button.btn[type="submit"]:disabled::after{content:"";display:inline-block;width:
   var b=document.getElementById('ckBanner'); if(!b) return;
   var K='algoryme-consent', c=null;
   try{c=localStorage.getItem(K);}catch(e){}
-  if(c!=='granted' && c!=='denied'){ b.hidden=false; }
+  if(c!=='granted' && c!=='denied' && !window.ALGO_NOTRACK){ b.hidden=false; }
   function decide(v){
     try{localStorage.setItem(K,v);}catch(e){}
     if(v==='granted' && typeof gtag==='function'){ gtag('consent','update',{'analytics_storage':'granted'}); }
@@ -984,6 +990,7 @@ button.btn[type="submit"]:disabled::after{content:"";display:inline-block;width:
 <script>
 /* ---- eventos GA4: funnel de captación ---- */
 (function(){
+  if(window.ALGO_NOTRACK)return;
   function ev(n,p){ try{ if(typeof gtag==='function') gtag('event', n, p||{}); }catch(e){} }
   var FORMS = { bookForm:'reserva_llamada', contactForm:'contacto', infoForm:'formacion', fcForm:'curso_gratis', captureForm:'email' };
   document.addEventListener('click', function(e){
