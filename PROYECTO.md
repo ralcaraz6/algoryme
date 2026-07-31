@@ -115,8 +115,11 @@ El orden cuenta una historia de venta y no es casual (recortado en jul-2026 a pe
 para que la home sea más corta y directa):
 
 1. **Hero** — el problema del cliente en una frase, con la promesa de infraestructura en negrita.
-   El copy va **centrado** (una sola columna, `.hero-copy`) y debajo, **a ancho completo**, la
-   banda `.hero-band`: el titular `heroPanel.lead` en mayúsculas («NOS ENCARGAMOS DE TODO») y un
+   Titular: «Construimos el software que **hace crecer tu negocio**» (frase elegida por el cliente
+   en jul-2026 para que se entienda de un vistazo que Algoryme desarrolla software; antes era
+   «Deberías construir el futuro…»), con subtítulo de una sola frase. El copy va **centrado** (una
+   sola columna, `.hero-copy`) y debajo, **pegada y a ancho completo**, la banda `.hero-band` **en
+   tinta**: el titular `heroPanel.lead` en mayúsculas («NOS ENCARGAMOS DE TODO, TODOS LOS DÍAS») y un
    marquee (`.hb-marquee`/`.hb-track`) que desfila de izquierda a derecha `heroPanel.items`
    (informes, facturas, CRM...), «todo lo que hacemos». Evolución del feedback de una amiga de Roge
    (jul-2026): se quitó la tarjeta blanca de la derecha, se movió la barra debajo del welcome copy,

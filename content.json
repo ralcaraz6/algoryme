@@ -163,8 +163,8 @@
     },
     "hero": {
       "eyebrow": "Desarrollo de producto para empresas",
-      "headline": "Deberías construir {{el futuro}}, no actualizar hojas de cálculo",
-      "sub": "Cada proceso que tu equipo hace a mano es tiempo y dinero que se escapan. Diseñamos el sistema que lo hace solo, {{en tu propia infraestructura}}, y lo dejamos funcionando en producción. No una demo bonita: algo que aguanta.",
+      "headline": "Construimos el software que {{hace crecer tu negocio}}",
+      "sub": "Lo que hoy hace tu equipo a mano, hecho solo. {{En tu infraestructura}} y en producción.",
       "cta1": "Reserva una llamada de 30 minutos",
       "cta2": "Ver proyectos"
     },
@@ -833,7 +833,7 @@
       "bookShort": "Agendar llamada"
     },
     "heroPanel": {
-      "lead": "Nos encargamos de todo.",
+      "lead": "Nos encargamos de todo, todos los días.",
       "items": [
         "Informes",
         "Facturas",
@@ -844,8 +844,7 @@
         "Agendas",
         "Seguimiento"
       ],
-      "foot": "Todos los días. Sin que nadie lo lance.",
-      "alt": "Nos encargamos de todo: informes, facturas, CRM, respuestas, documentos, datos, agendas y seguimiento. Todos los días, sin que nadie lo lance."
+      "alt": "Nos encargamos de todo, todos los días: informes, facturas, CRM, respuestas, documentos, datos, agendas y seguimiento."
     },
     "team": {
       "kicker": "El equipo",
@@ -1180,8 +1179,8 @@
     },
     "hero": {
       "eyebrow": "Product development for companies",
-      "headline": "You should be building {{the future}}, not updating spreadsheets",
-      "sub": "Every process your team does by hand is time and money leaking out. We design the system that does it for you, {{on your own infrastructure}}, and leave it running in production. Not a slick demo: something that holds up.",
+      "headline": "We build the software that {{grows your business}}",
+      "sub": "The work your team does by hand today, done on its own. {{On your infrastructure}} and in production.",
       "cta1": "Book a 30-minute call",
       "cta2": "View case studies"
     },
@@ -1850,7 +1849,7 @@
       "bookShort": "Book a call"
     },
     "heroPanel": {
-      "lead": "We take care of it all.",
+      "lead": "We take care of it all, every day.",
       "items": [
         "Reports",
         "Invoices",
@@ -1861,8 +1860,7 @@
         "Scheduling",
         "Follow-ups"
       ],
-      "foot": "Every day. Nobody has to launch it.",
-      "alt": "We take care of it all: reports, invoices, CRM, replies, documents, data, scheduling and follow-ups. Every day, without anyone launching it."
+      "alt": "We take care of it all, every day: reports, invoices, CRM, replies, documents, data, scheduling and follow-ups."
     },
     "team": {
       "kicker": "The team",
