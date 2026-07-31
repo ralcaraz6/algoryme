@@ -118,85 +118,33 @@ a la casilla marcable, el patrón anterior era un `input[type=checkbox]` obligat
 
 ## 4. Estructura de la home
 
-El orden cuenta una historia de venta y no es casual (recortado en jul-2026 a petición del cliente,
-para que la home sea más corta y directa):
+Rehecha en ago-2026 con el diseño que se probó en el repositorio `algoryme-v2`. El orden es:
 
-1. **Hero** — el problema del cliente en una frase, con la promesa de infraestructura en negrita.
-   Titular: «Construimos el software que **hace crecer tu negocio**» (frase elegida por el cliente
-   en jul-2026 para que se entienda de un vistazo que Algoryme desarrolla software), con subtítulo
-   de una sola frase. El copy va **centrado** (`.hero-copy`). La banda con la barra corriendo se
-   retiró: primero fue crema, luego tinta, y el cliente la descartó.
-2. **¿Qué le está robando el tiempo a tu equipo?** (`#que-frena`, claves `pain.*`) — **selector
-   interactivo** que sustituyó a esa banda: cinco chips (informes, facturas, copiar datos, responder
-   mensajes, tareas repetitivas) y una respuesta que cambia al pulsar. Es la única pieza de la web
-   en la que el visitante participa. Detalles que hay que respetar si se toca:
-   - La respuesta se pinta cambiando `data-i18n-rich` y llamando a `renderRich()`, **no** escribiendo
-     HTML: así `applyI18n()` la retraduce sola al cambiar de idioma sin perder la opción elegida.
-   - ⚠️ **`.pain-ans` no puede ser `display:flex`**. Lo fue, y flex convierte el texto en items
-     anónimos y **se come el espacio** que precede al `<em class="mark">`: se leía «digas yen tu
-     formato». Va en `display:block`.
-   - **Móvil**: los chips son un carrusel a sangre (`overflow-x:auto` + `scroll-snap`, sin barra
-     visible y con degradado en los bordes para que se vea que hay más). Al pulsar, el chip se centra
-     moviendo `scrollLeft` del contenedor, **nunca con `scrollIntoView`**, que arrastraría la página.
-   - `.pain-ans` reserva altura (`min-height`) suficiente para la respuesta más larga: sin eso, elegir
-     una opción de más líneas empujaba el resto de la página 26 px hacia abajo. Verificado a 390 y
-     360 px con **cero** desplazamiento.
-3. **Servicios** — **seis** capacidades en una lista seleccionable con panel de vista previa
-   (`backoffice.items`). Es la sección a la que apunta **Servicios** en la navegación
-   (`#aplicaciones`); si le cambias el `id`, se rompe el enlace en las 18 páginas. El kicker dice
-   «Servicios»; antes decía «El trabajo interno». El panel se rellena por JS desde `backoffice.items.N`
-   (nombre, tagline, bullets, icono clonado de la pestaña): para añadir un servicio hay que crear el
-   `<li>` con su `data-bo="N"` **y** la entrada N en `content.json`. La sexta, «Aplicaciones y webs
-   a medida», se añadió en jul-2026 porque es de lo que más pregunta la gente.
-4. **Cómo trabajamos** — línea de tiempo de cinco pasos hasta producción.
-5. **Proyectos** — tres tarjetas ilustradas y un botón a `casos.html`. La home enseña una
-   muestra, no el catálogo: si crece aquí, la página se hace interminable. El trío destacado
-   (índices 0-2 de `cases.items`) es **inmobiliario, finanzas y producción**: en jul-2026 el 3º pasó
-   de «renta variable» (mercados) a «transportista más barato» para no duplicar el sesgo financiero;
-   renta variable bajó al índice 3 y conserva su ficha (`caso-analisis-renta-variable.html`, ahora
-   `PAGE_META = 'caso3'`). ⚠️ Las ilustraciones de tarjeta y el `PAGE_META`/`data-i18n` de cada ficha
-   van **atados al índice**: si reordenas `cases.items`, hay que renumerar las fichas y sus enlaces.
-6. **El equipo** y **el fundador**.
-7. **FAQ** y **contacto**. El contacto es **un solo panel**: formulario a la izquierda y las tres
-   vías (llamada, WhatsApp, email) a la derecha, dentro del mismo marco. La reserva de llamada de 30
-   minutos vive aquí (columna derecha) y en el header; no hay una sección de reserva aparte.
+1. **Hero** — «Construimos el software que hace crecer tu negocio», copy centrado y un solo CTA.
+2. **Servicios** (`#aplicaciones`, claves `svc.*`) — **siete servicios agrupados en tres familias**
+   (Construimos, Automatizamos, Analizamos), con la **auditoría destacada** arriba como puerta de
+   entrada. Cada tarjeta lleva «Leer más» a su propia landing `servicio-<slug>.html`.
+   ⚠️ El nombre de clase `.svc-ico` ya está cogido por el icono grande del hero de las landings;
+   las tarjetas usan `.card-ico` / `.card-icobox`.
+3. **Proyectos** (`#casos`) — tres previews reales de web (prospectalo.com, app.svinvesting.com,
+   orph.eus) en un marco de navegador, con degradado abajo para que la captura no corte a media
+   frase. Las capturas están en `casos/` y se generaron con un servicio externo; para actualizarlas,
+   vuelve a capturarlas y sustituye el JPG.
+4. **Cómo trabajamos** — la línea de tiempo de cinco pasos.
+5. **Equipo** — Rogelio destacado con su foto (`rogelio.jpg`, la que estaba en «El fundador») y el
+   resto del equipo debajo, cada uno con enlace a LinkedIn. ⚠️ Los enlaces de los cinco son
+   **provisionales** (apuntan a linkedin.com); hay que sustituirlos por sus perfiles.
+6. **FAQ** y **contacto**, sin cambios.
 
-**Encabezados centrados y comparativa** (jul-2026, feedback de Noémi): los encabezados de sección
-(`.sec-head`) van **centrados**, igual que el hero. Y entre «Cómo trabajamos» y «Proyectos» hay una
-sección **comparativa** (`#comparativa`, claves `compare.*`, clases `.vs-*`): dos columnas, «Con
-Algoryme» (destacada, filete siena) frente a «Lo habitual en el sector» (apagada). El contraste es
-**cualitativo y honesto**: no nombra competidores ni inventa datos, solo enfrenta la forma de
-trabajar de Algoryme (ya presente en el resto de la web) con el patrón habitual del sector.
+**Secciones retiradas en la migración**: «El problema», «Tu stack, no el nuestro», «Integraciones»,
+el CTA de reserva suelto, el selector «¿Qué le está robando el tiempo a tu equipo?», la comparativa
+«Algoryme frente a otros» y la sección «El fundador» (fusionada en Equipo).
 
-**Secciones que existieron y se quitaron** (su CSS puede seguir presente, inofensivo): «El problema»
-(los tres riesgos del 95%), «Tu stack, no el nuestro» (`band-own`, el diferencial de propiedad;
-retirada en jul-2026), «Integraciones» (la fila de logos) y el **CTA de reserva** independiente
-(el `band-cta` con el formulario «Prefieres email» / `emailCapture`). El JS del `emailCapture` sigue
-en las páginas pero está protegido con `if (capForm)`, así que no hace nada al faltar el markup.
+**Páginas retiradas**: formación (5), herramientas, fichas de proyecto (5), newsletter y el embudo
+del curso gratuito (3). **No se borraron**: cada una quedó como redirección con `noindex, follow`
+y su canonical, para no dar 404 ni perder el SEO acumulado. Si alguna vez se recuperan, el
+contenido está en el historial de git.
 
-Páginas aparte: `casos.html` + 4 fichas de caso, `herramientas.html`, `formacion.html` + 4 cursos,
-el embudo del curso gratuito (3 páginas), `newsletter.html`, `legal.html`, `privacidad.html`, `404.html`.
-
-`herramientas.html` enlaza a **Rachea** y **Prospéctalo**, los dos productos de suscripción. Su
-código está en otros repositorios; el contexto para trabajar en ellos está en
-**[HERRAMIENTAS.md](HERRAMIENTAS.md)**.
-
-### Proyectos (antes «Casos de éxito»)
-
-En julio de 2026 el cliente los renombró a **Proyectos**. El cambio es solo de etiqueta: los
-ficheros siguen llamándose `casos.html` y `caso-*.html`, y las claves de `content.json` siguen
-siendo `cases`, `casesPage` y `caseDetail`. **No renombres los ficheros**: las URLs están indexadas
-y no hay redirecciones montadas.
-
-Cada proyecto se cuenta con tres bloques fijos —**El problema**, **La solución**, **El resultado**—
-tanto en el índice desplegable de `casos.html` como en las fichas completas. Las etiquetas viven en
-`cases.labels`.
-
-**Cuatro de los ocho proyectos no tienen resultado publicado**, y es deliberado: de ellos se conoce
-el problema y la solución, pero no el resultado medido, y la regla dura prohíbe inventarlo. El
-bloque «El resultado» solo se pinta si el proyecto tiene `outcome`; los que no lo tienen sencillamente
-no lo muestran, sin hueco ni texto de relleno. Cuando el cliente aporte los resultados reales, basta
-con rellenar `outcome` en su entrada de `content.json`.
 
 ## 5. La regla dura
 

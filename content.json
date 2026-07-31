@@ -72,6 +72,34 @@
       "caso3": {
         "title": "Análisis global de renta variable | Algoryme",
         "description": "Una plataforma con la renta variable cotizada del mundo y sus informes financieros, para hacer screening y valorar una compañía en minutos."
+      },
+      "svc0": {
+        "title": "Aplicaciones y webs a medida | Algoryme",
+        "description": "La herramienta que tu negocio necesita y que ningún producto de catálogo te da: una web, una tienda online, un portal para tus clientes o la aplicación con la que trabaja tu equipo"
+      },
+      "svc1": {
+        "title": "Auditoría de adopción de IA | Algoryme",
+        "description": "Miramos cómo trabaja tu empresa por dentro y te decimos dónde la IA te va a dar dinero y dónde no merece la pena. Sales con una lista de oportunidades ordenada por impacto, con el "
+      },
+      "svc2": {
+        "title": "Automatización de procesos | Algoryme",
+        "description": "El trabajo administrativo que hoy se hace copiando, pegando y revisando: pedidos, facturas que entran, altas de cliente, control de stock. Lo dejamos funcionando entre tus sistemas"
+      },
+      "svc3": {
+        "title": "Informes automáticos | Algoryme",
+        "description": "El informe que alguien rehace a mano cada lunes se genera y se envía solo: con tus datos, a la hora que tú digas y en el formato de siempre. Y si algo se sale de lo normal, te avis"
+      },
+      "svc4": {
+        "title": "Atención al cliente automatizada | Algoryme",
+        "description": "Contesta sola los correos y mensajes que se repiten, con la documentación de tu empresa y tu tono. Sabe quién escribe porque está conectada a tu CRM, y lo que necesita a una person"
+      },
+      "svc5": {
+        "title": "Chatbots con documentación interna | Algoryme",
+        "description": "Un asistente que responde con los manuales, contratos, protocolos y presupuestos de tu empresa. Tu equipo pregunta en lenguaje normal y recibe la respuesta con la fuente citada, en"
+      },
+      "svc6": {
+        "title": "Dashboards e inteligencia de negocio | Algoryme",
+        "description": "Los números de tu negocio en un sitio y actualizados solos: ventas, márgenes, clientes, stock. Unificamos los datos que hoy viven repartidos en cinco herramientas para que decidas "
       }
     },
     "en": {
@@ -146,20 +174,46 @@
       "caso3": {
         "title": "Global equity analysis | Algoryme",
         "description": "A platform holding the world's listed equities and their financial reports, to screen and value a company in minutes."
+      },
+      "svc0": {
+        "title": "Custom apps and websites | Algoryme",
+        "description": "The tool your business needs and that no off-the-shelf product gives you: a website, an online shop, a client portal or the application your team works with every day. We also add "
+      },
+      "svc1": {
+        "title": "AI adoption audit | Algoryme",
+        "description": "We look at how your company works from the inside and tell you where AI will make you money and where it isn't worth it. You leave with a list of opportunities ranked by impact, wi"
+      },
+      "svc2": {
+        "title": "Process automation | Algoryme",
+        "description": "The admin work done today by copying, pasting and checking: orders, incoming invoices, new client records, stock control. We leave it running between your systems, with rules that "
+      },
+      "svc3": {
+        "title": "Automated reports | Algoryme",
+        "description": "The report someone rebuilds by hand every Monday is generated and sent on its own: with your data, at the time you choose and in your usual format. And if something is off, it tell"
+      },
+      "svc4": {
+        "title": "Automated customer support | Algoryme",
+        "description": "It answers the repetitive emails and messages on its own, using your company's documentation and your tone. It knows who is writing because it's wired to your CRM, and what needs a"
+      },
+      "svc5": {
+        "title": "Chatbots on your internal documentation | Algoryme",
+        "description": "An assistant that answers using your company's manuals, contracts, protocols and quotes. Your team asks in plain language and gets the answer with the source cited, instead of digg"
+      },
+      "svc6": {
+        "title": "Dashboards and business intelligence | Algoryme",
+        "description": "Your business numbers in one place and updating themselves: sales, margins, clients, stock. We unify the data that today lives across five tools so you decide by looking, not by gu"
       }
     }
   },
   "es": {
     "nav": {
       "services": "Servicios",
-      "applications": "Aplicaciones",
-      "cases": "Proyectos",
-      "formacion": "Formación",
-      "newsletter": "Newsletter",
+      "projects": "Proyectos",
+      "process": "Cómo trabajamos",
+      "team": "Equipo",
       "contact": "Contacto",
       "cta": "Reserva una llamada de 30 minutos",
-      "clients": "Clientes",
-      "tools": "Herramientas"
+      "faq": "Preguntas"
     },
     "hero": {
       "eyebrow": "Desarrollo de producto para empresas",
@@ -797,18 +851,17 @@
       "linkedinLabel": "LinkedIn de Rogelio Alcaraz",
       "columns": {
         "services": [
-          "Agentes de IA a medida",
+          "Aplicaciones y webs a medida",
+          "Auditoría de adopción de IA",
           "Automatización de procesos",
-          "Auditoría de oportunidades",
-          "Análisis de datos",
-          "Proyectos"
+          "Informes automáticos",
+          "Atención al cliente automatizada"
         ],
         "resources": [
-          "Formación en IA para empresas",
-          "Curso de ChatGPT para empresas",
-          "Curso de IA",
-          "Formación en Claude",
-          "Newsletter"
+          "Proyectos",
+          "Cómo trabajamos",
+          "Equipo",
+          "Contacto"
         ]
       },
       "rights": "© 2026 Algoryme",
@@ -879,7 +932,10 @@
           "bio": "Apoya en investigación, documentación y pruebas de los sistemas antes de que salgan a producción.",
           "slug": "alvaro-entrena"
         }
-      ]
+      ],
+      "leadRole": "Director",
+      "leadBio": "Llevo más de diez años trabajando con datos y hoy soy analista de datos sénior en una plataforma europea con millones de usuarios. He visto de cerca lo que separa un proyecto de IA que acaba en producción de una demo bonita que nadie usa. Monté Algoryme porque demasiadas empresas están comprando cajas negras que no controlan ni entienden. Aquí construimos sobre tu infraestructura, te explicamos cada decisión y te dejamos el sistema en la mano.",
+      "linkedin": "LinkedIn"
     },
     "freeCourse": {
       "badge": "Curso gratuito",
@@ -1175,19 +1231,173 @@
           "answer": "Las tareas encadenadas que hoy hace una persona pasan a un agente, {{con trazabilidad}}."
         }
       ]
+    },
+    "svc": {
+      "kicker": "Servicios",
+      "heading": "Qué podemos construir para ti",
+      "sub": "Agrupados por lo que buscas: entender dónde está la oportunidad, construir algo nuevo, quitarte trabajo de encima o entender tus números.",
+      "featBadge": "Empieza aquí",
+      "more": "Leer más",
+      "families": [
+        [
+          "Construimos",
+          "Software nuevo para tu negocio"
+        ],
+        [
+          "Automatizamos",
+          "El trabajo que hoy hace una persona"
+        ],
+        [
+          "Analizamos",
+          "Tus datos, convertidos en decisiones"
+        ]
+      ],
+      "items": [
+        {
+          "slug": "aplicaciones-y-webs",
+          "name": "Aplicaciones y webs a medida",
+          "summary": "La herramienta que tu negocio necesita y que ningún producto de catálogo te da: una web, una tienda online, un portal para tus clientes o la aplicación con la que trabaja tu equipo cada día. También añadimos funcionalidad a lo que ya tienes.",
+          "problem": "El software de catálogo nunca encaja del todo: pagas licencias por funciones que no usas y te falta justo la que necesitas. Mientras tanto, el equipo tira de hojas de cálculo para tapar el hueco.",
+          "solution": "Construimos la aplicación o la web desde cero, con lo que tu negocio necesita y nada más. Se despliega en tu infraestructura, se integra con lo que ya usas y el código es tuyo desde el primer día.",
+          "includes": [
+            "Webs corporativas y tiendas online",
+            "Portales de cliente y paneles internos",
+            "Aplicaciones de gestión a medida",
+            "Funcionalidad nueva sobre tu sistema actual",
+            "Integrada con tus herramientas de hoy",
+            "Documentada y transferible"
+          ]
+        },
+        {
+          "slug": "auditoria-adopcion-ia",
+          "name": "Auditoría de adopción de IA",
+          "summary": "Miramos cómo trabaja tu empresa por dentro y te decimos dónde la IA te va a dar dinero y dónde no merece la pena. Sales con una lista de oportunidades ordenada por impacto, con el coste y el plazo de cada una.",
+          "problem": "Sabes que se pierde tiempo en tareas que no deberían ser manuales, pero nadie tiene el mapa completo. Y hay mucho ruido de IA prometiendo de todo, sin decir qué encaja en tu caso.",
+          "solution": "Nos sentamos con dirección y con quien hace el trabajo cada día, recorremos los procesos reales y salimos con una lista priorizada por impacto y esfuerzo. Si no vemos retorno claro, te lo decimos antes de que gastes.",
+          "includes": [
+            "Entrevistas con dirección y con los equipos",
+            "Mapa de los procesos que hoy se hacen a mano",
+            "Qué automatizar primero y qué no tocar",
+            "Coste y plazo estimado de cada oportunidad",
+            "Riesgos y requisitos de datos",
+            "Si te encaja, lo construimos nosotros"
+          ]
+        },
+        {
+          "slug": "automatizacion-de-procesos",
+          "name": "Automatización de procesos",
+          "summary": "El trabajo administrativo que hoy se hace copiando, pegando y revisando: pedidos, facturas que entran, altas de cliente, control de stock. Lo dejamos funcionando entre tus sistemas, con reglas que validan por el camino.",
+          "problem": "El CRM no habla con el ERP, y la hoja de cálculo tampoco. Alguien hace de puente copiando datos, revisando facturas una a una y tecleando pedidos. Es lento y es donde se cuelan los errores.",
+          "solution": "Automatizamos el proceso de punta a punta: la información entra, se lee, se valida contra tus reglas de negocio y acaba donde tiene que estar. Cuando algo no cuadra, el sistema para y avisa en vez de arrastrar el error.",
+          "includes": [
+            "Pedidos, albaranes y facturas que entran",
+            "Datos que viajan entre CRM, ERP y hojas",
+            "Extracción de los campos que te importan",
+            "Validación con tus reglas de negocio",
+            "Aviso cuando algo no cuadra",
+            "Tú revisas solo la excepción"
+          ]
+        },
+        {
+          "slug": "informes-automaticos",
+          "name": "Informes automáticos",
+          "summary": "El informe que alguien rehace a mano cada lunes se genera y se envía solo: con tus datos, a la hora que tú digas y en el formato de siempre. Y si algo se sale de lo normal, te avisa sin que tengas que mirar un panel.",
+          "problem": "Cada semana alguien recopila los mismos datos de los mismos sitios para montar el mismo informe. Es la primera hora de su día. Y cuando esa persona está de vacaciones, no hay informe.",
+          "solution": "El informe se genera solo a partir de tus fuentes de datos, ya unificadas, y llega al correo de quien tenga que verlo. Además vigila los números y avisa cuando algo se desvía, antes de que sea un problema.",
+          "includes": [
+            "Briefing diario o informe semanal",
+            "Tus fuentes de datos, unificadas",
+            "En tu formato y tu tono de siempre",
+            "Alertas cuando algo se sale de lo normal",
+            "Enviado a quien tú decidas",
+            "Sin que nadie tenga que lanzarlo"
+          ]
+        },
+        {
+          "slug": "atencion-al-cliente",
+          "name": "Atención al cliente automatizada",
+          "summary": "Contesta sola los correos y mensajes que se repiten, con la documentación de tu empresa y tu tono. Sabe quién escribe porque está conectada a tu CRM, y lo que necesita a una persona lo pasa a una persona. A cualquier hora.",
+          "problem": "El buzón de soporte se llena de las mismas preguntas: el estado de un pedido, un precio, cómo funciona algo. Alguien las contesta una por una y, mientras, no atiende lo que de verdad importa.",
+          "solution": "Un sistema que responde con los manuales y el tono de tu empresa, conectado a tu CRM para tener delante el contexto de quien escribe. Resuelve lo repetitivo al momento y escala lo que lo merece, con el hilo entero.",
+          "includes": [
+            "Correo de soporte, WhatsApp y chat de la web",
+            "Responde con tus manuales y tu tono",
+            "Conectada al CRM: sabe quién escribe",
+            "Escala a una persona cuando toca",
+            "Disponible a cualquier hora",
+            "Informe de qué se pregunta más"
+          ]
+        },
+        {
+          "slug": "chatbots-documentacion-interna",
+          "name": "Chatbots con documentación interna",
+          "summary": "Un asistente que responde con los manuales, contratos, protocolos y presupuestos de tu empresa. Tu equipo pregunta en lenguaje normal y recibe la respuesta con la fuente citada, en vez de rebuscar entre carpetas y PDF.",
+          "problem": "El conocimiento de la empresa está repartido entre carpetas, correos y PDF que solo saben encontrar dos personas. Cuando esas dos no están, el resto pregunta, espera o improvisa.",
+          "solution": "Un asistente que ha leído toda tu documentación y responde en lenguaje normal, citando de qué documento sale cada respuesta para que se pueda comprobar. Vive en tu infraestructura: tus documentos no salen de casa.",
+          "includes": [
+            "Manuales, protocolos, contratos y presupuestos",
+            "Responde citando el documento de origen",
+            "Búsqueda en lenguaje normal, sin palabras clave",
+            "Respeta los permisos de cada persona",
+            "Se actualiza cuando cambia la documentación",
+            "Alojado en tu propia infraestructura"
+          ]
+        },
+        {
+          "slug": "dashboards-inteligencia-negocio",
+          "name": "Dashboards e inteligencia de negocio",
+          "summary": "Los números de tu negocio en un sitio y actualizados solos: ventas, márgenes, clientes, stock. Unificamos los datos que hoy viven repartidos en cinco herramientas para que decidas mirando, no intuyendo.",
+          "problem": "Para saber cómo va el negocio hay que pedir datos a tres personas, exportar de dos herramientas y cuadrarlo en un Excel. Cuando el número está listo, ya es viejo, y nadie se fía del todo.",
+          "solution": "Unificamos tus fuentes de datos y montamos el cuadro de mando con los indicadores que de verdad usas para decidir, actualizado solo. Con el histórico dentro, se pueden añadir previsiones de demanda o de tesorería.",
+          "includes": [
+            "Tus datos de ventas, costes y operaciones, unificados",
+            "Los indicadores que usas para decidir",
+            "Actualizado solo, sin exportar nada",
+            "Acceso por perfil: cada uno ve lo suyo",
+            "Previsiones sobre tu propio histórico",
+            "Alertas cuando un indicador se desvía"
+          ]
+        }
+      ],
+      "includesTitle": "Qué incluye",
+      "othersTitle": "Otros servicios"
+    },
+    "projects": {
+      "kicker": "Proyectos",
+      "heading": "Esto ya está en producción",
+      "sub": "No son maquetas: son plataformas con clientes usándolas.",
+      "cta": "Verla en marcha",
+      "items": [
+        {
+          "img": "casos/prospectalo.jpg",
+          "domain": "prospectalo.com",
+          "url": "https://prospectalo.com/",
+          "text": "Pipeline de ventas para autónomos: cada oportunidad con su próximo paso."
+        },
+        {
+          "img": "casos/svinvesting.jpg",
+          "domain": "app.svinvesting.com",
+          "url": "https://app.svinvesting.com",
+          "text": "Plataforma de análisis de renta variable con valoración de 60.000 empresas."
+        },
+        {
+          "img": "casos/orpheus.jpg",
+          "domain": "orph.eus",
+          "url": "https://www.orph.eus/",
+          "text": "Plataforma de gestión de espacios de trabajo para oficinas."
+        }
+      ]
     }
   },
   "en": {
     "nav": {
       "services": "Services",
-      "applications": "Applications",
-      "cases": "Projects",
-      "formacion": "Training",
-      "newsletter": "Newsletter",
+      "projects": "Projects",
+      "process": "How we work",
+      "team": "Team",
       "contact": "Contact",
       "cta": "Book a 30-minute call",
-      "clients": "Clients",
-      "tools": "Tools"
+      "faq": "FAQ"
     },
     "hero": {
       "eyebrow": "Product development for companies",
@@ -1825,18 +2035,17 @@
       "linkedinLabel": "Rogelio Alcaraz on LinkedIn",
       "columns": {
         "services": [
-          "Custom AI agents",
+          "Custom apps and websites",
+          "AI adoption audit",
           "Process automation",
-          "Opportunity audit",
-          "Data analysis",
-          "Projects"
+          "Automated reports",
+          "Automated customer support"
         ],
         "resources": [
-          "AI training for companies",
-          "ChatGPT course for companies",
-          "AI course",
-          "Claude training",
-          "Newsletter"
+          "Projects",
+          "How we work",
+          "Team",
+          "Contact"
         ]
       },
       "rights": "© 2026 Algoryme",
@@ -1907,7 +2116,10 @@
           "bio": "Supports research, documentation and testing of the systems before they reach production.",
           "slug": "alvaro-entrena"
         }
-      ]
+      ],
+      "leadRole": "Director",
+      "leadBio": "I have spent more than ten years working with data and I am currently a senior data analyst at a European platform with millions of users. I have seen up close what separates an AI project that reaches production from a pretty demo nobody ends up using. I started Algoryme because too many companies are buying black boxes they neither control nor understand. Here we build on your infrastructure, explain every decision and hand you the system.",
+      "linkedin": "LinkedIn"
     },
     "freeCourse": {
       "badge": "Free course",
@@ -2201,6 +2413,162 @@
         {
           "label": "Repetitive work",
           "answer": "Chained tasks a person does today move to an agent, {{with a full trace}}."
+        }
+      ]
+    },
+    "svc": {
+      "kicker": "Services",
+      "heading": "What we can build for you",
+      "sub": "Grouped by what you're after: finding where the opportunity is, building something new, taking work off your plate or understanding your numbers.",
+      "featBadge": "Start here",
+      "more": "Read more",
+      "families": [
+        [
+          "We build",
+          "New software for your business"
+        ],
+        [
+          "We automate",
+          "The work a person does today"
+        ],
+        [
+          "We analyse",
+          "Your data, turned into decisions"
+        ]
+      ],
+      "items": [
+        {
+          "slug": "aplicaciones-y-webs",
+          "name": "Custom apps and websites",
+          "summary": "The tool your business needs and that no off-the-shelf product gives you: a website, an online shop, a client portal or the application your team works with every day. We also add new features to what you already have.",
+          "problem": "Off-the-shelf software never quite fits: you pay licences for features you don't use and you're missing the one you need. Meanwhile the team patches the gap with spreadsheets.",
+          "solution": "We build the application or the website from scratch, with what your business needs and nothing else. It runs on your infrastructure, integrates with what you already use and the code is yours from day one.",
+          "includes": [
+            "Corporate websites and online shops",
+            "Client portals and internal dashboards",
+            "Custom management applications",
+            "New features on your current system",
+            "Integrated with the tools you use today",
+            "Documented and transferable"
+          ]
+        },
+        {
+          "slug": "auditoria-adopcion-ia",
+          "name": "AI adoption audit",
+          "summary": "We look at how your company works from the inside and tell you where AI will make you money and where it isn't worth it. You leave with a list of opportunities ranked by impact, with the cost and timeline of each one.",
+          "problem": "You know time is lost on tasks that shouldn't be manual, but nobody has the full map. And there's a lot of AI noise promising everything without saying what fits your case.",
+          "solution": "We sit down with management and with the people doing the work every day, walk through the real processes and come out with a list ranked by impact and effort. If we don't see a clear return, we tell you before you spend.",
+          "includes": [
+            "Interviews with management and the teams",
+            "A map of what is done by hand today",
+            "What to automate first and what to leave alone",
+            "Estimated cost and timeline for each opportunity",
+            "Risks and data requirements",
+            "If it fits, we build it"
+          ]
+        },
+        {
+          "slug": "automatizacion-de-procesos",
+          "name": "Process automation",
+          "summary": "The admin work done today by copying, pasting and checking: orders, incoming invoices, new client records, stock control. We leave it running between your systems, with rules that validate along the way.",
+          "problem": "The CRM doesn't talk to the ERP, and neither does the spreadsheet. Someone bridges the gap copying data, checking invoices one by one and typing in orders. It's slow and it's where the errors creep in.",
+          "solution": "We automate the process end to end: information comes in, is read, validated against your business rules and ends up where it belongs. When something doesn't add up, the system stops and warns instead of carrying the error forward.",
+          "includes": [
+            "Incoming orders, delivery notes and invoices",
+            "Data travelling between CRM, ERP and spreadsheets",
+            "Extraction of the fields that matter to you",
+            "Validation against your business rules",
+            "A warning when something doesn't add up",
+            "You only review the exception"
+          ]
+        },
+        {
+          "slug": "informes-automaticos",
+          "name": "Automated reports",
+          "summary": "The report someone rebuilds by hand every Monday is generated and sent on its own: with your data, at the time you choose and in your usual format. And if something is off, it tells you without you having to watch a dashboard.",
+          "problem": "Every week someone pulls the same data from the same places to build the same report. It's the first hour of their day. And when that person is on holiday, there is no report.",
+          "solution": "The report builds itself from your data sources, already unified, and lands in the inbox of whoever needs it. It also watches the numbers and warns when something drifts, before it becomes a problem.",
+          "includes": [
+            "Daily briefing or weekly report",
+            "Your data sources, unified",
+            "In your usual format and tone",
+            "Alerts when something is off",
+            "Sent to whoever you decide",
+            "Nobody has to launch it"
+          ]
+        },
+        {
+          "slug": "atencion-al-cliente",
+          "name": "Automated customer support",
+          "summary": "It answers the repetitive emails and messages on its own, using your company's documentation and your tone. It knows who is writing because it's wired to your CRM, and what needs a person goes to a person. At any hour.",
+          "problem": "The support inbox fills up with the same questions: an order status, a price, how something works. Someone answers them one by one and, meanwhile, isn't handling what really matters.",
+          "solution": "A system that answers using your manuals and your company's tone, connected to your CRM so it has the context of whoever writes. It resolves the repetitive on the spot and escalates what deserves it, with the full thread.",
+          "includes": [
+            "Support email, WhatsApp and website chat",
+            "Answers with your manuals and your tone",
+            "Wired to the CRM: it knows who's writing",
+            "Escalates to a person when needed",
+            "Available at any hour",
+            "A report of what gets asked most"
+          ]
+        },
+        {
+          "slug": "chatbots-documentacion-interna",
+          "name": "Chatbots on your internal documentation",
+          "summary": "An assistant that answers using your company's manuals, contracts, protocols and quotes. Your team asks in plain language and gets the answer with the source cited, instead of digging through folders and PDFs.",
+          "problem": "Company knowledge is scattered across folders, emails and PDFs that only two people know how to find. When those two aren't around, everyone else asks, waits or improvises.",
+          "solution": "An assistant that has read all your documentation and answers in plain language, citing which document each answer comes from so it can be checked. It lives on your infrastructure: your documents never leave home.",
+          "includes": [
+            "Manuals, protocols, contracts and quotes",
+            "Answers citing the source document",
+            "Plain-language search, no keywords",
+            "Respects each person's permissions",
+            "Updates when the documentation changes",
+            "Hosted on your own infrastructure"
+          ]
+        },
+        {
+          "slug": "dashboards-inteligencia-negocio",
+          "name": "Dashboards and business intelligence",
+          "summary": "Your business numbers in one place and updating themselves: sales, margins, clients, stock. We unify the data that today lives across five tools so you decide by looking, not by guessing.",
+          "problem": "To know how the business is doing you have to ask three people for data, export from two tools and reconcile it in a spreadsheet. By the time the number is ready it's old, and nobody fully trusts it.",
+          "solution": "We unify your data sources and build the dashboard with the indicators you actually use to decide, updating on its own. With the history in place, forecasts for demand or cash flow can be added.",
+          "includes": [
+            "Your sales, cost and operations data, unified",
+            "The indicators you use to decide",
+            "Updated on its own, no exports",
+            "Access by role: everyone sees their own",
+            "Forecasts on your own history",
+            "Alerts when an indicator drifts"
+          ]
+        }
+      ],
+      "includesTitle": "What it includes",
+      "othersTitle": "Other services"
+    },
+    "projects": {
+      "kicker": "Projects",
+      "heading": "This is already in production",
+      "sub": "Not mock-ups: these are platforms with clients using them.",
+      "cta": "See it running",
+      "items": [
+        {
+          "img": "casos/prospectalo.jpg",
+          "domain": "prospectalo.com",
+          "url": "https://prospectalo.com/",
+          "text": "A sales pipeline for freelancers: every opportunity with its next step."
+        },
+        {
+          "img": "casos/svinvesting.jpg",
+          "domain": "app.svinvesting.com",
+          "url": "https://app.svinvesting.com",
+          "text": "Equity analysis platform with valuations for 60,000 companies."
+        },
+        {
+          "img": "casos/orpheus.jpg",
+          "domain": "orph.eus",
+          "url": "https://www.orph.eus/",
+          "text": "A workspace management platform for offices."
         }
       ]
     }
