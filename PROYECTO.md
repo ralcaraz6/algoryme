@@ -72,6 +72,13 @@ en el histórico de la sesión; si no lo tienes, es un recorrido con un parser d
   medir con `getComputedStyle` justo después de un clic devuelve el valor *inicial*, no el final,
   y parece que la regla no se aplica. Antes de dar por roto un estado (`.open`, `:hover`), inyecta
   `*{transition:none!important}` y vuelve a medir. Pasó con el icono +/− del índice de proyectos.
+- **Una regla suelta de `font-size` puede aplastar toda la escala.** En jul-2026 la home llevaba
+  `h1,h2,.founder-title,.hero h1{font-size:clamp(1.85rem,2.9vw,2.3rem)}` colada **dentro del bloque
+  de `text-wrap`**, fuera de cualquier media query. Igualaba h1 y h2 (36,8 px los dos a 1440) y
+  dejaba el titular de la home un 38 % más pequeño que el de las demás páginas, que sí llegaban a
+  59,2 px. Lo detectó el cliente a ojo, no nosotros. **Antes de publicar cambios de estilo, pasa
+  `scripts/check-maqueta.html`** (instrucciones dentro): mide jerarquía, tamaños de sección,
+  texto diminuto, desbordes y cortes de línea en las 19 páginas a 1440/1024/390.
 - **Las capturas de pantalla del navegador integrado** dan tiempo de espera agotado con estas
   páginas. Alternativa que funciona: Chrome en modo headless
   (`--headless --screenshot --window-size=W,H`, y `--default-background-color=00000000` para

@@ -1,0 +1,109 @@
+<!doctype html>
+<meta charset="UTF-8">
+<title>Verificación de maqueta · Algoryme</title>
+<!--
+  Detector de errores de maqueta. Cárgalo servido, NO con file:// :
+
+      cd /Users/rogelio/tt/algoryme && python3 -m http.server 8199
+      abre http://127.0.0.1:8199/scripts/check-maqueta.html
+
+  Comprueba, en todas las páginas y a varios anchos:
+   1. jerarquía: el h1 debe ser mayor que cualquier h2  (este falló en jul-2026: una regla
+      `h1,h2,...{font-size:...}` colada en el bloque de text-wrap igualaba ambos en la home)
+   2. los titulares de sección de una misma página miden lo mismo
+   3. ningún h3 llega al tamaño de un h2 de sección
+   4. no hay texto visible por debajo de 11 px
+   5. no hay desbordamiento horizontal
+   6. regla del cliente: ningún texto salta de línea antes de llenar su contenedor
+-->
+<style>
+  body{font:15px/1.5 ui-sans-serif,system-ui,-apple-system,sans-serif;background:#FAF7F0;color:#211D18;margin:0;padding:28px}
+  h1{font-size:20px;margin:0 0 4px}
+  p.sub{color:#6B6153;margin:0 0 20px}
+  #run{font:600 14px/1 inherit;padding:11px 18px;border:0;border-radius:10px;background:#B5401C;color:#fff;cursor:pointer}
+  #out{margin-top:22px;white-space:pre-wrap;font:13px/1.6 ui-monospace,Menlo,monospace}
+  .ok{color:#31513F;font-weight:700}
+  .bad{color:#B5401C;font-weight:700}
+</style>
+<h1>Verificación de maqueta</h1>
+<p class="sub">Mide las páginas en un navegador real. Pásalo antes de publicar cambios de estilo.</p>
+<button id="run">Ejecutar</button>
+<div id="out"></div>
+<script>
+const PAGES = ["index.html","casos.html","caso-transportista-mas-barato.html","caso-analisis-renta-variable.html",
+  "caso-briefing-diario-fondo.html","caso-plataforma-inversion-inmobiliaria.html","herramientas.html","formacion.html",
+  "curso-ia.html","curso-chatgpt-empresas.html","formacion-claude.html","formacion-ia-empresas.html","newsletter.html",
+  "legal.html","privacidad.html","404.html","curso-tareas-claude.html","curso-tareas-claude-registro.html",
+  "curso-tareas-claude-acceso.html"];
+const WIDTHS = [1440, 1024, 390];
+const out = document.getElementById('out');
+const log = (s, cls) => out.insertAdjacentHTML('beforeend', cls ? `<span class="${cls}">${s}</span>\n` : s + '\n');
+
+async function page(p, w) {
+  const bugs = [];
+  const f = document.createElement('iframe');
+  f.style.cssText = 'position:absolute;left:-99999px;width:' + w + 'px;height:1300px;border:0';
+  document.body.appendChild(f);
+  await new Promise(r => { f.onload = r; f.src = '../' + p + '?c=' + Math.random(); });
+  await new Promise(r => setTimeout(r, 130));
+  const d = f.contentDocument, W = f.contentWindow;
+  const px = el => parseFloat(W.getComputedStyle(el).fontSize);
+  const vis = el => el.offsetHeight > 0;
+
+  const h1 = [...d.querySelectorAll('h1')].filter(vis).map(px);
+  const h2 = [...d.querySelectorAll('h2')].filter(vis).map(px);
+  if (h1.length && h2.length && !(Math.max(...h1) > Math.max(...h2) + 0.5))
+    bugs.push(`jerarquía: h1 ${Math.max(...h1)}px no supera al h2 ${Math.max(...h2)}px`);
+
+  const sec = [...d.querySelectorAll('.sec-head h2, .own-head h2')].filter(vis).map(px);
+  if (sec.length > 1 && Math.max(...sec) - Math.min(...sec) > 0.5)
+    bugs.push(`titulares de sección desiguales: ${Math.min(...sec)}px … ${Math.max(...sec)}px`);
+
+  const h3 = [...d.querySelectorAll('h3')].filter(vis).map(px);
+  if (sec.length && h3.length && Math.max(...h3) >= Math.min(...sec))
+    bugs.push(`h3 (${Math.max(...h3)}px) alcanza al h2 de sección (${Math.min(...sec)}px)`);
+
+  const tiny = [...d.querySelectorAll('p,li,a,button,h1,h2,h3')]
+    .filter(el => vis(el) && el.textContent.trim() && px(el) < 11);
+  if (tiny.length) bugs.push(`${tiny.length} textos por debajo de 11px, p.ej. «${tiny[0].textContent.trim().slice(0,30)}»`);
+
+  if (d.documentElement.scrollWidth > d.documentElement.clientWidth + 1)
+    bugs.push(`desborde horizontal: ${d.documentElement.scrollWidth}px en ${d.documentElement.clientWidth}px`);
+
+  // Regla del cliente: nada debe cortar la línea antes de llenar su contenedor.
+  // En TITULARES es estricta. En subtítulos se tolera el max-width de legibilidad que
+  // acompaña al diseño centrado (una línea de ~60-70 caracteres); solo se avisa si el
+  // recorte es severo (menos del 60% del contenedor), que ya se lee como columna estrecha.
+  [...d.querySelectorAll('h1,h2,.sub,.hero-sub,.sub-wide')].filter(vis).forEach(el => {
+    const cs = W.getComputedStyle(el);
+    const lh = parseFloat(cs.lineHeight) || px(el) * 1.2;
+    if (el.offsetHeight < lh * 1.5) return;               // una sola línea, nada que mirar
+    const maxw = parseFloat(cs.maxWidth);
+    if (isNaN(maxw)) return;
+    const cont = el.parentElement.getBoundingClientRect().width;
+    if (maxw >= cont - 2) return;                         // no lo limita
+    const titular = el.tagName === 'H1' || el.tagName === 'H2';
+    if (titular || maxw < cont * 0.6)
+      bugs.push(`«${el.textContent.trim().slice(0,26)}» corta por max-width (${cs.maxWidth} de ${Math.round(cont)}px)`);
+  });
+
+  f.remove();
+  return bugs;
+}
+
+document.getElementById('run').addEventListener('click', async () => {
+  out.textContent = '';
+  let total = 0, fallos = 0;
+  for (const w of WIDTHS) {
+    log(`\n── ${w}px ──`);
+    for (const p of PAGES) {
+      total++;
+      const bugs = await page(p, w);
+      if (bugs.length) { fallos += bugs.length; log(`✕ ${p}`, 'bad'); bugs.forEach(b => log('    ' + b)); }
+      else log(`· ${p}`);
+    }
+  }
+  log(`\n${fallos ? '✕ ' + fallos + ' problema(s)' : '✓ sin problemas'} — ${total} comprobaciones`,
+      fallos ? 'bad' : 'ok');
+});
+</script>
