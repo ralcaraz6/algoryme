@@ -116,37 +116,41 @@ para que la home sea más corta y directa):
 
 1. **Hero** — el problema del cliente en una frase, con la promesa de infraestructura en negrita.
    Titular: «Construimos el software que **hace crecer tu negocio**» (frase elegida por el cliente
-   en jul-2026 para que se entienda de un vistazo que Algoryme desarrolla software; antes era
-   «Deberías construir el futuro…»), con subtítulo de una sola frase. El copy va **centrado** (una
-   sola columna, `.hero-copy`) y debajo, **pegada y a ancho completo**, la banda `.hero-band` **en
-   tinta**: el titular `heroPanel.lead` en mayúsculas («NOS ENCARGAMOS DE TODO, TODOS LOS DÍAS») y un
-   marquee (`.hb-marquee`/`.hb-track`) que desfila de izquierda a derecha `heroPanel.items`
-   (informes, facturas, CRM...), «todo lo que hacemos». Evolución del feedback de una amiga de Roge
-   (jul-2026): se quitó la tarjeta blanca de la derecha, se movió la barra debajo del welcome copy,
-   se pasó a mayúsculas y a primera persona («se encarga» → «nos encargamos»). ⚠️ **Los items del
-   track se pintan dos veces** (el segundo grupo con `.hb-dup aria-hidden`) para que el bucle cierre
-   sin salto: la animación `hb-run` mueve el track de `-50%` a `0`, así que las dos mitades tienen
-   que ser idénticas. Cada item es su clave i18n (`heroPanel.items.N`) y funciona igual en inglés
-   (las mayúsculas son `text-transform`, no van en el texto). El texto accesible va en `#hpAlt`
-   (sr-only) porque el marquee es decorativo; con `prefers-reduced-motion` el track se para y se
-   envuelve.
-2. **Servicios** — **seis** capacidades en una lista seleccionable con panel de vista previa
+   en jul-2026 para que se entienda de un vistazo que Algoryme desarrolla software), con subtítulo
+   de una sola frase. El copy va **centrado** (`.hero-copy`). La banda con la barra corriendo se
+   retiró: primero fue crema, luego tinta, y el cliente la descartó.
+2. **¿Qué le está robando el tiempo a tu equipo?** (`#que-frena`, claves `pain.*`) — **selector
+   interactivo** que sustituyó a esa banda: cinco chips (informes, facturas, copiar datos, responder
+   mensajes, tareas repetitivas) y una respuesta que cambia al pulsar. Es la única pieza de la web
+   en la que el visitante participa. Detalles que hay que respetar si se toca:
+   - La respuesta se pinta cambiando `data-i18n-rich` y llamando a `renderRich()`, **no** escribiendo
+     HTML: así `applyI18n()` la retraduce sola al cambiar de idioma sin perder la opción elegida.
+   - ⚠️ **`.pain-ans` no puede ser `display:flex`**. Lo fue, y flex convierte el texto en items
+     anónimos y **se come el espacio** que precede al `<em class="mark">`: se leía «digas yen tu
+     formato». Va en `display:block`.
+   - **Móvil**: los chips son un carrusel a sangre (`overflow-x:auto` + `scroll-snap`, sin barra
+     visible y con degradado en los bordes para que se vea que hay más). Al pulsar, el chip se centra
+     moviendo `scrollLeft` del contenedor, **nunca con `scrollIntoView`**, que arrastraría la página.
+   - `.pain-ans` reserva altura (`min-height`) suficiente para la respuesta más larga: sin eso, elegir
+     una opción de más líneas empujaba el resto de la página 26 px hacia abajo. Verificado a 390 y
+     360 px con **cero** desplazamiento.
+3. **Servicios** — **seis** capacidades en una lista seleccionable con panel de vista previa
    (`backoffice.items`). Es la sección a la que apunta **Servicios** en la navegación
    (`#aplicaciones`); si le cambias el `id`, se rompe el enlace en las 18 páginas. El kicker dice
    «Servicios»; antes decía «El trabajo interno». El panel se rellena por JS desde `backoffice.items.N`
    (nombre, tagline, bullets, icono clonado de la pestaña): para añadir un servicio hay que crear el
    `<li>` con su `data-bo="N"` **y** la entrada N en `content.json`. La sexta, «Aplicaciones y webs
    a medida», se añadió en jul-2026 porque es de lo que más pregunta la gente.
-3. **Cómo trabajamos** — línea de tiempo de cinco pasos hasta producción.
-4. **Proyectos** — tres tarjetas ilustradas y un botón a `casos.html`. La home enseña una
+4. **Cómo trabajamos** — línea de tiempo de cinco pasos hasta producción.
+5. **Proyectos** — tres tarjetas ilustradas y un botón a `casos.html`. La home enseña una
    muestra, no el catálogo: si crece aquí, la página se hace interminable. El trío destacado
    (índices 0-2 de `cases.items`) es **inmobiliario, finanzas y producción**: en jul-2026 el 3º pasó
    de «renta variable» (mercados) a «transportista más barato» para no duplicar el sesgo financiero;
    renta variable bajó al índice 3 y conserva su ficha (`caso-analisis-renta-variable.html`, ahora
    `PAGE_META = 'caso3'`). ⚠️ Las ilustraciones de tarjeta y el `PAGE_META`/`data-i18n` de cada ficha
    van **atados al índice**: si reordenas `cases.items`, hay que renumerar las fichas y sus enlaces.
-5. **El equipo** y **el fundador**.
-6. **FAQ** y **contacto**. El contacto es **un solo panel**: formulario a la izquierda y las tres
+6. **El equipo** y **el fundador**.
+7. **FAQ** y **contacto**. El contacto es **un solo panel**: formulario a la izquierda y las tres
    vías (llamada, WhatsApp, email) a la derecha, dentro del mismo marco. La reserva de llamada de 30
    minutos vive aquí (columna derecha) y en el header; no hay una sección de reserva aparte.
 

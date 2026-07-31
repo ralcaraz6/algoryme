@@ -832,20 +832,6 @@
       "consentPre": "Al enviar aceptas nuestra",
       "bookShort": "Agendar llamada"
     },
-    "heroPanel": {
-      "lead": "Nos encargamos de todo, todos los días.",
-      "items": [
-        "Informes",
-        "Facturas",
-        "CRM",
-        "Respuestas",
-        "Documentos",
-        "Datos",
-        "Agendas",
-        "Seguimiento"
-      ],
-      "alt": "Nos encargamos de todo, todos los días: informes, facturas, CRM, respuestas, documentos, datos, agendas y seguimiento."
-    },
     "team": {
       "kicker": "El equipo",
       "heading": "Quién construye tus sistemas",
@@ -1162,6 +1148,32 @@
         "Tus datos suben a plataformas ajenas",
         "Muchos clientes en paralelo y perfiles que rotan",
         "Presupuesto directo, sin mirar si de verdad tiene sentido"
+      ]
+    },
+    "pain": {
+      "kicker": "Por dónde empezar",
+      "heading": "¿Qué le está robando el tiempo a tu equipo?",
+      "items": [
+        {
+          "label": "Los informes",
+          "answer": "Los generamos y los enviamos solos, a la hora que digas y {{en tu formato de siempre}}."
+        },
+        {
+          "label": "Las facturas",
+          "answer": "Las leemos, extraemos lo que importa y tú solo miras {{lo que no cuadra}}."
+        },
+        {
+          "label": "Copiar datos",
+          "answer": "Los datos viajan entre tus sistemas y se validan solos. {{Se acabó el copia y pega}}."
+        },
+        {
+          "label": "Responder mensajes",
+          "answer": "Respondemos a clientes y equipo con tus manuales y tu tono, {{a cualquier hora}}."
+        },
+        {
+          "label": "Tareas repetitivas",
+          "answer": "Las tareas encadenadas que hoy hace una persona pasan a un agente, {{con trazabilidad}}."
+        }
       ]
     }
   },
@@ -1848,20 +1860,6 @@
       "consentPre": "By sending this you accept our",
       "bookShort": "Book a call"
     },
-    "heroPanel": {
-      "lead": "We take care of it all, every day.",
-      "items": [
-        "Reports",
-        "Invoices",
-        "CRM",
-        "Replies",
-        "Documents",
-        "Data",
-        "Scheduling",
-        "Follow-ups"
-      ],
-      "alt": "We take care of it all, every day: reports, invoices, CRM, replies, documents, data, scheduling and follow-ups."
-    },
     "team": {
       "kicker": "The team",
       "heading": "Who builds your systems",
@@ -2178,6 +2176,32 @@
         "Your data goes up to someone else's platform",
         "Many clients in parallel and rotating juniors",
         "A quote up front, without checking whether it makes sense"
+      ]
+    },
+    "pain": {
+      "kicker": "Where to start",
+      "heading": "What's eating your team's time?",
+      "items": [
+        {
+          "label": "Reports",
+          "answer": "We build and send them on their own, at the time you choose and {{in your usual format}}."
+        },
+        {
+          "label": "Invoices",
+          "answer": "We read them, pull out what matters and you only check {{what doesn't add up}}."
+        },
+        {
+          "label": "Copying data",
+          "answer": "Data travels between your systems and validates itself. {{No more copy and paste}}."
+        },
+        {
+          "label": "Replying",
+          "answer": "We answer clients and staff in your tone, using your own manuals, {{at any hour}}."
+        },
+        {
+          "label": "Repetitive work",
+          "answer": "Chained tasks a person does today move to an agent, {{with a full trace}}."
+        }
       ]
     }
   }
