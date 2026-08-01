@@ -1405,6 +1405,7 @@
           "img": "casos/noemisarpe.jpg",
           "domain": "noemisarpe.com",
           "url": "https://noemisarpe.com/",
+          "problem": "El problema: un portafolio que tiene que convencer a agencias internacionales y que dependía de terceros para cada cambio.",
           "built": "Qué construimos: web de portafolio con campañas, editoriales y obra, y tienda propia."
         }
       ]
@@ -2605,6 +2606,7 @@
           "img": "casos/noemisarpe.jpg",
           "domain": "noemisarpe.com",
           "url": "https://noemisarpe.com/",
+          "problem": "The problem: a portfolio that has to win over international agencies, with every change depending on someone else.",
           "built": "What we built: a portfolio site with campaigns, editorials and artwork, plus its own shop."
         }
       ]
