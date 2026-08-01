@@ -132,14 +132,17 @@ Rehecha en ago-2026 con el diseño que se probó en el repositorio `algoryme-v2`
    ⚠️ El nombre de clase `.svc-ico` ya está cogido por el icono grande del hero de las landings;
    las tarjetas usan `.card-ico` / `.card-icobox`.
 3. **Proyectos** (`#casos`) — tres previews reales de web (prospectalo.com, app.svinvesting.com,
-   orph.eus) en un marco de navegador, con degradado abajo para que la captura no corte a media
+   noemisarpe.com) en un marco de navegador, con degradado abajo para que la captura no corte a media
    frase. Las capturas están en `casos/` y se generaron con un servicio externo; para actualizarlas,
    vuelve a capturarlas y sustituye el JPG.
 4. **Cómo trabajamos** — la línea de tiempo de cinco pasos.
 5. **FAQ** y **contacto**, sin cambios.
 
-La sección de equipo salió de la home en ago-2026: ahora es **`equipo.html`**, con su pestaña
-propia en la barra de navegación (`nav.team`) y en el pie. La home no la enseña.
+**La sección de equipo ya no existe.** Salió de la home a `equipo.html` el 1-ago-2026 y ese mismo
+día el cliente pidió retirarla del todo: fuera la pestaña del menú y el enlace del pie, fuera del
+sitemap, y `equipo.html` como redirección con `noindex, follow`. Los textos (`team.*` de
+`content.json`), los retratos de `equipo/` y el script `equipo/uniformar.py` siguen en el
+repositorio; recuperarla es rescatar el `<main>` del commit anterior a la retirada.
 
 **Secciones retiradas en la migración**: «El problema», «Tu stack, no el nuestro», «Integraciones»,
 el CTA de reserva suelto, el selector «¿Qué le está robando el tiempo a tu equipo?», la comparativa
