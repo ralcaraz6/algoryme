@@ -205,6 +205,10 @@ página propia**: rellenar esos campos habría sido inventarlos. Cuando lleguen 
 alguno, ascenderlo es rellenar `situation`, `built`, `how`, `outcome` y `stack` en su entrada de
 `content.json`, clonar una ficha existente y añadir el enlace en su fila del índice.
 
+En ago-2026 el tercer ejemplo de web de la home pasó de `orph.eus` a `noemisarpe.com`. El cliente
+**confirmó expresamente que esa web es obra suya**, que es lo que permite mantenerla bajo el título
+«Esto ya está en producción». No la quites por dudar de la autoría: ya se preguntó y está respondida.
+
 **Dónde vive cada cosa:** la home enseña tres casos y un botón; `casos.html` es el índice completo,
 una fila por caso con «Ver más» que despliega en el sitio (`#casesList`, un abierto a la vez, mismo
 patrón que las FAQ). Las tres filas con ficha añaden dentro «Ver el caso completo». Esta división
