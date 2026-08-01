@@ -40,7 +40,7 @@ configurados y verificados los tres en `PASS`.
 
 ## 3. Cómo está construido
 
-Sitio **estático sin compilación**. 18 páginas HTML, cada una autocontenida: su CSS en línea, su
+Sitio **estático sin compilación**. 19 páginas HTML, cada una autocontenida: su CSS en línea, su
 JavaScript en línea y el diccionario de textos embebido. La única petición externa son las fuentes
 de Google. Se despliega solo con hacer *push* a `main`.
 
@@ -52,7 +52,7 @@ página va embebido, minificado, en una sola línea**: `var CONTENT = {...};`. E
 JavaScript vean contenido real.
 
 Esto significa que **al cambiar un texto hay que hacer tres cosas**: editar `content.json`,
-re-embeber el diccionario en las 18 páginas y re-hornear el texto estático. Hay un script para eso
+re-embeber el diccionario en las 19 páginas y re-hornear el texto estático. Hay un script para eso
 en el histórico de la sesión; si no lo tienes, es un recorrido con un parser de llaves balanceadas
 (el diccionario está minificado, las expresiones regulares ingenuas fallan en silencio).
 
@@ -66,6 +66,11 @@ en el histórico de la sesión; si no lo tienes, es un recorrido con un parser d
   revertirás cambios ajenos.
 - **Las páginas se crean clonando una hermana**, así que heredan `og:url`, `hreflang` y el
   `BreadcrumbList` de la plantilla. Hay que reescribir esos tres a mano en cada página nueva.
+- **`applyI18n()` necesita `var PAGE_META`** declarado arriba del script (bloque *PAGE CONFIG*).
+  Si falta, la función revienta en su primera línea y **la página se queda en español para
+  siempre**: no traduce nada, ni textos ni `<title>`. Pasó con la migración de la home de ago-2026,
+  que se llevó por delante el bloque en la home y en las siete landings de servicio, y no se vio
+  porque el español "horneado" en el HTML tapa el fallo. Si tocas el idioma, mira la consola.
 - **Los `curl` en bucle** desde el entorno de Claude se topan con límites de red y devuelven vacío.
   Para verificar en producción, usa el navegador o fija una IP con `--resolve`.
 - **Las transiciones CSS quedan congeladas** en Chrome headless con `--virtual-time-budget`: al
@@ -131,10 +136,10 @@ Rehecha en ago-2026 con el diseño que se probó en el repositorio `algoryme-v2`
    frase. Las capturas están en `casos/` y se generaron con un servicio externo; para actualizarlas,
    vuelve a capturarlas y sustituye el JPG.
 4. **Cómo trabajamos** — la línea de tiempo de cinco pasos.
-5. **Equipo** — Rogelio destacado con su foto (`rogelio.jpg`, la que estaba en «El fundador») y el
-   resto del equipo debajo, cada uno con enlace a LinkedIn. ⚠️ Los enlaces de los cinco son
-   **provisionales** (apuntan a linkedin.com); hay que sustituirlos por sus perfiles.
-6. **FAQ** y **contacto**, sin cambios.
+5. **FAQ** y **contacto**, sin cambios.
+
+La sección de equipo salió de la home en ago-2026: ahora es **`equipo.html`**, con su pestaña
+propia en la barra de navegación (`nav.team`) y en el pie. La home no la enseña.
 
 **Secciones retiradas en la migración**: «El problema», «Tu stack, no el nuestro», «Integraciones»,
 el CTA de reserva suelto, el selector «¿Qué le está robando el tiempo a tu equipo?», la comparativa
@@ -145,6 +150,31 @@ del curso gratuito (3). **No se borraron**: cada una quedó como redirección co
 y su canonical, para no dar 404 ni perder el SEO acumulado. Si alguna vez se recuperan, el
 contenido está en el historial de git.
 
+
+## 4b. La página de equipo, las fotos y el idioma automático
+
+**`equipo.html`** (ago-2026) es la única página que habla del equipo: Rogelio destacado arriba y
+los cinco restantes en una rejilla centrada, cada uno con una descripción de una línea sacada de
+`team.members[].bio`. ⚠️ Álvaro Entrena **no lleva enlace a LinkedIn** porque no tenemos su perfil;
+el de los otros cuatro sí es real. No inventes uno.
+
+**Las fotos del equipo se unifican con `equipo/uniformar.py`**: recorta el fondo original de cada
+retrato, lo compone sobre el mismo fondo de marca, encuadra todas las cabezas al mismo tamaño y
+aplica el mismo tratamiento de color. Los originales viven en `equipo/_src/` y no se tocan; la
+salida es `equipo/<slug>.jpg` a 640×640. Necesita `rembg` en un entorno virtual (el script explica
+cómo); la primera ejecución descarga un modelo de 176 MB. Si alguien manda una foto nueva, se deja
+en `_src/` y se vuelve a ejecutar: es la manera de que las seis sigan pareciendo un mismo set.
+
+**Idioma automático**: si el visitante no ha elegido idioma antes (ni `?lang=`, ni `localStorage`),
+`detectLang()` mira `navigator.languages`. Cualquier variante de español —y también `ca-ES`,
+`gl-ES`, `eu-ES`— sirve la web en español; cualquier otro idioma la sirve en inglés. Si no hay dato,
+español. La elección manual del selector ES/EN se guarda y manda sobre la detección.
+
+**Efectos de scroll** (ago-2026): la cabecera se encoge y proyecta sombra al bajar, una línea
+sienna de 2 px marca el progreso de lectura, el hero de la home se desplaza y se desvanece con el
+scroll, y las apariciones `.reveal` entran escalonadas entre hermanos. Todo se apaga con
+`prefers-reduced-motion`. ⚠️ La cabecera **sigue sin poder llevar `backdrop-filter`** (rompe el
+menú móvil, ver la nota en el CSS): si quieres más profundidad, usa sombra.
 
 ## 5. La regla dura
 
@@ -206,7 +236,7 @@ Nada se despliega sin pasar esto. Está probado que hace falta:
   darlo por bueno**, no solo los números.
 - Cuando algo no se puede hacer como se pide (porque sería inventar un dato o porque es un límite
   físico del formato), **decirlo en una frase y entregar la mejor alternativa**, no bloquear.
-- Los cambios de marca y de contenido se propagan a 18 páginas. Hazlo siempre con un script y
+- Los cambios de marca y de contenido se propagan a 19 páginas. Hazlo siempre con un script y
   **verifica el número de sustituciones**, no a mano.
 
 ## 8b. Analítica y cookies

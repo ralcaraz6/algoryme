@@ -100,6 +100,10 @@
       "svc6": {
         "title": "Dashboards e inteligencia de negocio | Algoryme",
         "description": "Los números de tu negocio en un sitio y actualizados solos: ventas, márgenes, clientes, stock. Unificamos los datos que hoy viven repartidos en cinco herramientas para que decidas "
+      },
+      "equipo": {
+        "title": "El equipo | Algoryme",
+        "description": "Quién construye tus sistemas en Algoryme: un equipo pequeño y sénior. Hablas directamente con quien diseña, construye y mantiene lo que se pone en producción."
       }
     },
     "en": {
@@ -202,6 +206,10 @@
       "svc6": {
         "title": "Dashboards and business intelligence | Algoryme",
         "description": "Your business numbers in one place and updating themselves: sales, margins, clients, stock. We unify the data that today lives across five tools so you decide by looking, not by gu"
+      },
+      "equipo": {
+        "title": "The team | Algoryme",
+        "description": "Who builds your systems at Algoryme: a small, senior team. You talk directly to the people who design, build and maintain what goes into production."
       }
     }
   },
@@ -935,7 +943,11 @@
       ],
       "leadRole": "Director",
       "leadBio": "Llevo más de diez años trabajando con datos y hoy soy analista de datos sénior en una plataforma europea con millones de usuarios. He visto de cerca lo que separa un proyecto de IA que acaba en producción de una demo bonita que nadie usa. Monté Algoryme porque demasiadas empresas están comprando cajas negras que no controlan ni entienden. Aquí construimos sobre tu infraestructura, te explicamos cada decisión y te dejamos el sistema en la mano.",
-      "linkedin": "LinkedIn"
+      "linkedin": "LinkedIn",
+      "pageIntro": "Somos seis. No hay capas intermedias: la persona con la que hablas es la que diseña y mantiene tu sistema.",
+      "ctaHeading": "¿Hablamos de tu caso?",
+      "ctaSub": "Media hora con nosotros y te decimos si tiene sentido automatizarlo.",
+      "backHome": "Volver a la home"
     },
     "freeCourse": {
       "badge": "Curso gratuito",
@@ -1387,6 +1399,9 @@
           "text": "Plataforma de gestión de espacios de trabajo para oficinas."
         }
       ]
+    },
+    "page": {
+      "crumbHome": "Inicio"
     }
   },
   "en": {
@@ -2119,7 +2134,11 @@
       ],
       "leadRole": "Director",
       "leadBio": "I have spent more than ten years working with data and I am currently a senior data analyst at a European platform with millions of users. I have seen up close what separates an AI project that reaches production from a pretty demo nobody ends up using. I started Algoryme because too many companies are buying black boxes they neither control nor understand. Here we build on your infrastructure, explain every decision and hand you the system.",
-      "linkedin": "LinkedIn"
+      "linkedin": "LinkedIn",
+      "pageIntro": "There are six of us. No middle layers: the person you talk to is the one who designs and maintains your system.",
+      "ctaHeading": "Shall we talk about your case?",
+      "ctaSub": "Half an hour with us and we'll tell you whether automating it makes sense.",
+      "backHome": "Back to home"
     },
     "freeCourse": {
       "badge": "Free course",
@@ -2571,6 +2590,9 @@
           "text": "A workspace management platform for offices."
         }
       ]
+    },
+    "page": {
+      "crumbHome": "Home"
     }
   }
 }
