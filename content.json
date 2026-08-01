@@ -226,8 +226,8 @@
     "hero": {
       "eyebrow": "Desarrollo de producto para empresas",
       "headline": "Construimos el software que {{hace crecer tu negocio}}",
-      "sub": "Lo que hoy hace tu equipo a mano, hecho solo. {{En tu infraestructura}} y en producción.",
-      "cta1": "Reserva una llamada de 30 minutos",
+      "sub": "Automatizaciones y software a medida, desplegados en {{tu infraestructura}}. En producción en semanas, no en trimestres.",
+      "cta1": "Reservar 30 minutos de diagnóstico",
       "cta2": "Ver proyectos"
     },
     "ownership": {
@@ -765,13 +765,13 @@
     "contact": {
       "kicker": "Contacto",
       "heading": "Hablemos de tu proceso",
-      "sub": "Trabajamos con pocos proyectos a la vez para hacerlos bien. La primera llamada es de diagnóstico: si tu caso no lo vale, te lo diremos.",
+      "sub": "Trabajamos con pocos proyectos a la vez. Cuéntanos qué proceso te está costando tiempo y te decimos en la primera llamada si tiene sentido automatizarlo.",
       "ways": [
         {
           "label": "Llamada de 30 minutos",
           "value": "Reserva en el calendario",
           "note": "El camino más rápido. Elige hueco y listo.",
-          "action": "Reservar"
+          "action": "Reservar 30 minutos"
         },
         {
           "label": "WhatsApp Business",
@@ -783,7 +783,7 @@
           "label": "Email",
           "value": "info@algoryme.com",
           "note": "Respondemos en menos de 24 horas.",
-          "action": "Enviar email"
+          "action": "Escribir un email"
         }
       ],
       "form": {
@@ -792,19 +792,26 @@
         "email": "Email de trabajo",
         "phone": "Teléfono (opcional)",
         "message": "Cuéntanos tu caso",
-        "submit": "Enviar mensaje",
+        "submit": "Enviar mi caso",
         "submitting": "Enviando...",
         "success": {
-          "title": "Mensaje enviado",
-          "text": "Gracias. Te respondemos en menos de 24 horas laborables."
+          "title": "Recibido",
+          "text": "Te respondemos en menos de 24 horas laborables. Si tienes prisa, escríbenos por WhatsApp."
         },
-        "error": "No se ha podido enviar. Escríbenos a info@algoryme.com.",
-        "privacyNote": "Usamos tus datos solo para responderte. Nunca los compartimos con terceros."
+        "error": "No se ha podido enviar. Revisa tu conexión e inténtalo otra vez, o escríbenos a info@algoryme.com.",
+        "privacyNote": "Usamos tus datos solo para responderte. Nunca los compartimos con terceros.",
+        "messagePlaceholder": "Qué proceso os come tiempo hoy, quién lo hace y con qué herramientas.",
+        "noSpam": "Sin newsletter y sin llamadas comerciales. Solo respondemos a tu caso.",
+        "errors": {
+          "name": "¿Con quién hablamos?",
+          "emailRequired": "Necesitamos un email para responderte.",
+          "emailInvalid": "Ese email no parece válido. Revisa el formato."
+        }
       }
     },
     "faq": {
       "kicker": "Preguntas frecuentes",
-      "heading": "Dudas habituales sobre consultoría e implantación de IA",
+      "heading": "Lo que nos preguntan antes de firmar",
       "items": [
         {
           "q": "¿Qué es un agente de IA?",
@@ -849,7 +856,7 @@
       ]
     },
     "footer": {
-      "blurb": "Consultoría de inteligencia artificial. Diseñamos e implementamos agentes y automatizaciones que se despliegan en tu propia infraestructura.",
+      "blurb": "Algoryme construye software a medida y automatiza procesos con IA, desplegado en la infraestructura del cliente.",
       "contactHeading": "Contacto",
       "email": "info@algoryme.com",
       "phone": "+34605621826",
@@ -874,7 +881,7 @@
       },
       "rights": "© 2026 Algoryme",
       "legalNotice": "Aviso legal",
-      "privacy": "Privacidad",
+      "privacy": "Política de privacidad",
       "whatsappLabel": "WhatsApp"
     },
     "ui": {
@@ -887,11 +894,11 @@
       "consentText": "Al enviar aceptas nuestra política de privacidad.",
       "sending": "Enviando...",
       "closeModal": "Cerrar",
-      "bookCta": "Reserva una llamada de 30 minutos",
+      "bookCta": "Reservar 30 minutos de diagnóstico",
       "privacyLink": "política de privacidad",
       "waFloat": "Escríbenos por WhatsApp",
       "consentPre": "Al enviar aceptas nuestra",
-      "bookShort": "Agendar llamada"
+      "bookShort": "Reservar llamada"
     },
     "team": {
       "kicker": "El equipo",
@@ -1246,7 +1253,7 @@
     },
     "svc": {
       "kicker": "Servicios",
-      "heading": "Elige por dónde empezar",
+      "heading": "¿En cuál te reconoces?",
       "sub": "Agrupados por lo que buscas: entender dónde está la oportunidad, construir algo nuevo, quitarte trabajo de encima o entender tus números.",
       "featBadge": "Empieza aquí",
       "more": "Leer más",
@@ -1384,19 +1391,21 @@
           "img": "casos/prospectalo.jpg",
           "domain": "prospectalo.com",
           "url": "https://prospectalo.com/",
-          "text": "Pipeline de ventas para autónomos: cada oportunidad con su próximo paso."
+          "problem": "El problema: los autónomos pierden oportunidades porque nadie recuerda cuál es el siguiente paso.",
+          "built": "Qué construimos: pipeline de ventas donde cada oportunidad lleva su próxima acción y su fecha."
         },
         {
           "img": "casos/svinvesting.jpg",
           "domain": "app.svinvesting.com",
           "url": "https://app.svinvesting.com",
-          "text": "Plataforma de análisis de renta variable con valoración de 60.000 empresas."
+          "problem": "El problema: analizar compañías una a una en hojas de cálculo.",
+          "built": "Qué construimos: plataforma de análisis de renta variable con valoración de 60.000 empresas."
         },
         {
           "img": "casos/noemisarpe.jpg",
           "domain": "noemisarpe.com",
           "url": "https://noemisarpe.com/",
-          "text": "Web de portafolio para una creativa: campañas, editoriales y obra, con tienda propia."
+          "built": "Qué construimos: web de portafolio con campañas, editoriales y obra, y tienda propia."
         }
       ]
     },
@@ -1417,8 +1426,8 @@
     "hero": {
       "eyebrow": "Product development for companies",
       "headline": "We build the software that {{grows your business}}",
-      "sub": "The work your team does by hand today, done on its own. {{On your infrastructure}} and in production.",
-      "cta1": "Book a 30-minute call",
+      "sub": "Custom software and automations, deployed on {{your infrastructure}}. In production in weeks, not quarters.",
+      "cta1": "Book a 30-minute diagnostic",
       "cta2": "View case studies"
     },
     "ownership": {
@@ -1956,13 +1965,13 @@
     "contact": {
       "kicker": "Contact",
       "heading": "Let's talk about your process",
-      "sub": "We take on few projects at a time so we do them well. The first call is a diagnosis: if your case isn’t worth it, we’ll tell you.",
+      "sub": "We take on few projects at a time. Tell us which process is costing you time and on the first call we'll tell you whether automating it makes sense.",
       "ways": [
         {
           "label": "30-minute call",
           "value": "Book in the calendar",
           "note": "The fastest route. Pick a slot and you are done.",
-          "action": "Book"
+          "action": "Book 30 minutes"
         },
         {
           "label": "WhatsApp Business",
@@ -1974,7 +1983,7 @@
           "label": "Email",
           "value": "info@algoryme.com",
           "note": "We reply within 24 hours.",
-          "action": "Send an email"
+          "action": "Write an email"
         }
       ],
       "form": {
@@ -1983,19 +1992,26 @@
         "email": "Work email",
         "phone": "Phone (optional)",
         "message": "Tell us about your case",
-        "submit": "Send message",
+        "submit": "Send my case",
         "submitting": "Sending...",
         "success": {
-          "title": "Message sent",
-          "text": "Thank you. We will reply within 24 working hours."
+          "title": "Received",
+          "text": "We'll reply within 24 working hours. If you're in a hurry, message us on WhatsApp."
         },
-        "error": "It could not be sent. Email us at info@algoryme.com.",
-        "privacyNote": "We use your details only to reply to you. We never share them with third parties."
+        "error": "We couldn't send it. Check your connection and try again, or write to info@algoryme.com.",
+        "privacyNote": "We use your details only to reply to you. We never share them with third parties.",
+        "messagePlaceholder": "Which process eats your time today, who does it and with which tools.",
+        "noSpam": "No newsletter and no sales calls. We only reply about your case.",
+        "errors": {
+          "name": "Who are we speaking with?",
+          "emailRequired": "We need an email to reply to you.",
+          "emailInvalid": "That email doesn't look valid. Check the format."
+        }
       }
     },
     "faq": {
       "kicker": "FAQ",
-      "heading": "Common questions about AI consultancy and rollout",
+      "heading": "What people ask us before signing",
       "items": [
         {
           "q": "What is an AI agent?",
@@ -2040,7 +2056,7 @@
       ]
     },
     "footer": {
-      "blurb": "AI consultancy. We design and build agents and automations that are deployed on your own infrastructure.",
+      "blurb": "Algoryme builds custom software and automates processes with AI, deployed on the client's infrastructure.",
       "contactHeading": "Contact",
       "email": "info@algoryme.com",
       "phone": "+34605621826",
@@ -2065,7 +2081,7 @@
       },
       "rights": "© 2026 Algoryme",
       "legalNotice": "Legal notice",
-      "privacy": "Privacy",
+      "privacy": "Privacy policy",
       "whatsappLabel": "WhatsApp"
     },
     "ui": {
@@ -2078,7 +2094,7 @@
       "consentText": "By sending this you accept our privacy policy.",
       "sending": "Sending...",
       "closeModal": "Close",
-      "bookCta": "Book a 30-minute call",
+      "bookCta": "Book a 30-minute diagnostic",
       "privacyLink": "privacy policy",
       "waFloat": "Message us on WhatsApp",
       "consentPre": "By sending this you accept our",
@@ -2437,7 +2453,7 @@
     },
     "svc": {
       "kicker": "Services",
-      "heading": "Choose where to start",
+      "heading": "Which one sounds like you?",
       "sub": "Grouped by what you're after: finding where the opportunity is, building something new, taking work off your plate or understanding your numbers.",
       "featBadge": "Start here",
       "more": "Read more",
@@ -2575,19 +2591,21 @@
           "img": "casos/prospectalo.jpg",
           "domain": "prospectalo.com",
           "url": "https://prospectalo.com/",
-          "text": "A sales pipeline for freelancers: every opportunity with its next step."
+          "problem": "The problem: freelancers lose opportunities because nobody remembers the next step.",
+          "built": "What we built: a sales pipeline where every opportunity carries its next action and date."
         },
         {
           "img": "casos/svinvesting.jpg",
           "domain": "app.svinvesting.com",
           "url": "https://app.svinvesting.com",
-          "text": "Equity analysis platform with valuations for 60,000 companies."
+          "problem": "The problem: analysing companies one by one in spreadsheets.",
+          "built": "What we built: an equity research platform with valuations for 60,000 companies."
         },
         {
           "img": "casos/noemisarpe.jpg",
           "domain": "noemisarpe.com",
           "url": "https://noemisarpe.com/",
-          "text": "Portfolio site for a creative: campaigns, editorials and artwork, with its own shop."
+          "built": "What we built: a portfolio site with campaigns, editorials and artwork, plus its own shop."
         }
       ]
     },

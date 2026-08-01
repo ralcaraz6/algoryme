@@ -115,6 +115,17 @@ quitó en jul-2026** (antes era obligatoria). El botón que abre el modal en el 
 llamada»** (`ui.bookShort`); el CTA descriptivo «Reserva una llamada de 30 minutos» (`ui.bookCta`)
 se mantiene en el hero y otros sitios.
 
+**Estados del formulario de contacto (ago-2026):** los errores de campo salen **debajo de su campo**
+(`.field-err`, `#err-name` y `#err-email`), no en el aviso global. El aviso global `#formError` queda
+solo para fallo de red o de servidor. El mensaje de email cambia según el motivo (vacío o mal
+formado) reescribiendo su `data-i18n`, para que siga traduciéndose al cambiar de idioma. El botón se
+deshabilita mientras envía y el error de campo desaparece al corregirlo.
+
+**Etiquetas de llamada unificadas (ago-2026):** menú «Reservar llamada» (`ui.bookShort`), hero y
+bandas CTA «Reservar 30 minutos de diagnóstico» (`hero.cta1`, `ui.bookCta`), contacto «Reservar 30
+minutos», formulario «Enviar mi caso», WhatsApp «Escribir por WhatsApp», email «Escribir un email».
+No volver a introducir «Agendar llamada» ni «Reservar» a secas.
+
 **Consentimiento:** se retiró la casilla «He leído y acepto la política de privacidad», también a
 petición del cliente. En su lugar queda un aviso permanente bajo el formulario con enlace a la
 política. Es una decisión suya y está tomada a conciencia; si algún día un asesor legal pide volver
