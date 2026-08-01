@@ -3,7 +3,7 @@
 y compone a todos sobre el mismo fondo de marca.
 
 Entrada:  equipo/_src/<slug>.(jpg|jpeg|png)
-Salida:   equipo/<slug>.jpg  (cuadrado, fondo uniforme)
+Salida:   equipo/<slug>.jpg  (retrato 4:5, fondo uniforme)
 
 Necesita rembg (segmentación de personas). Si no lo tienes:
 
@@ -20,7 +20,7 @@ from PIL import Image, ImageDraw, ImageFilter, ImageEnhance
 
 EQ = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(EQ, "_src")
-OUT = 640                      # lado del JPG final
+OUT_W, OUT_H = 512, 640        # retrato 4:5, el formato de la retícula de equipo
 BG_TOP = (243, 238, 229)       # arena cálida, un punto por debajo del papel de marca
 BG_BOTTOM = (228, 220, 207)
 SLUGS = [
@@ -29,9 +29,8 @@ SLUGS = [
 ]
 
 
-def backdrop(size):
+def backdrop(w, h):
     """Fondo de marca: degradado vertical suave + halo claro detrás de la cabeza."""
-    w = h = size
     bg = Image.new("RGB", (w, h))
     d = ImageDraw.Draw(bg)
     for y in range(h):
@@ -41,7 +40,7 @@ def backdrop(size):
     halo = Image.new("L", (w, h), 0)
     ImageDraw.Draw(halo).ellipse(
         [w * 0.14, -h * 0.08, w * 0.86, h * 0.72], fill=90)
-    halo = halo.filter(ImageFilter.GaussianBlur(size * 0.11))
+    halo = halo.filter(ImageFilter.GaussianBlur(w * 0.13))
     return Image.composite(Image.new("RGB", (w, h), (250, 247, 240)), bg, halo)
 
 
@@ -80,9 +79,10 @@ def crop_box(mask, side_factor=2.75):
           for x in range(0, w, 3) if px[x, y] > 128]
     cx = sum(xs) / len(xs) if xs else w / 2
     side = int(head_w * side_factor)
-    left = int(cx - side / 2)
+    wide = int(side * OUT_W / OUT_H)        # el alto manda; el ancho sale del 4:5
+    left = int(cx - wide / 2)
     t = int(top - side * 0.20)
-    return (left, t, left + side, t + side)
+    return (left, t, left + wide, t + side)
 
 
 def main():
@@ -102,8 +102,8 @@ def main():
         cut = remove(im, session=session, post_process_mask=True)
         alpha = clean_mask(im, cut.getchannel("A"))
         box = crop_box(alpha)
-        person = im.crop(box).resize((OUT, OUT), Image.LANCZOS)
-        cut_a = alpha.crop(box).resize((OUT, OUT), Image.LANCZOS)
+        person = im.crop(box).resize((OUT_W, OUT_H), Image.LANCZOS)
+        cut_a = alpha.crop(box).resize((OUT_W, OUT_H), Image.LANCZOS)
 
         # mismo tratamiento tonal para todos: un punto menos de saturación y luz cálida
         rgb = ImageEnhance.Color(person).enhance(0.86)
@@ -112,7 +112,7 @@ def main():
         rgb = Image.merge("RGB", (r.point(lambda v: min(255, int(v * 1.02))), g,
                                   b.point(lambda v: int(v * 0.985))))
 
-        canvas = backdrop(OUT)
+        canvas = backdrop(OUT_W, OUT_H)
         canvas.paste(rgb, (0, 0), cut_a)
         canvas.save(os.path.join(EQ, f"{slug}.jpg"),
                     "JPEG", quality=88, optimize=True, progressive=True)
