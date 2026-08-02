@@ -226,17 +226,35 @@ Hecho:
 - **Sitemap**: fuera `<priority>`; `lastmod` sale de la fecha real de git.
 - **Imágenes**: las capturas de casos en WebP con respaldo JPG (200 KB → 84 KB) y `alt` descriptivo.
 
+**La web inglesa ya existe de verdad (2-ago-2026).** `/en/` son ocho ficheros propios generados por
+`scripts/build_en.py` a partir de las páginas españolas: traduce el texto horneado leyendo los
+`data-i18n*` contra `content.json`, reescribe cabecera, JSON-LD, enlaces y recursos, y fija el idioma
+de la página. **Tras cualquier cambio en el HTML español hay que volver a ejecutarlo**, o el inglés se
+queda atrás:
+
+    python3 scripts/build_en.py
+
+Reglas que trae ese cambio y conviene no romper:
+
+- El idioma lo manda la URL. `var lang` ya no se decide por navegador ni por `localStorage`, y el
+  detector de idioma del navegador se retiró: con dos URLs reales, redirigir solo, aunque fuera por
+  JavaScript, arriesga que Google indexe la home española como si fuera inglesa.
+- El selector ES/EN **navega** usando `ALT_URL`, que va junto a `PAGE_META` en cada página.
+- `?lang=en` sobre una página española redirige a su equivalente inglesa, para no romper enlaces viejos.
+- `legal.html` y `privacidad.html` no tienen versión inglesa: su texto es jurídico y no está traducido.
+  Las páginas inglesas enlazan a la española.
+- Lo que no lleva `data-i18n` (el aviso sin JavaScript, `aria-label` del calendario y del menú, el alt
+  de la imagen social) se traduce con la lista `LITERALES` del script. Si añades texto suelto en
+  español, acuérdate de esa lista.
+
 Pendiente, por orden de impacto:
 
-1. **La versión inglesa no es indexable** y es el agujero más grande: `?lang=en` devuelve el mismo
-   HTML que el español y canonicaliza hacia él. Hace falta generar `/en/` estático, una URL por
-   página, con canonical propio, hreflang recíproco y el selector de idioma navegando a la URL, no
-   cambiando un parámetro. Es un script de build, no un parche.
-2. **Contenido único por página de servicio** (900-1.200 palabras, FAQ propias con su `FAQPage`).
+1. **Contenido único por página de servicio** (900-1.200 palabras, FAQ propias con su `FAQPage`).
    Necesita datos que no tenemos: horquillas de precio reales, integraciones concretas y un caso.
    No inventarlos (§5).
-3. **Ficha por caso**, página «quién está detrás», landing local y guía de precios.
-4. **Dirección postal y coordenadas** en el schema, y Google Business Profile.
+2. **Ficha por caso**, página «quién está detrás», landing local y guía de precios.
+3. **Google Business Profile**: la dirección y las coordenadas ya están en el schema
+   (Carrer de Benet Mateu 44, 08034 Barcelona). Falta darse de alta y añadir el perfil a `sameAs`.
 
 No tocar: bajar pesos de fuente. Se comprobó que Sora 600 e IBM Plex Mono 600 sí se usan.
 

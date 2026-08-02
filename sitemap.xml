@@ -4,71 +4,121 @@
   <url>
     <loc>https://algoryme.com/</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://algoryme.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://algoryme.com/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://algoryme.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://algoryme.com/"/>
     <lastmod>2026-08-02</lastmod>
   </url>
   <url>
     <loc>https://algoryme.com/servicio-aplicaciones-y-webs.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://algoryme.com/servicio-aplicaciones-y-webs.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://algoryme.com/servicio-aplicaciones-y-webs.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://algoryme.com/en/service-custom-apps-and-websites.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://algoryme.com/servicio-aplicaciones-y-webs.html"/>
     <lastmod>2026-08-02</lastmod>
   </url>
   <url>
     <loc>https://algoryme.com/servicio-auditoria-adopcion-ia.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://algoryme.com/servicio-auditoria-adopcion-ia.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://algoryme.com/servicio-auditoria-adopcion-ia.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://algoryme.com/en/service-ai-adoption-audit.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://algoryme.com/servicio-auditoria-adopcion-ia.html"/>
     <lastmod>2026-08-02</lastmod>
   </url>
   <url>
     <loc>https://algoryme.com/servicio-automatizacion-de-procesos.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://algoryme.com/servicio-automatizacion-de-procesos.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://algoryme.com/servicio-automatizacion-de-procesos.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://algoryme.com/en/service-process-automation.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://algoryme.com/servicio-automatizacion-de-procesos.html"/>
     <lastmod>2026-08-02</lastmod>
   </url>
   <url>
     <loc>https://algoryme.com/servicio-informes-automaticos.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://algoryme.com/servicio-informes-automaticos.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://algoryme.com/servicio-informes-automaticos.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://algoryme.com/en/service-automated-reports.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://algoryme.com/servicio-informes-automaticos.html"/>
     <lastmod>2026-08-02</lastmod>
   </url>
   <url>
     <loc>https://algoryme.com/servicio-atencion-al-cliente.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://algoryme.com/servicio-atencion-al-cliente.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://algoryme.com/servicio-atencion-al-cliente.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://algoryme.com/en/service-customer-support.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://algoryme.com/servicio-atencion-al-cliente.html"/>
     <lastmod>2026-08-02</lastmod>
   </url>
   <url>
     <loc>https://algoryme.com/servicio-chatbots-documentacion-interna.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://algoryme.com/servicio-chatbots-documentacion-interna.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://algoryme.com/servicio-chatbots-documentacion-interna.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://algoryme.com/en/service-internal-docs-chatbot.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://algoryme.com/servicio-chatbots-documentacion-interna.html"/>
     <lastmod>2026-08-02</lastmod>
   </url>
   <url>
     <loc>https://algoryme.com/servicio-dashboards-inteligencia-negocio.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://algoryme.com/servicio-dashboards-inteligencia-negocio.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://algoryme.com/servicio-dashboards-inteligencia-negocio.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://algoryme.com/en/service-dashboards-business-intelligence.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://algoryme.com/servicio-dashboards-inteligencia-negocio.html"/>
     <lastmod>2026-08-02</lastmod>
   </url>
-    <url>
+  <url>
+    <loc>https://algoryme.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://algoryme.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://algoryme.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algoryme.com/"/>
+    <lastmod>2026-08-02</lastmod>
+  </url>
+  <url>
+    <loc>https://algoryme.com/en/service-custom-apps-and-websites.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://algoryme.com/servicio-aplicaciones-y-webs.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://algoryme.com/en/service-custom-apps-and-websites.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algoryme.com/servicio-aplicaciones-y-webs.html"/>
+    <lastmod>2026-08-02</lastmod>
+  </url>
+  <url>
+    <loc>https://algoryme.com/en/service-ai-adoption-audit.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://algoryme.com/servicio-auditoria-adopcion-ia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://algoryme.com/en/service-ai-adoption-audit.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algoryme.com/servicio-auditoria-adopcion-ia.html"/>
+    <lastmod>2026-08-02</lastmod>
+  </url>
+  <url>
+    <loc>https://algoryme.com/en/service-process-automation.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://algoryme.com/servicio-automatizacion-de-procesos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://algoryme.com/en/service-process-automation.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algoryme.com/servicio-automatizacion-de-procesos.html"/>
+    <lastmod>2026-08-02</lastmod>
+  </url>
+  <url>
+    <loc>https://algoryme.com/en/service-automated-reports.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://algoryme.com/servicio-informes-automaticos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://algoryme.com/en/service-automated-reports.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algoryme.com/servicio-informes-automaticos.html"/>
+    <lastmod>2026-08-02</lastmod>
+  </url>
+  <url>
+    <loc>https://algoryme.com/en/service-customer-support.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://algoryme.com/servicio-atencion-al-cliente.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://algoryme.com/en/service-customer-support.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algoryme.com/servicio-atencion-al-cliente.html"/>
+    <lastmod>2026-08-02</lastmod>
+  </url>
+  <url>
+    <loc>https://algoryme.com/en/service-internal-docs-chatbot.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://algoryme.com/servicio-chatbots-documentacion-interna.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://algoryme.com/en/service-internal-docs-chatbot.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algoryme.com/servicio-chatbots-documentacion-interna.html"/>
+    <lastmod>2026-08-02</lastmod>
+  </url>
+  <url>
+    <loc>https://algoryme.com/en/service-dashboards-business-intelligence.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://algoryme.com/servicio-dashboards-inteligencia-negocio.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://algoryme.com/en/service-dashboards-business-intelligence.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algoryme.com/servicio-dashboards-inteligencia-negocio.html"/>
+    <lastmod>2026-08-02</lastmod>
+  </url>
+  <url>
     <loc>https://algoryme.com/legal.html</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://algoryme.com/legal.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://algoryme.com/legal.html?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://algoryme.com/legal.html"/>
     <lastmod>2026-08-02</lastmod>
   </url>
   <url>
     <loc>https://algoryme.com/privacidad.html</loc>
-    <xhtml:link rel="alternate" hreflang="es" href="https://algoryme.com/privacidad.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://algoryme.com/privacidad.html?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://algoryme.com/privacidad.html"/>
     <lastmod>2026-08-02</lastmod>
   </url>
 </urlset>
