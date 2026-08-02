@@ -147,7 +147,15 @@ Rehecha en ago-2026 con el diseño que se probó en el repositorio `algoryme-v2`
    frase. Las capturas están en `casos/` y se generaron con un servicio externo; para actualizarlas,
    vuelve a capturarlas y sustituye el JPG.
 4. **Cómo trabajamos** — la línea de tiempo de cinco pasos.
-5. **FAQ** y **contacto**, sin cambios.
+5. **Qué te cuesta hoy** (`#coste`, claves `calc.*`) — calculadora de coste del trabajo manual: tres
+   deslizadores (horas/semana, coste/hora, % mecánico) y una tarjeta en tinta con el resultado.
+   Fórmula: horas x 52 x coste, por el porcentaje mecánico; las semanas salen dividiendo entre 40 h.
+   **Solo se ve en escritorio** (`@media (max-width:900px){.calc-sec{display:none}}`): en móvil los
+   tres controles y la tabla no caben sin romperse, y se decidió ocultarla antes que degradarla.
+   `renderCalc()` se llama también desde `applyI18n()` para que los números se reformateen al cambiar
+   de idioma (es-ES usa punto de millar y coma decimal; en-GB al revés). No afirma ahorros: calcula
+   lo que el visitante ya paga, y el aviso de debajo dice qué no incluye la cifra.
+6. **FAQ** y **contacto**, sin cambios.
 
 **La sección de equipo ya no existe.** Salió de la home a `equipo.html` el 1-ago-2026 y ese mismo
 día el cliente pidió retirarla del todo: fuera la pestaña del menú y el enlace del pie, fuera del

@@ -225,7 +225,7 @@
     },
     "hero": {
       "eyebrow": "Desarrollo de producto para empresas",
-      "headline": "Construimos el software que {{hace crecer tu negocio}}",
+      "headline": "Hay trabajo en tu empresa que {{ya no debería hacer una persona}}",
       "sub": "Automatizaciones y software a medida, desplegados en {{tu infraestructura}}. En producción en semanas, no en trimestres.",
       "cta1": "Reservar 30 minutos de diagnóstico",
       "cta2": "Ver proyectos"
@@ -1253,7 +1253,7 @@
     },
     "svc": {
       "kicker": "Servicios",
-      "heading": "¿En cuál te reconoces?",
+      "heading": "Construimos el software que hace crecer tu negocio",
       "sub": "Agrupados por lo que buscas: entender dónde está la oportunidad, construir algo nuevo, quitarte trabajo de encima o entender tus números.",
       "featBadge": "Empieza aquí",
       "more": "Leer más",
@@ -1412,6 +1412,33 @@
     },
     "page": {
       "crumbHome": "Inicio"
+    },
+    "calc": {
+      "kicker": "Qué te cuesta hoy",
+      "heading": "Qué te cuesta hoy ese trabajo manual",
+      "sub": "Mueve los tres controles con tus números reales. No calcula lo que te vamos a ahorrar: calcula lo que ya estás pagando por no haberlo tocado.",
+      "hours": {
+        "label": "Horas a la semana dedicadas a la tarea manual",
+        "help": "Suma el tiempo de todas las personas que tocan ese proceso. Cuenta también el rato de revisar y corregir."
+      },
+      "rate": {
+        "label": "Coste real por hora de esas personas",
+        "help": "Sueldo bruto más seguridad social, dividido entre las horas trabajadas. Si no lo sabes, 25 a 35 € es el rango habitual para perfiles administrativos y de gestión."
+      },
+      "share": {
+        "label": "Parte del proceso que es puramente mecánica",
+        "help": "Copiar, pegar, cuadrar, dar formato, reenviar. Lo que no requiere criterio. Esta es la parte candidata a automatizarse; el resto se queda con una persona."
+      },
+      "resultLabel": "Coste anual del trabajo mecánico en ese proceso",
+      "rows": {
+        "total": "Coste anual total del proceso",
+        "hours": "Horas mecánicas al año",
+        "weeks": "Equivale a",
+        "three": "En tres años"
+      },
+      "weeks": "semanas",
+      "noteTitle": "Cómo se calcula y qué no dice esta cifra.",
+      "note": "Horas semanales x 52 x coste por hora, aplicando el porcentaje mecánico. No incluye el coste de los errores, ni el de las decisiones que se toman tarde porque el dato no está, ni el de la persona que se va y se lleva el proceso en la cabeza. Tampoco descuenta el precio del proyecto ni asume que la automatización cubra el 100% de esa parte mecánica. Es el suelo, no el techo. En el diagnóstico ponemos números a tu caso concreto y te decimos si compensa."
     }
   },
   "en": {
@@ -1426,7 +1453,7 @@
     },
     "hero": {
       "eyebrow": "Product development for companies",
-      "headline": "We build the software that {{grows your business}}",
+      "headline": "There's work in your company that {{no longer needs a person}}",
       "sub": "Custom software and automations, deployed on {{your infrastructure}}. In production in weeks, not quarters.",
       "cta1": "Book a 30-minute diagnostic",
       "cta2": "View case studies"
@@ -2454,7 +2481,7 @@
     },
     "svc": {
       "kicker": "Services",
-      "heading": "Which one sounds like you?",
+      "heading": "We build the software that grows your business",
       "sub": "Grouped by what you're after: finding where the opportunity is, building something new, taking work off your plate or understanding your numbers.",
       "featBadge": "Start here",
       "more": "Read more",
@@ -2613,6 +2640,33 @@
     },
     "page": {
       "crumbHome": "Home"
+    },
+    "calc": {
+      "kicker": "What it costs you today",
+      "heading": "What that manual work is costing you today",
+      "sub": "Move the three controls using your real numbers. It doesn't calculate what we'd save you: it calculates what you're already paying for leaving it as it is.",
+      "hours": {
+        "label": "Hours a week spent on the manual task",
+        "help": "Add up the time of everyone who touches that process. Include the time spent checking and fixing it."
+      },
+      "rate": {
+        "label": "Real hourly cost of those people",
+        "help": "Gross salary plus social security, divided by hours worked. If you don't know it, €25 to €35 is the usual range for admin and operations roles."
+      },
+      "share": {
+        "label": "Share of the process that is purely mechanical",
+        "help": "Copying, pasting, reconciling, formatting, forwarding. Whatever needs no judgement. That's the part worth automating; the rest stays with a person."
+      },
+      "resultLabel": "Annual cost of the mechanical work in that process",
+      "rows": {
+        "total": "Total annual cost of the process",
+        "hours": "Mechanical hours per year",
+        "weeks": "That's the same as",
+        "three": "Over three years"
+      },
+      "weeks": "weeks",
+      "noteTitle": "How it's calculated and what this figure doesn't say.",
+      "note": "Weekly hours x 52 x hourly cost, applying the mechanical percentage. It doesn't include the cost of mistakes, of decisions made late because the data wasn't there, or of the person who leaves and takes the process with them. Nor does it subtract the price of the project or assume automation covers 100% of that mechanical part. It's the floor, not the ceiling. In the diagnostic we put numbers on your specific case and tell you whether it's worth it."
     }
   }
 }
