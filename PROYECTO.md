@@ -203,6 +203,43 @@ scroll, y las apariciones `.reveal` entran escalonadas entre hermanos. Todo se a
 `prefers-reduced-motion`. ⚠️ La cabecera **sigue sin poder llevar `backdrop-filter`** (rompe el
 menú móvil, ver la nota en el CSS): si quieres más profundidad, usa sombra.
 
+## 4b. SEO: lo hecho y lo que falta (ago-2026)
+
+Auditoría externa recibida el 2-ago-2026. **No hay generador**: el sitio es HTML a mano, y la fuente
+de verdad de los textos es `content.json` + el diccionario embebido en cada página. Los cambios se
+propagan con scripts, nunca a mano (§8).
+
+Hecho:
+
+- **Metadatos**: los siete `<meta description>` de servicio estaban cortados con un *slice* a 180
+  caracteres, varios a mitad de palabra. Reescritos a mano, 143-149 caracteres, frase cerrada y
+  llamada a la acción. Titles con modificador. Todo en `content.json` (`meta.es/en.svcN`).
+- **Señales locales**: Barcelona en el title de la home, en la descripción, en el pie de las 11
+  páginas (`footer.location`) y en una línea de la sección de contacto (`contact.local`).
+- **Schema**: un único bloque de organización con `@id: https://algoryme.com/#organization` en las 11
+  páginas, tipo `["ProfessionalService","LocalBusiness"]`, con `sameAs`, `knowsAbout`, `founder`,
+  `priceRange` y `areaServed` con Barcelona. Antes la home tenía el bloque más pobre del sitio.
+- **Canibalización entre servicios**: el bloque «Otros servicios» repetía la descripción completa de
+  tres servicios (~150 palabras duplicadas por página). Ahora lista los seis restantes con solo el
+  nombre (`.svc-others`).
+- **Enlaces internos**: `index.html` → `/`, que es lo que dice el canonical.
+- **Sitemap**: fuera `<priority>`; `lastmod` sale de la fecha real de git.
+- **Imágenes**: las capturas de casos en WebP con respaldo JPG (200 KB → 84 KB) y `alt` descriptivo.
+
+Pendiente, por orden de impacto:
+
+1. **La versión inglesa no es indexable** y es el agujero más grande: `?lang=en` devuelve el mismo
+   HTML que el español y canonicaliza hacia él. Hace falta generar `/en/` estático, una URL por
+   página, con canonical propio, hreflang recíproco y el selector de idioma navegando a la URL, no
+   cambiando un parámetro. Es un script de build, no un parche.
+2. **Contenido único por página de servicio** (900-1.200 palabras, FAQ propias con su `FAQPage`).
+   Necesita datos que no tenemos: horquillas de precio reales, integraciones concretas y un caso.
+   No inventarlos (§5).
+3. **Ficha por caso**, página «quién está detrás», landing local y guía de precios.
+4. **Dirección postal y coordenadas** en el schema, y Google Business Profile.
+
+No tocar: bajar pesos de fuente. Se comprobó que Sora 600 e IBM Plex Mono 600 sí se usan.
+
 ## 5. La regla dura
 
 > **Ningún dato, cliente, logo o métrica de esta web puede ser inventado. Si un dato no está

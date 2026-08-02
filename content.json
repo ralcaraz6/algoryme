@@ -2,8 +2,8 @@
   "meta": {
     "es": {
       "home": {
-        "title": "Desarrollo de software a medida para empresas | Algoryme",
-        "description": "Construimos software y automatizaciones a medida que ayudan a tu empresa a ganar más o gastar menos. En tu propia infraestructura y en producción. España."
+        "title": "Desarrollo de software a medida en Barcelona | Algoryme",
+        "description": "Desarrollo de software a medida y automatización con IA para empresas, en Barcelona y en toda España. Desplegado en tu infraestructura. Hablemos 30 min."
       },
       "formacion": {
         "title": "Formación en IA para empresas | Algoryme",
@@ -74,32 +74,32 @@
         "description": "Una plataforma con la renta variable cotizada del mundo y sus informes financieros, para hacer screening y valorar una compañía en minutos."
       },
       "svc0": {
-        "title": "Aplicaciones y webs a medida | Algoryme",
-        "description": "La herramienta que tu negocio necesita y que ningún producto de catálogo te da: una web, una tienda online, un portal para tus clientes o la aplicación con la que trabaja tu equipo"
+        "title": "Aplicaciones y webs a medida en Barcelona | Algoryme",
+        "description": "Webs, tiendas online, portales de cliente y aplicaciones internas hechas a medida en Barcelona. El código es tuyo. Cuéntanos tu caso en 30 minutos."
       },
       "svc1": {
-        "title": "Auditoría de adopción de IA | Algoryme",
-        "description": "Miramos cómo trabaja tu empresa por dentro y te decimos dónde la IA te va a dar dinero y dónde no merece la pena. Sales con una lista de oportunidades ordenada por impacto, con el "
+        "title": "Auditoría de adopción de IA para empresas | Algoryme",
+        "description": "Analizamos tu empresa por dentro y te damos una lista de oportunidades de IA ordenada por impacto, con coste y plazo de cada una. Reserva 30 minutos."
       },
       "svc2": {
-        "title": "Automatización de procesos | Algoryme",
-        "description": "El trabajo administrativo que hoy se hace copiando, pegando y revisando: pedidos, facturas que entran, altas de cliente, control de stock. Lo dejamos funcionando entre tus sistemas"
+        "title": "Automatización de procesos para empresas | Algoryme",
+        "description": "Automatizamos el trabajo administrativo que hoy se hace copiando y pegando: pedidos, facturas, altas, stock. Te decimos si compensa en 30 minutos."
       },
       "svc3": {
-        "title": "Informes automáticos | Algoryme",
-        "description": "El informe que alguien rehace a mano cada lunes se genera y se envía solo: con tus datos, a la hora que tú digas y en el formato de siempre. Y si algo se sale de lo normal, te avis"
+        "title": "Informes automáticos para empresas | Algoryme",
+        "description": "El informe que alguien rehace a mano cada lunes, generado y enviado solo con tus datos y en tu formato. Cuéntanos cuál es en una llamada de 30 min."
       },
       "svc4": {
-        "title": "Atención al cliente automatizada | Algoryme",
-        "description": "Contesta sola los correos y mensajes que se repiten, con la documentación de tu empresa y tu tono. Sabe quién escribe porque está conectada a tu CRM, y lo que necesita a una person"
+        "title": "Atención al cliente automatizada con IA | Algoryme",
+        "description": "Un sistema que contesta solo los correos y mensajes repetidos, con la documentación y el tono de tu empresa, conectado a tu CRM. Hablemos 30 minutos."
       },
       "svc5": {
-        "title": "Chatbots con documentación interna | Algoryme",
-        "description": "Un asistente que responde con los manuales, contratos, protocolos y presupuestos de tu empresa. Tu equipo pregunta en lenguaje normal y recibe la respuesta con la fuente citada, en"
+        "title": "Chatbot con la documentación interna de tu empresa",
+        "description": "Un asistente que responde con los manuales, contratos y protocolos de tu empresa, citando la fuente. Desplegado en tu infraestructura. Hablemos."
       },
       "svc6": {
         "title": "Dashboards e inteligencia de negocio | Algoryme",
-        "description": "Los números de tu negocio en un sitio y actualizados solos: ventas, márgenes, clientes, stock. Unificamos los datos que hoy viven repartidos en cinco herramientas para que decidas "
+        "description": "Ventas, márgenes, clientes y stock en un solo sitio y actualizados solos, unificando los datos que hoy viven en cinco herramientas. Reserva 30 min."
       },
       "equipo": {
         "title": "El equipo | Algoryme",
@@ -108,8 +108,8 @@
     },
     "en": {
       "home": {
-        "title": "Custom software development for companies | Algoryme",
-        "description": "We build custom software and automations that help your company earn more or spend less. On your own infrastructure, in production. Spain."
+        "title": "Custom software development in Barcelona | Algoryme",
+        "description": "Custom software development and AI automation for companies, in Barcelona and across Spain. Deployed on your own infrastructure. Let's talk 30 minutes."
       },
       "formacion": {
         "title": "AI training for companies | Algoryme",
@@ -180,32 +180,32 @@
         "description": "A platform holding the world's listed equities and their financial reports, to screen and value a company in minutes."
       },
       "svc0": {
-        "title": "Custom apps and websites | Algoryme",
-        "description": "The tool your business needs and that no off-the-shelf product gives you: a website, an online shop, a client portal or the application your team works with every day. We also add "
+        "title": "Custom apps and websites for companies | Algoryme",
+        "description": "Websites, online shops, client portals and internal apps built to measure in Barcelona. The code is yours. Tell us your case in a 30-minute call."
       },
       "svc1": {
-        "title": "AI adoption audit | Algoryme",
-        "description": "We look at how your company works from the inside and tell you where AI will make you money and where it isn't worth it. You leave with a list of opportunities ranked by impact, wi"
+        "title": "AI adoption audit for companies | Algoryme",
+        "description": "We look at how your company works and hand you a list of AI opportunities ranked by impact, with the cost and timeline of each one. Book 30 minutes."
       },
       "svc2": {
-        "title": "Process automation | Algoryme",
-        "description": "The admin work done today by copying, pasting and checking: orders, incoming invoices, new client records, stock control. We leave it running between your systems, with rules that "
+        "title": "Business process automation | Algoryme",
+        "description": "We automate the admin work done today by copying and pasting: orders, invoices, sign-ups, stock. We'll tell you if it pays off in a 30-minute call."
       },
       "svc3": {
-        "title": "Automated reports | Algoryme",
-        "description": "The report someone rebuilds by hand every Monday is generated and sent on its own: with your data, at the time you choose and in your usual format. And if something is off, it tell"
+        "title": "Automated reports for companies | Algoryme",
+        "description": "The report someone rebuilds by hand every Monday, generated and sent on its own with your data and in your format. Tell us which one in 30 minutes."
       },
       "svc4": {
-        "title": "Automated customer support | Algoryme",
-        "description": "It answers the repetitive emails and messages on its own, using your company's documentation and your tone. It knows who is writing because it's wired to your CRM, and what needs a"
+        "title": "AI-powered customer support | Algoryme",
+        "description": "A system that answers repeat emails and messages on its own, with your company's documentation and tone, connected to your CRM. Let's talk 30 min."
       },
       "svc5": {
-        "title": "Chatbots on your internal documentation | Algoryme",
-        "description": "An assistant that answers using your company's manuals, contracts, protocols and quotes. Your team asks in plain language and gets the answer with the source cited, instead of digg"
+        "title": "Chatbot for your company's internal documentation",
+        "description": "An assistant that answers using your manuals, contracts and protocols, citing the source. Deployed on your own infrastructure. Let's talk."
       },
       "svc6": {
         "title": "Dashboards and business intelligence | Algoryme",
-        "description": "Your business numbers in one place and updating themselves: sales, margins, clients, stock. We unify the data that today lives across five tools so you decide by looking, not by gu"
+        "description": "Sales, margins, customers and stock in one place and updated on their own, unifying the data that today lives in five different tools. Book 30 min."
       },
       "equipo": {
         "title": "The team | Algoryme",
@@ -807,7 +807,8 @@
           "emailRequired": "Necesitamos un email para responderte.",
           "emailInvalid": "Ese email no parece válido. Revisa el formato."
         }
-      }
+      },
+      "local": "Trabajamos con empresas de Barcelona y de toda España, presencial o en remoto."
     },
     "faq": {
       "kicker": "Preguntas frecuentes",
@@ -882,7 +883,8 @@
       "rights": "© 2026 Algoryme",
       "legalNotice": "Aviso legal",
       "privacy": "Política de privacidad",
-      "whatsappLabel": "WhatsApp"
+      "whatsappLabel": "WhatsApp",
+      "location": "Algoryme · Barcelona, España"
     },
     "ui": {
       "skip": "Saltar al contenido",
@@ -1392,21 +1394,24 @@
           "domain": "prospectalo.com",
           "url": "https://prospectalo.com/",
           "problem": "El problema: los autónomos pierden oportunidades porque nadie recuerda cuál es el siguiente paso.",
-          "built": "Qué construimos: pipeline de ventas donde cada oportunidad lleva su próxima acción y su fecha."
+          "built": "Qué construimos: pipeline de ventas donde cada oportunidad lleva su próxima acción y su fecha.",
+          "alt": "Panel de pipeline de ventas de prospectalo.com, construido por Algoryme"
         },
         {
           "img": "casos/svinvesting.jpg",
           "domain": "app.svinvesting.com",
           "url": "https://app.svinvesting.com",
           "problem": "El problema: analizar compañías una a una en hojas de cálculo.",
-          "built": "Qué construimos: plataforma de análisis de renta variable con valoración de 60.000 empresas."
+          "built": "Qué construimos: plataforma de análisis de renta variable con valoración de 60.000 empresas.",
+          "alt": "Plataforma de análisis de renta variable app.svinvesting.com, construida por Algoryme"
         },
         {
           "img": "casos/noemisarpe.jpg",
           "domain": "noemisarpe.com",
           "url": "https://noemisarpe.com/",
           "problem": "El problema: un portafolio que tiene que convencer a agencias internacionales y que dependía de terceros para cada cambio.",
-          "built": "Qué construimos: web de portafolio con campañas, editoriales y obra, y tienda propia."
+          "built": "Qué construimos: web de portafolio con campañas, editoriales y obra, y tienda propia.",
+          "alt": "Web de portafolio de noemisarpe.com, construida por Algoryme"
         }
       ]
     },
@@ -2035,7 +2040,8 @@
           "emailRequired": "We need an email to reply to you.",
           "emailInvalid": "That email doesn't look valid. Check the format."
         }
-      }
+      },
+      "local": "We work with companies in Barcelona and across Spain, on site or remotely."
     },
     "faq": {
       "kicker": "FAQ",
@@ -2110,7 +2116,8 @@
       "rights": "© 2026 Algoryme",
       "legalNotice": "Legal notice",
       "privacy": "Privacy policy",
-      "whatsappLabel": "WhatsApp"
+      "whatsappLabel": "WhatsApp",
+      "location": "Algoryme · Barcelona, Spain"
     },
     "ui": {
       "skip": "Skip to content",
@@ -2620,21 +2627,24 @@
           "domain": "prospectalo.com",
           "url": "https://prospectalo.com/",
           "problem": "The problem: freelancers lose opportunities because nobody remembers the next step.",
-          "built": "What we built: a sales pipeline where every opportunity carries its next action and date."
+          "built": "What we built: a sales pipeline where every opportunity carries its next action and date.",
+          "alt": "Sales pipeline dashboard of prospectalo.com, built by Algoryme"
         },
         {
           "img": "casos/svinvesting.jpg",
           "domain": "app.svinvesting.com",
           "url": "https://app.svinvesting.com",
           "problem": "The problem: analysing companies one by one in spreadsheets.",
-          "built": "What we built: an equity research platform with valuations for 60,000 companies."
+          "built": "What we built: an equity research platform with valuations for 60,000 companies.",
+          "alt": "Equity research platform app.svinvesting.com, built by Algoryme"
         },
         {
           "img": "casos/noemisarpe.jpg",
           "domain": "noemisarpe.com",
           "url": "https://noemisarpe.com/",
           "problem": "The problem: a portfolio that has to win over international agencies, with every change depending on someone else.",
-          "built": "What we built: a portfolio site with campaigns, editorials and artwork, plus its own shop."
+          "built": "What we built: a portfolio site with campaigns, editorials and artwork, plus its own shop.",
+          "alt": "Portfolio website noemisarpe.com, built by Algoryme"
         }
       ]
     },
