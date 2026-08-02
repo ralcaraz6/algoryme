@@ -57,6 +57,14 @@ LITERALES = [
     ('o escribirnos por <a href="https://wa.me/', 'or message us on <a href="https://wa.me/'),
 ]
 
+# el aviso de idioma va siempre en el idioma de la otra versión, y se aplica al final
+# porque antes hay que haber reescrito los enlaces
+LITERALES_FIN = [
+    ('<span>This page is also available in English.</span>', '<span>Esta página también está en español.</span>'),
+    ('<a href="/en/">Read it in English</a>', '<a href="/">Verla en español</a>'),
+    ('id="langHintNo" aria-label="Dismiss"', 'id="langHintNo" aria-label="Cerrar"'),
+]
+
 CONTENT = json.load(open(os.path.join(ROOT, "content.json"), encoding="utf-8"))
 E = lambda s: html.escape(s, quote=False)
 EA = lambda s: html.escape(s, quote=True)
@@ -219,6 +227,9 @@ def construir(f):
     for carpeta in ("casos/", "equipo/", "marca/"):
         src = src.replace('src="%s' % carpeta, 'src="/%s' % carpeta)
         src = src.replace('srcset="%s' % carpeta, 'srcset="/%s' % carpeta)
+
+    for a, b in LITERALES_FIN:
+        src = src.replace(a, b)
 
     # --- idioma fijado por la URL ---
     src = src.replace("var lang = 'es';", "var lang = 'en';", 1)

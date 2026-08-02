@@ -129,6 +129,14 @@ h3{font-size:1.06rem;line-height:1.35;font-weight:600;letter-spacing:-.008em}
 .skip-link:focus{left:12px;top:12px}
 .ns-banner{background:var(--cream);border-bottom:1px solid var(--line);padding:12px 24px;font-size:14px;text-align:center}
 
+.lang-hint{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;
+  background:var(--cream);border-bottom:1px solid var(--line);padding:10px 46px 10px 24px;
+  font-size:14px;color:var(--muted);position:relative}
+.lang-hint a{color:var(--ink);font-weight:600;text-underline-offset:3px}
+.lang-hint button{position:absolute;right:12px;top:50%;transform:translateY(-50%);background:none;
+  border:0;font-size:20px;line-height:1;color:var(--muted);cursor:pointer;padding:4px 8px}
+.lang-hint button:hover{color:var(--ink)}
+
 /* ---------- reveal ---------- */
 .reveal{opacity:0;transform:translateY(20px);
   transition:opacity .75s cubic-bezier(.16,.84,.44,1),transform .75s cubic-bezier(.16,.84,.44,1)}
@@ -920,6 +928,11 @@ button.btn[type="submit"]:disabled::after{content:"";display:inline-block;width:
     </div>
   </div>
 </header>
+<div class="lang-hint" id="langHint" hidden>
+  <span>This page is also available in English.</span>
+  <a href="/en/">Read it in English</a>
+  <button type="button" id="langHintNo" aria-label="Dismiss">&times;</button>
+</div>
 
 <main id="main">
 <section class="svc-hero">
@@ -1273,6 +1286,43 @@ function setLang(l, persist){
   try { qp = new URLSearchParams(location.search).get('lang'); } catch(e){}
   if (qp === 'en' && typeof ALT_URL !== 'undefined' && ALT_URL.en){ location.replace(ALT_URL.en); return; }
   lang = 'es';
+})();
+
+/* ==================== AVISO DE IDIOMA ==================== */
+/* Si el navegador va en otro idioma, ofrecemos la otra versión. Es un aviso y no
+   una redirección: redirigir solo, aunque sea por JavaScript, arriesga que Google
+   lea la home española como si fuera la inglesa. */
+(function langHint(){
+  var bar = document.getElementById('langHint');
+  if (!bar || typeof ALT_URL === 'undefined') return;
+  var dest = ALT_URL[lang === 'es' ? 'en' : 'es'];
+  if (!dest) return;
+  try { if (localStorage.getItem('alLangHint') === 'off') return; } catch(e){}
+
+  var list = [];
+  try {
+    list = (navigator.languages && navigator.languages.length)
+      ? navigator.languages : [navigator.language || navigator.userLanguage || ''];
+  } catch(e){}
+  var hispano = false, alguno = false;
+  for (var i = 0; i < list.length; i++){
+    var t = String(list[i] || '').toLowerCase();
+    if (!t) continue;
+    alguno = true;
+    /* es-*, y también ca-ES, gl-ES, eu-ES: si el navegador está en España, español */
+    if (t === 'es' || t.indexOf('es-') === 0 || /^(ca|gl|eu)(-es)?$/.test(t)){ hispano = true; break; }
+  }
+  if (!alguno) return;
+  if (lang === 'es' ? hispano : !hispano) return;
+
+  var enlace = bar.querySelector('a');
+  if (enlace) enlace.href = dest;
+  bar.hidden = false;
+  var no = document.getElementById('langHintNo');
+  if (no) no.addEventListener('click', function(){
+    bar.hidden = true;
+    try { localStorage.setItem('alLangHint', 'off'); } catch(e){}
+  });
 })();
 
 /* ==================== REVEAL ON SCROLL ==================== */
