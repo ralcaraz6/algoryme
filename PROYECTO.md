@@ -276,8 +276,17 @@ No tocar: bajar pesos de fuente. Se comprobó que Sora 600 e IBM Plex Mono 600 s
 - **El pie enlazaba a anclas**: sus cuatro servicios apuntan ya a su página, y dos de ellos compartían
   destino.
 
-Pendiente de esa auditoría: consolidar los diez puntos de corte (400, 560, 720, 760, 820, 860, 880,
-900, 1023, 1080) en cuatro. Es deuda técnica, no afecta a lo que ve el visitante.
+**Puntos de corte: cuatro y solo cuatro** — 560, 768, 1024 y 1280. Antes eran diez (400, 560, 720,
+760, 820, 860, 880, 900, 1023, 1080), cinco de ellos apilados entre 760 y 900. Al unificar:
+
+- el menú de escritorio aparece a partir de 1025 px, no de 901;
+- las tarjetas de proyecto (`.webs`) ya no necesitan punto de corte propio: usan
+  `repeat(auto-fit,minmax(260px,1fr))` y se reparten solas;
+- la calculadora **se apila** entre 768 y 1024 en vez de desaparecer, y solo se retira por debajo
+  de 768, que es donde de verdad no cabe.
+
+Comprobado a 390, 560, 767, 768, 900, 1023, 1024, 1025, 1200 y 1440: sin desbordes horizontales.
+Si añades una consulta de medios nueva, usa uno de los cuatro.
 
 ## 5. La regla dura
 

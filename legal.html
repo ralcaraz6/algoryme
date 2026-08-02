@@ -224,7 +224,7 @@ h3{font-size:1.06rem;line-height:1.35;font-weight:600;letter-spacing:-.008em}
 .hero-sub{color:var(--muted);font-size:17.5px;max-width:54ch;margin-top:22px}
 .hero-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
 .hero-ctas .btn-lg{padding:15px 20px;font-size:15.5px}
-@media (max-width:400px){.hero-ctas .btn{width:100%}}
+@media (max-width:560px){.hero-ctas .btn{width:100%}}
 .trust-line{margin-top:26px;font:500 12px/1.5 var(--mono);letter-spacing:.06em;color:var(--muted)}
 .hero-art{min-width:0}
 .hero-scene{width:100%;height:auto;display:block;border-radius:var(--radius-card);border:1px solid var(--line)}
@@ -472,14 +472,14 @@ h3{font-size:1.06rem;line-height:1.35;font-weight:600;letter-spacing:-.008em}
 #bookForm .btn{margin-top:20px}
 
 /* ================= RESPONSIVE ================= */
-@media (max-width:1080px){
+@media (max-width:1280px){
   .tech-wall{grid-template-columns:repeat(6,1fr)}
   .int-wall{grid-template-columns:repeat(8,1fr)}
   .app-grid{grid-template-columns:repeat(3,1fr)}
   .own-grid{grid-template-columns:repeat(2,1fr)}
   .way-grid{grid-template-columns:repeat(2,1fr)}
 }
-@media (max-width:900px){
+@media (max-width:1024px){
   .nav-links{display:none}
   .hamburger{display:flex}
   .nav-cta{display:none}
@@ -497,7 +497,7 @@ h3{font-size:1.06rem;line-height:1.35;font-weight:600;letter-spacing:-.008em}
   .proc-grid .step:nth-child(odd){padding-right:20px;border-right:1px solid var(--line)}
   .proc-grid .step:nth-child(even){padding-left:20px}
 }
-@media (max-width:720px){
+@media (max-width:768px){
   .section{padding:64px 0}
   .hero{padding:64px 0 60px}
   .tech-wall{grid-template-columns:repeat(4,1fr)}
@@ -534,7 +534,7 @@ h3{font-size:1.06rem;line-height:1.35;font-weight:600;letter-spacing:-.008em}
 .founder-meta .founder-role{color:var(--muted);font-size:14px}
 .founder-photo-wrap{margin:0}
 .founder-photo{width:100%;height:auto;max-width:560px;aspect-ratio:4/3;object-fit:cover;object-position:50% 30%;border-radius:18px;display:block;margin-left:auto;background:var(--card)}
-@media (max-width:900px){
+@media (max-width:1024px){
   .founder-split{grid-template-columns:1fr;gap:26px}
   /* let the copy children join the grid so the photo can sit right after the title */
   .founder-copy{display:contents}
@@ -577,7 +577,7 @@ p,li,.sub,.privacy-note,.founder-bio,.step p,.app-card p,.case-card p,figcaption
 .tm-name{font-weight:600;font-size:17px}
 .tm-role{font:500 11.5px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--sienna);margin:4px 0 10px}
 .tm-bio{font-size:14.5px;color:var(--muted)}
-@media (max-width:900px){.team-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:1024px){.team-grid{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:560px){.team-grid{grid-template-columns:1fr}}
 
 /* ============ INTEGRACIONES COMPACTAS ============ */
@@ -622,7 +622,7 @@ body.modal-open .wa-fab,body.menu-open .wa-fab{display:none}
 .case-art-wrap{margin:-4px -4px 16px;background:var(--cream);border:1px solid var(--line);border-radius:12px;
   overflow:hidden;display:block;line-height:0}
 .case-art{width:100%;height:auto;display:block;aspect-ratio:320/120}
-@media (max-width:900px){.case-art-wrap{margin-bottom:14px}}
+@media (max-width:1024px){.case-art-wrap{margin-bottom:14px}}
 
 /* ============ TEAM PHOTOS ============ */
 .tm-avatar,.tm-photo{width:76px;height:76px;border-radius:50%;margin-bottom:14px;display:block;flex:none}
@@ -633,7 +633,7 @@ body.modal-open .wa-fab,body.menu-open .wa-fab{display:none}
 /* ---------- revisión de maquetación ---------- */
 /* «política de privacidad» partía por la mitad y el subrayado quedaba a dos líneas */
 .privacy-note a{white-space:nowrap}
-@media (max-width:900px){
+@media (max-width:1024px){
   /* área táctil cómoda en móvil: el padding crece y el margen negativo lo compensa,
      así el objetivo del dedo aumenta sin mover un solo píxel de la maqueta */
   .lang-btn{padding:9px 7px}
@@ -718,8 +718,8 @@ button.btn[type="submit"]:disabled::after{content:"";display:inline-block;width:
 .nf-contact{margin-top:44px;display:grid;gap:10px;font-size:15px}
 .nf-contact a{color:var(--sienna);text-decoration:none;font-weight:600}
 .nf-contact a:hover{text-decoration:underline}
-@media (max-width:900px){.nl-grid{grid-template-columns:1fr;gap:28px}}
-@media (max-width:760px){
+@media (max-width:1024px){.nl-grid{grid-template-columns:1fr;gap:28px}}
+@media (max-width:768px){
   .outcome-list,.course-grid{grid-template-columns:1fr}
   .page-hero{padding:56px 0 44px}
   .meta-item{flex:1 1 100%}
