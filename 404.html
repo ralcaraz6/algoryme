@@ -171,8 +171,9 @@ h3{font-size:1.06rem;line-height:1.35;font-weight:600;letter-spacing:-.008em}
 /* ===== Algoryme wordmark: humanist lowercase + tracked mono ===== */
 .logo{display:inline-block;text-decoration:none;font-size:20px;white-space:nowrap;font-family:'Chivo',var(--sans);line-height:1;color:var(--ink);font-synthesis:none}
 .lw-a{font-weight:900;letter-spacing:-.035em;text-transform:uppercase}
-.lw-cur{display:inline-block;width:.5em;height:.9em;background:currentColor;margin-left:.15em;vertical-align:-.08em;border-radius:1px;animation:lw-blink 1.06s steps(1,end) infinite}
-/* el cursor parpadea como el de una terminal esperando a que escribas */
+.lw-cur{display:inline-block;width:.5em;height:.9em;background:currentColor;margin-left:.15em;vertical-align:-.08em;border-radius:1px;animation:lw-blink 1.06s steps(1,end) 4}
+/* el cursor parpadea cuatro veces al cargar (4,2 s) y se queda fijo: es un guiño
+   de bienvenida, no algo que esté moviéndose toda la visita */
 @keyframes lw-blink{0%,50%{opacity:1}50.01%,100%{opacity:0}}
 @media (prefers-reduced-motion:reduce){.lw-cur{animation:none}}
 

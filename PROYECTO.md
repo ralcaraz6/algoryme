@@ -192,10 +192,12 @@ en `_src/` y se vuelve a ejecutar: es la manera de que las seis sigan pareciendo
 `gl-ES`, `eu-ES`— sirve la web en español; cualquier otro idioma la sirve en inglés. Si no hay dato,
 español. La elección manual del selector ES/EN se guarda y manda sobre la detección.
 
-**El cubo del logo parpadea** como el cursor de una terminal esperando a que escribas
-(`@keyframes lw-blink`, 1,06 s, corte seco sin desvanecido). Está en la cabecera y en el pie de las
-12 páginas con marca, y se para con `prefers-reduced-motion`. Es decisión del cliente: si alguien
-propone suavizarlo, era la alternativa que descartó.
+**El cubo del logo parpadea al entrar y luego se queda fijo**: `@keyframes lw-blink`, 1,06 s, corte
+seco sin desvanecido y **cuatro repeticiones** (4,2 s). Al terminar vuelve a su estado base, que es
+visible, así que no hace falta `animation-fill-mode`. Está en la cabecera y en el pie de las páginas
+con marca y se para con `prefers-reduced-motion`. Dos decisiones del cliente que no conviene
+deshacer: el corte es seco (descartó el desvanecido suave) y **no parpadea toda la visita**, solo da
+la bienvenida.
 
 **Efectos de scroll** (ago-2026): la cabecera se encoge y proyecta sombra al bajar, una línea
 sienna de 2 px marca el progreso de lectura, el hero de la home se desplaza y se desvanece con el
