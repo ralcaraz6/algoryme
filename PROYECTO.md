@@ -258,6 +258,27 @@ Pendiente, por orden de impacto:
 
 No tocar: bajar pesos de fuente. Se comprobó que Sora 600 e IBM Plex Mono 600 sí se usan.
 
+## 4c. Accesibilidad y robustez (auditoría de ago-2026)
+
+- **La página ya no depende de que el JavaScript arranque.** `.reveal` empieza oculto **solo** si el
+  `<head>` ha podido marcar `document.documentElement.classList.add('js')`. Si el bundle falla, todo
+  se ve. Además hay `@media (scripting: none)`. Si tocas el reveal, mantén las dos redes.
+- **Las tipografías son nuestras** (`fonts/`, 12 ficheros woff2, 171 KB, subconjuntos latin y
+  latin-ext), con `font-display:swap` y `preload` de las tres críticas. Ni una petición a Google:
+  además de ser más rápido, era incoherente con el argumento de soberanía del dato que vende la web.
+  Para actualizar una fuente, se baja el woff2 y se sustituye; no volver al `<link>` de Google.
+- **Objetivos táctiles a 44 px**: selector de idioma, enlaces del menú, CTA de cabecera y, sobre todo,
+  los deslizadores de la calculadora, que medían 4 px de alto (el área táctil de un `input[type=range]`
+  es su caja, no el pomo). La pista se pinta con `::-webkit-slider-runnable-track` y `::-moz-range-track`.
+- **Nada de texto por debajo de 12 px** y el `.kicker` sobre crema usa `--sienna-dark`.
+- Los deslizadores anuncian unidades con `aria-valuetext` («28 € por hora», no «28»).
+- Entrada de bloques a 320 ms con escalonado de 60 ms (antes 750 + 280).
+- **El pie enlazaba a anclas**: sus cuatro servicios apuntan ya a su página, y dos de ellos compartían
+  destino.
+
+Pendiente de esa auditoría: consolidar los diez puntos de corte (400, 560, 720, 760, 820, 860, 880,
+900, 1023, 1080) en cuatro. Es deuda técnica, no afecta a lo que ve el visitante.
+
 ## 5. La regla dura
 
 > **Ningún dato, cliente, logo o métrica de esta web puede ser inventado. Si un dato no está

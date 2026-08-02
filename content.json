@@ -1443,7 +1443,10 @@
       },
       "weeks": "semanas",
       "noteTitle": "Cómo se calcula y qué no dice esta cifra.",
-      "note": "Horas semanales x 52 x coste por hora, aplicando el porcentaje mecánico. No incluye el coste de los errores, ni el de las decisiones que se toman tarde porque el dato no está, ni el de la persona que se va y se lleva el proceso en la cabeza. Tampoco descuenta el precio del proyecto ni asume que la automatización cubra el 100% de esa parte mecánica. Es el suelo, no el techo. En el diagnóstico ponemos números a tu caso concreto y te decimos si compensa."
+      "note": "Horas semanales x 52 x coste por hora, aplicando el porcentaje mecánico. No incluye el coste de los errores, ni el de las decisiones que se toman tarde porque el dato no está, ni el de la persona que se va y se lleva el proceso en la cabeza. Tampoco descuenta el precio del proyecto ni asume que la automatización cubra el 100% de esa parte mecánica. Es el suelo, no el techo. En el diagnóstico ponemos números a tu caso concreto y te decimos si compensa.",
+      "unitHours": "a la semana",
+      "unitRate": "por hora",
+      "unitShare": "del proceso"
     }
   },
   "en": {
@@ -2676,7 +2679,10 @@
       },
       "weeks": "weeks",
       "noteTitle": "How it's calculated and what this figure doesn't say.",
-      "note": "Weekly hours x 52 x hourly cost, applying the mechanical percentage. It doesn't include the cost of mistakes, of decisions made late because the data wasn't there, or of the person who leaves and takes the process with them. Nor does it subtract the price of the project or assume automation covers 100% of that mechanical part. It's the floor, not the ceiling. In the diagnostic we put numbers on your specific case and tell you whether it's worth it."
+      "note": "Weekly hours x 52 x hourly cost, applying the mechanical percentage. It doesn't include the cost of mistakes, of decisions made late because the data wasn't there, or of the person who leaves and takes the process with them. Nor does it subtract the price of the project or assume automation covers 100% of that mechanical part. It's the floor, not the ceiling. In the diagnostic we put numbers on your specific case and tell you whether it's worth it.",
+      "unitHours": "per week",
+      "unitRate": "per hour",
+      "unitShare": "of the process"
     }
   }
 }
