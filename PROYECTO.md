@@ -193,7 +193,7 @@ en `_src/` y se vuelve a ejecutar: es la manera de que las seis sigan pareciendo
 español. La elección manual del selector ES/EN se guarda y manda sobre la detección.
 
 **El cubo del logo parpadea al entrar y luego se queda fijo**: `@keyframes lw-blink`, 1,06 s, corte
-seco sin desvanecido y **cuatro repeticiones** (4,2 s). Al terminar vuelve a su estado base, que es
+seco sin desvanecido y **tres repeticiones** (3,2 s). Al terminar vuelve a su estado base, que es
 visible, así que no hace falta `animation-fill-mode`. Está en la cabecera y en el pie de las páginas
 con marca y se para con `prefers-reduced-motion`. Dos decisiones del cliente que no conviene
 deshacer: el corte es seco (descartó el desvanecido suave) y **no parpadea toda la visita**, solo da
