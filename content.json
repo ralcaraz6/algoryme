@@ -1385,7 +1385,7 @@
     },
     "projects": {
       "kicker": "Proyectos",
-      "heading": "Esto ya está en producción",
+      "heading": "De la idea a producción",
       "sub": "No son maquetas: son plataformas con clientes usándolas.",
       "cta": "Verla en marcha",
       "items": [
@@ -2621,7 +2621,7 @@
     },
     "projects": {
       "kicker": "Projects",
-      "heading": "This is already in production",
+      "heading": "From idea to production",
       "sub": "Not mock-ups: these are platforms with clients using them.",
       "cta": "See it running",
       "items": [
