@@ -891,10 +891,11 @@ button.btn[type="submit"]:disabled::after{content:"";display:inline-block;width:
 .web-card-model:hover{border-color:var(--line);transform:none;box-shadow:none}
 .web-card-model .web-bar code{text-transform:lowercase}
 /* preview de los modelos: su logo centrado sobre crema, mismo tamaño que las capturas */
-.web-frame-logo{aspect-ratio:3/2;display:flex;align-items:center;justify-content:center;padding:24px;
-  background:radial-gradient(120% 140% at 50% 0,var(--card) 0,var(--cream) 70%,#EAE3D4 100%)}
+.web-frame-logo{aspect-ratio:3/2;display:flex;align-items:center;justify-content:center;padding:24px;background:var(--ink)}
 .web-frame-logo::after{display:none}
-.web-frame-logo .model-logo{height:auto;width:auto;max-height:96px;max-width:72%;object-fit:contain;opacity:.9}
+/* logos monocromos aclarados sobre la tinta, como la banda de arriba */
+.web-frame-logo .model-logo{height:auto;width:auto;max-height:62px;max-width:64%;object-fit:contain;
+  filter:invert(1) brightness(1.7);opacity:.92}
 .web-bar{display:flex;align-items:center;gap:6px;padding:10px 14px;background:var(--cream);border-bottom:1px solid var(--line)}
 .web-bar i{width:7px;height:7px;border-radius:50%;background:var(--line-strong);flex:none}
 .web-bar code{margin-left:8px;font:500 12px/1.4 var(--mono);color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -1171,7 +1172,7 @@ button.btn[type="submit"]:disabled::after{content:"";display:inline-block;width:
       </a></li>
       <li><div class="web-card web-card-model reveal">
         <span class="web-bar"><i></i><i></i><i></i><code data-i18n="projects.cases.0.domain">kleinanzeigen.de</code></span>
-        <span class="web-frame"><picture><source srcset="casos/kleinanzeigen.webp" type="image/webp"><img class="web-shot" src="casos/kleinanzeigen.jpg" width="900" height="600" loading="lazy" decoding="async" alt="Página de inicio de kleinanzeigen.de"></picture></span>
+        <span class="web-frame web-frame-logo"><img class="model-logo" src="clientes/mono/kleinanzeigen.png" width="150" height="26" loading="lazy" decoding="async" alt="Kleinanzeigen"></span>
         <span class="web-txt"><span class="wt wt-t" data-i18n="projects.cases.0.title">Valor de cliente a 12 meses</span>
         <span class="wt wt-p" data-i18n="projects.cases.0.problem">El problema: no sabían cuánto llegaría a valer un usuario recién registrado, así que captación y retención iban a ciegas.</span>
         <span class="wt wt-b" data-i18n="projects.cases.0.built">Qué construimos: un modelo predictivo que estima el valor a 12 meses de cada usuario a partir de más de 80 señales.</span>
@@ -1179,7 +1180,7 @@ button.btn[type="submit"]:disabled::after{content:"";display:inline-block;width:
       </div></li>
       <li><div class="web-card web-card-model reveal">
         <span class="web-bar"><i></i><i></i><i></i><code data-i18n="projects.cases.1.domain">vitable.com.au</code></span>
-        <span class="web-frame"><picture><source srcset="casos/vitable.webp" type="image/webp"><img class="web-shot" src="casos/vitable.jpg" width="900" height="600" loading="lazy" decoding="async" alt="Página de inicio de vitable.com.au"></picture></span>
+        <span class="web-frame web-frame-logo"><img class="model-logo" src="clientes/mono/vitable.png" width="150" height="40" loading="lazy" decoding="async" alt="Vitable"></span>
         <span class="web-txt"><span class="wt wt-t" data-i18n="projects.cases.1.title">Envío por el transportista más barato</span>
         <span class="wt wt-p" data-i18n="projects.cases.1.problem">El problema: cada pedido de vitaminas se enviaba sin optimizar el transportista, pagando de más en logística.</span>
         <span class="wt wt-b" data-i18n="projects.cases.1.built">Qué construimos: un algoritmo que elige el carrier más barato para cada pedido según destino, tamaño y urgencia del envío.</span>
@@ -1187,7 +1188,7 @@ button.btn[type="submit"]:disabled::after{content:"";display:inline-block;width:
       </div></li>
       <li><div class="web-card web-card-model reveal">
         <span class="web-bar"><i></i><i></i><i></i><code data-i18n="projects.cases.2.domain">mable.com.au</code></span>
-        <span class="web-frame"><picture><source srcset="casos/mable.webp" type="image/webp"><img class="web-shot" src="casos/mable.jpg" width="900" height="600" loading="lazy" decoding="async" alt="Página de inicio de mable.com.au"></picture></span>
+        <span class="web-frame web-frame-logo"><img class="model-logo" src="clientes/mono/mable.png" width="88" height="72" loading="lazy" decoding="async" alt="Mable"></span>
         <span class="web-txt"><span class="wt wt-t" data-i18n="projects.cases.2.title">Riesgo detectado en los partes de los cuidadores</span>
         <span class="wt wt-p" data-i18n="projects.cases.2.problem">El problema: al cerrar cada servicio, las notas del cuidador podían esconder una situación de riesgo que pasaba desapercibida.</span>
         <span class="wt wt-b" data-i18n="projects.cases.2.built">Qué construimos: un modelo de lenguaje lee cada parte, detecta señales de riesgo y avisa al equipo para que contacte al cuidador.</span>
