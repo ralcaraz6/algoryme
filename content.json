@@ -1447,6 +1447,9 @@
       "unitHours": "a la semana",
       "unitRate": "por hora",
       "unitShare": "del proceso"
+    },
+    "clients": {
+      "heading": "Marcas con las que hemos trabajado"
     }
   },
   "en": {
@@ -2683,6 +2686,9 @@
       "unitHours": "per week",
       "unitRate": "per hour",
       "unitShare": "of the process"
+    },
+    "clients": {
+      "heading": "Brands we've worked with"
     }
   }
 }

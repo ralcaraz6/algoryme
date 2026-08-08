@@ -224,7 +224,7 @@ def construir(f):
     src = src.replace('href="/"', 'href="/en/"').replace('href="/#', 'href="/en/#')
     src = src.replace('href="legal.html"', 'href="/legal.html"')
     src = src.replace('href="privacidad.html"', 'href="/privacidad.html"')
-    for carpeta in ("casos/", "equipo/", "marca/"):
+    for carpeta in ("casos/", "equipo/", "marca/", "clientes/"):
         src = src.replace('src="%s' % carpeta, 'src="/%s' % carpeta)
         src = src.replace('srcset="%s' % carpeta, 'srcset="/%s' % carpeta)
 

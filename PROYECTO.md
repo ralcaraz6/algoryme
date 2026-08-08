@@ -290,6 +290,21 @@ No tocar: bajar pesos de fuente. Se comprobó que Sora 600 e IBM Plex Mono 600 s
 Comprobado a 390, 560, 767, 768, 900, 1023, 1024, 1025, 1200 y 1440: sin desbordes horizontales.
 Si añades una consulta de medios nueva, usa uno de los cuatro.
 
+## 4d. Banda de logos de clientes (ago-2026)
+
+Debajo del hero, sección `.clients-band` (clave `clients.heading`): nueve marcas con las que ha
+trabajado la agencia, en tinta y a un solo tono. El cliente confirmó que puede mostrarlas.
+
+- Originales en `clientes/` (kleinanzeigen, mable, vitable, comercia, svi, refinefast,
+  problemperception, arbitrari, noemisarpe). Varios traían fondo de color pegado.
+- Las versiones que usa la web están en `clientes/mono/`: fondo quitado y logo recoloreado a
+  `--ink` sobre transparente, generadas con un pase de PIL (muestrea el color de la esquina como
+  fondo, lo hace transparente y pinta el resto de tinta). Para regenerarlas tras cambiar un original,
+  repetir ese pase. La banda las **aclara con `filter:invert(1) brightness(1.7)`** sobre el fondo
+  oscuro, así que se guardan oscuras.
+- **No llevan `loading="lazy"`**: van casi arriba del todo y con lazy el pane headless las dejaba en
+  blanco en la primera pintura.
+
 ## 5. La regla dura
 
 > **Ningún dato, cliente, logo o métrica de esta web puede ser inventado. Si un dato no está

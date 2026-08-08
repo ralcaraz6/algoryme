@@ -1,0 +1,18 @@
+Logos de la tira "marcas con las que hemos trabajado" (home).
+
+Deja aquí los ficheros con ESTOS nombres exactos (png o svg, fondo transparente
+o el que tengan; el sitio los mete en tarjeta blanca y los iguala en altura):
+
+  kleinanzeigen.png
+  mable.png
+  vitable.png
+  comercia.png
+  svi.png
+  refinefast.png
+  problemperception.png
+  arbitrari.png
+  noemisarpe.png   <- este no lo has pasado todavía
+
+Mejor PNG con fondo transparente o SVG. Si el logo trae su propio fondo de
+color (p. ej. mable naranja, PP amarillo), vale igual: se ve como un cuadrito
+de color dentro de la tarjeta.
