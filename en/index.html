@@ -111,9 +111,11 @@ input::placeholder,textarea::placeholder{color:var(--muted);opacity:1}
   color:#EFA98E;text-align:center;margin-bottom:28px}
 .clients-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:26px 52px;
   filter:invert(1) brightness(1.7)}
+.clients-row a{display:inline-flex;align-items:center;border-radius:6px}
+.clients-row a:focus-visible{outline:2px solid #EFA98E;outline-offset:6px}
 .clients-row img{height:28px;width:auto;object-fit:contain;opacity:.62;transition:opacity .2s ease}
 .clients-row img.ico{height:36px}
-.clients-row img:hover{opacity:1}
+.clients-row a:hover img,.clients-row img:hover{opacity:1}
 @media (max-width:768px){.clients-band{padding:34px 0}.clients-row{gap:22px 34px}
   .clients-row img{height:22px}.clients-row img.ico{height:28px}}
 .anchor-target{scroll-margin-top:80px}
@@ -988,15 +990,15 @@ button.btn[type="submit"]:disabled::after{content:"";display:inline-block;width:
   <div class="container">
     <p class="clients-h" id="clientsHeading" data-i18n="clients.heading">Brands we've worked with</p>
     <div class="clients-row reveal">
-      <img src="/clientes/mono/kleinanzeigen.png" width="150" height="26" decoding="async" alt="Kleinanzeigen">
-      <img class="ico" src="/clientes/mono/mable.png" width="41" height="33" decoding="async" alt="Mable">
-      <img src="/clientes/mono/vitable.png" width="122" height="33" decoding="async" alt="Vitable">
-      <img src="/clientes/mono/comercia.png" width="98" height="33" decoding="async" alt="Comercia Global Payments">
-      <img src="/clientes/mono/svi.png" width="82" height="33" decoding="async" alt="Systematic Value Investing">
+      <a href="https://www.kleinanzeigen.de/" target="_blank" rel="noopener" aria-label="Kleinanzeigen"><img src="/clientes/mono/kleinanzeigen.png" width="150" height="26" decoding="async" alt="Kleinanzeigen"></a>
+      <a href="https://mable.com.au/" target="_blank" rel="noopener" aria-label="Mable"><img class="ico" src="/clientes/mono/mable.png" width="41" height="33" decoding="async" alt="Mable"></a>
+      <a href="https://vitable.com.au/" target="_blank" rel="noopener" aria-label="Vitable"><img src="/clientes/mono/vitable.png" width="122" height="33" decoding="async" alt="Vitable"></a>
+      <a href="https://www.comerciaglobalpayments.com/" target="_blank" rel="noopener" aria-label="Comercia Global Payments"><img src="/clientes/mono/comercia.png" width="98" height="33" decoding="async" alt="Comercia Global Payments"></a>
+      <a href="https://www.svinvesting.com/" target="_blank" rel="noopener" aria-label="Systematic Value Investing"><img src="/clientes/mono/svi.png" width="82" height="33" decoding="async" alt="Systematic Value Investing"></a>
       <img class="ico" src="/clientes/mono/refinefast.png" width="41" height="40" decoding="async" alt="RefineFast">
-      <img class="ico" src="/clientes/mono/problemperception.png" width="63" height="40" decoding="async" alt="ProblemPerception">
-      <img class="ico" src="/clientes/mono/arbitrari.png" width="48" height="40" decoding="async" alt="Arbitrari">
-      <img src="/clientes/mono/noemisarpe.png" width="142" height="26" decoding="async" alt="Noémi Sarpe">
+      <a href="https://www.problemperception.com/" target="_blank" rel="noopener" aria-label="ProblemPerception"><img class="ico" src="/clientes/mono/problemperception.png" width="63" height="40" decoding="async" alt="ProblemPerception"></a>
+      <a href="https://www.abitari.com/" target="_blank" rel="noopener" aria-label="Arbitrari"><img class="ico" src="/clientes/mono/arbitrari.png" width="48" height="40" decoding="async" alt="Arbitrari"></a>
+      <a href="https://noemisarpe.com/" target="_blank" rel="noopener" aria-label="Noémi Sarpe"><img src="/clientes/mono/noemisarpe.png" width="142" height="26" decoding="async" alt="Noémi Sarpe"></a>
     </div>
   </div>
 </section>
