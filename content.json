@@ -1423,21 +1423,24 @@
           "title": "Valor de cliente a 12 meses",
           "problem": "El problema: no sabían cuánto llegaría a valer un usuario recién registrado, así que captación y retención iban a ciegas.",
           "built": "Qué construimos: un modelo predictivo que estima el valor a 12 meses de cada usuario a partir de más de 80 señales.",
-          "logo": "kleinanzeigen"
+          "logo": "kleinanzeigen",
+          "domain": "kleinanzeigen.de"
         },
         {
           "company": "Vitable",
           "title": "Envío por el transportista más barato",
           "problem": "El problema: cada pedido de vitaminas se enviaba sin optimizar el transportista, pagando de más en logística.",
           "built": "Qué construimos: un algoritmo que elige el carrier más barato para cada pedido según destino, tamaño y urgencia del envío.",
-          "logo": "vitable"
+          "logo": "vitable",
+          "domain": "vitable.com.au"
         },
         {
           "company": "Mable",
           "title": "Riesgo detectado en los partes de los cuidadores",
           "problem": "El problema: al cerrar cada servicio, las notas del cuidador podían esconder una situación de riesgo que pasaba desapercibida.",
           "built": "Qué construimos: un modelo de lenguaje lee cada parte, detecta señales de riesgo y avisa al equipo para que contacte al cuidador.",
-          "logo": "mable"
+          "logo": "mable",
+          "domain": "mable.com.au"
         }
       ],
       "live": "En producción"
@@ -2689,21 +2692,24 @@
           "title": "12-month customer value",
           "problem": "The problem: they couldn't tell how much a newly registered user would be worth, so acquisition and retention ran blind.",
           "built": "What we built: a predictive model that estimates each user's 12-month value from more than 80 signals.",
-          "logo": "kleinanzeigen"
+          "logo": "kleinanzeigen",
+          "domain": "kleinanzeigen.de"
         },
         {
           "company": "Vitable",
           "title": "Shipping via the cheapest carrier",
           "problem": "The problem: every vitamins order shipped without optimising the carrier, overpaying on logistics.",
           "built": "What we built: an algorithm that picks the cheapest carrier for each order by destination, size and delivery speed.",
-          "logo": "vitable"
+          "logo": "vitable",
+          "domain": "vitable.com.au"
         },
         {
           "company": "Mable",
           "title": "Risk flagged in carer timesheets",
           "problem": "The problem: when each service ended, a carer's notes could hide a risky situation that went unnoticed.",
           "built": "What we built: a language model reads every timesheet, flags risk signals and alerts the team to contact the carer.",
-          "logo": "mable"
+          "logo": "mable",
+          "domain": "mable.com.au"
         }
       ],
       "live": "In production"
