@@ -79,6 +79,17 @@ def url_en(f):
     return BASE + "en/" + ("" if destino == "index.html" else destino)
 
 
+# Rutas relativas a la raíz para el selector de idioma (ALT_URL): así el
+# cambio ES/EN se queda dentro del mismo host y no salta a producción en local.
+def path_es(f):
+    return "/" if f == "index.html" else "/" + f
+
+
+def path_en(f):
+    destino = PAGINAS[f]
+    return "/en/" + ("" if destino == "index.html" else destino)
+
+
 def resolve(dic, ruta):
     cur = dic
     for parte in ruta.split("."):
@@ -243,7 +254,7 @@ def construir(f):
   lang = 'en';
 })();""") + src[fin:]
     src = re.sub(r'var ALT_URL = \{[^;]+\};',
-                 'var ALT_URL = {"es":"%s","en":"%s"};' % (url_es(f), url_en(f)), src, count=1)
+                 'var ALT_URL = {"es":"%s","en":"%s"};' % (path_es(f), path_en(f)), src, count=1)
 
     os.makedirs(EN, exist_ok=True)
     destino = os.path.join(EN, PAGINAS[f])
