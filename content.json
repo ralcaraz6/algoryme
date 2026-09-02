@@ -1533,7 +1533,9 @@
         }
       ],
       "live": "En producción",
-      "caseCta": "Ver el caso"
+      "caseCta": "Ver el caso",
+      "more": "Ver todos los proyectos",
+      "less": "Ver menos"
     },
     "page": {
       "crumbHome": "Inicio"
@@ -2870,7 +2872,9 @@
         }
       ],
       "live": "In production",
-      "caseCta": "See the case study"
+      "caseCta": "See the case study",
+      "more": "See all projects",
+      "less": "Show less"
     },
     "page": {
       "crumbHome": "Home"
