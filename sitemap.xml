@@ -121,4 +121,32 @@
     <loc>https://algoryme.com/privacidad.html</loc>
     <lastmod>2026-08-02</lastmod>
   </url>
+  <url>
+    <loc>https://algoryme.com/caso-theartventory.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://algoryme.com/caso-theartventory.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://algoryme.com/en/case-theartventory.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algoryme.com/caso-theartventory.html"/>
+    <lastmod>2026-09-02</lastmod>
+  </url>
+  <url>
+    <loc>https://algoryme.com/en/case-theartventory.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://algoryme.com/caso-theartventory.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://algoryme.com/en/case-theartventory.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algoryme.com/caso-theartventory.html"/>
+    <lastmod>2026-09-02</lastmod>
+  </url>
+  <url>
+    <loc>https://algoryme.com/caso-enfinnterrible.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://algoryme.com/caso-enfinnterrible.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://algoryme.com/en/case-enfinnterrible.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algoryme.com/caso-enfinnterrible.html"/>
+    <lastmod>2026-09-02</lastmod>
+  </url>
+  <url>
+    <loc>https://algoryme.com/en/case-enfinnterrible.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://algoryme.com/caso-enfinnterrible.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://algoryme.com/en/case-enfinnterrible.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://algoryme.com/caso-enfinnterrible.html"/>
+    <lastmod>2026-09-02</lastmod>
+  </url>
 </urlset>

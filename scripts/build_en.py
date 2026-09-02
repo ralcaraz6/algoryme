@@ -40,6 +40,8 @@ PAGINAS = {
     "servicio-atencion-al-cliente.html": "service-customer-support.html",
     "servicio-chatbots-documentacion-interna.html": "service-internal-docs-chatbot.html",
     "servicio-dashboards-inteligencia-negocio.html": "service-dashboards-business-intelligence.html",
+    "caso-theartventory.html": "case-theartventory.html",
+    "caso-enfinnterrible.html": "case-enfinnterrible.html",
 }
 # legal.html y privacidad.html se quedan solo en español: su texto es jurídico y
 # no está traducido. Las páginas inglesas enlazan a la versión española.

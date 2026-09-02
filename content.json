@@ -104,6 +104,14 @@
       "equipo": {
         "title": "El equipo | Algoryme",
         "description": "Quién construye tus sistemas en Algoryme: un equipo pequeño y sénior. Hablas directamente con quien diseña, construye y mantiene lo que se pone en producción."
+      },
+      "casoArtventory": {
+        "title": "Plataforma de gestión de arte de edición limitada | Algoryme",
+        "description": "Caso Algoryme: una plataforma que reúne catálogo, ediciones, ventas, coleccionistas y certificados de autenticidad para artistas y galerías, alojada en la UE."
+      },
+      "casoEnfinn": {
+        "title": "Web oficial y tienda de un dúo de pop electrónico | Algoryme",
+        "description": "Caso Algoryme: la web oficial de un dúo de pop electrónico, con música, tienda de merchandising propia y kit de prensa. Su marca y su venta, sin terceros."
       }
     },
     "en": {
@@ -210,6 +218,14 @@
       "equipo": {
         "title": "The team | Algoryme",
         "description": "Who builds your systems at Algoryme: a small, senior team. You talk directly to the people who design, build and maintain what goes into production."
+      },
+      "casoArtventory": {
+        "title": "Limited-edition art management platform | Algoryme",
+        "description": "Algoryme case: a platform unifying catalogue, editions, sales, collectors and certificates of authenticity for artists and galleries, hosted in the EU."
+      },
+      "casoEnfinn": {
+        "title": "Official site and store for an electronic-pop duo | Algoryme",
+        "description": "Algoryme case: the official site of an electronic-pop duo, with music, its own merch store and a press kit. Their brand and their sales, without third parties."
       }
     }
   },
@@ -578,6 +594,61 @@
           "summary": "Una tienda online para que un artista independiente venda sus cuadros directamente, con su propio catálogo y su proceso de compra.",
           "situation": "Un artista independiente necesitaba un canal propio para vender sus cuadros.",
           "built": "Una tienda online con su catálogo de obra y el proceso de compra completo."
+        },
+        {
+          "sector": "Arte",
+          "tag": "Arte",
+          "title": "Plataforma para gestionar arte de edición limitada",
+          "summary": "Artistas y galerías llevaban obra, ediciones, ventas y certificados en hojas de cálculo sueltas. Construimos una plataforma que lo reúne todo en un solo sistema.",
+          "slug": "theartventory",
+          "domain": "theartventory.com",
+          "url": "https://theartventory.com/",
+          "lead": "Un artista o una galería gestionaba catálogo, ediciones numeradas, ventas, coleccionistas y certificados, cada cosa por su lado. Hoy entra en una plataforma que lo reúne todo, con sus datos alojados en la UE y exportables cualquier día.",
+          "situation": "Gestionar arte de edición limitada obliga a llevar a la vez el catálogo de obra, el stock de ediciones y pruebas de artista, las ventas, los coleccionistas y los certificados de autenticidad. Repartido entre hojas de cálculo y herramientas sueltas, la información nunca está donde hace falta: ni al cerrar una venta, ni al llegar a una feria.",
+          "built": "Una plataforma que reúne todo ese mundo en un solo sistema, pensada para dos oficios sobre la misma base: el estudio del artista y la galería que representa a varios. Catálogo, ediciones, ventas, coleccionistas, certificados y administración, en un espacio propio.",
+          "how": [
+            "Catálogo con cada obra tasada y numerada, y control de stock de ediciones y pruebas de artista",
+            "Registro de ventas, facturas, depósitos y saldos, con panel e informes",
+            "Certificados de autenticidad para cada coleccionista, con la marca del artista",
+            "Modo feria en iPad: tomar pedidos en el stand y emitir el certificado en el momento",
+            "Importación del catálogo existente asistida por IA"
+          ],
+          "outcome": "El artista deja las hojas de cálculo y tiene el catálogo entero ordenado y buscable; la galería lleva a todos sus artistas desde un mismo acceso. Todo alojado en la UE y exportable cualquier día.",
+          "stack": [
+            "Catálogo y control de stock",
+            "Ventas y facturación",
+            "Certificados de autenticidad",
+            "Modo feria en iPad",
+            "Alojamiento en la UE",
+            "Importación con IA"
+          ]
+        },
+        {
+          "sector": "Música",
+          "tag": "Música",
+          "title": "Web oficial y tienda de un dúo de pop electrónico",
+          "summary": "Un dúo de pop electrónico repartía su música y su merchandising entre plataformas de terceros. Construimos su web oficial, con tienda, música y kit de prensa.",
+          "slug": "enfinnterrible",
+          "domain": "enfinnterrible.com",
+          "url": "https://enfinnterrible.com/",
+          "lead": "Un dúo de pop electrónico necesitaba una casa propia para su música y su merchandising, sin depender de plataformas de terceros. Hoy tiene su web oficial con tienda, música y kit de prensa.",
+          "situation": "El proyecto vivía repartido entre plataformas de streaming, redes y tiendas ajenas. No había un sitio propio que reuniera la música, la venta de merchandising y el material para prensa y salas, ni control sobre la marca ni sobre lo que se vende.",
+          "built": "La web oficial del dúo: un mundo propio con su identidad, su música, una tienda de merchandising con carrito y proceso de compra, contacto directo y un kit de prensa para medios y programadores.",
+          "how": [
+            "Portada inmersiva con vídeo y la identidad del proyecto",
+            "Sección de música con sus lanzamientos",
+            "Tienda de merchandising propia con carrito y compra",
+            "Kit de prensa descargable para medios y salas",
+            "Contacto directo para bookings"
+          ],
+          "outcome": "El dúo controla su presencia y su venta desde un único sitio propio, sin comisiones ni límites de plataformas ajenas.",
+          "stack": [
+            "Web a medida",
+            "Tienda online",
+            "Carrito y pago",
+            "Kit de prensa",
+            "Sección de música"
+          ]
         }
       ],
       "more": "Ver el proyecto",
@@ -1461,7 +1532,8 @@
           "domain": "mable.com.au"
         }
       ],
-      "live": "En producción"
+      "live": "En producción",
+      "caseCta": "Ver el caso"
     },
     "page": {
       "crumbHome": "Inicio"
@@ -1859,6 +1931,61 @@
           "summary": "An online store so an independent artist can sell his paintings directly, with his own catalogue and checkout.",
           "situation": "An independent artist needed a channel of his own to sell his paintings.",
           "built": "An online store with his catalogue of work and the full checkout process."
+        },
+        {
+          "sector": "Art",
+          "tag": "Art",
+          "title": "Platform to manage limited-edition art",
+          "summary": "Artists and galleries kept works, editions, sales and certificates across scattered spreadsheets. We built a platform that brings it all into one system.",
+          "slug": "theartventory",
+          "domain": "theartventory.com",
+          "url": "https://theartventory.com/",
+          "lead": "An artist or a gallery managed catalogue, numbered editions, sales, collectors and certificates, each in its own place. Today they open one platform that brings it all together, with their data hosted in the EU and exportable any day.",
+          "situation": "Managing limited-edition art means keeping, all at once, the catalogue of works, the stock of editions and artist proofs, the sales, the collectors and the certificates of authenticity. Split across spreadsheets and separate tools, the information is never where it is needed: not when closing a sale, not when arriving at a fair.",
+          "built": "A platform that brings that whole world into a single system, designed for two jobs on the same base: the artist's studio and the gallery that represents several. Catalogue, editions, sales, collectors, certificates and administration, in a space of their own.",
+          "how": [
+            "Catalogue with every work priced and numbered, and stock control of editions and artist proofs",
+            "Record of sales, invoices, deposits and balances, with dashboard and reports",
+            "Certificates of authenticity for every collector, carrying the artist's branding",
+            "Fair mode on iPad: take orders at the booth and issue the certificate on the spot",
+            "AI-assisted import of the existing catalogue"
+          ],
+          "outcome": "The artist leaves spreadsheets behind and has the whole catalogue ordered and searchable; the gallery runs all its artists from a single login. All hosted in the EU and exportable any day.",
+          "stack": [
+            "Catalogue & stock control",
+            "Sales & invoicing",
+            "Certificates of authenticity",
+            "Fair mode on iPad",
+            "EU hosting",
+            "AI import"
+          ]
+        },
+        {
+          "sector": "Music",
+          "tag": "Music",
+          "title": "Official site and store for an electronic-pop duo",
+          "summary": "An electronic-pop duo spread its music and merch across third-party platforms. We built their official site, with a store, music and a press kit.",
+          "slug": "enfinnterrible",
+          "domain": "enfinnterrible.com",
+          "url": "https://enfinnterrible.com/",
+          "lead": "An electronic-pop duo needed a home of its own for its music and merch, without depending on third-party platforms. Today it has its official site with a store, music and a press kit.",
+          "situation": "The project lived scattered across streaming platforms, social media and third-party stores. There was no home of its own bringing together the music, the merch sales and the material for press and venues, nor control over the brand or what gets sold.",
+          "built": "The duo's official site: a world of their own with its identity, its music, a merch store with cart and checkout, direct contact and a press kit for media and bookers.",
+          "how": [
+            "Immersive landing with video and the project's identity",
+            "Music section with its releases",
+            "Own merch store with cart and checkout",
+            "Downloadable press kit for media and venues",
+            "Direct contact for bookings"
+          ],
+          "outcome": "The duo controls its presence and its sales from a single site of its own, with no third-party commissions or limits.",
+          "stack": [
+            "Custom website",
+            "Online store",
+            "Cart & checkout",
+            "Press kit",
+            "Music section"
+          ]
         }
       ],
       "more": "See the project",
@@ -2742,7 +2869,8 @@
           "domain": "mable.com.au"
         }
       ],
-      "live": "In production"
+      "live": "In production",
+      "caseCta": "See the case study"
     },
     "page": {
       "crumbHome": "Home"
