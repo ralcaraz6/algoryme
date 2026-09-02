@@ -142,10 +142,14 @@ Rehecha en ago-2026 con el diseño que se probó en el repositorio `algoryme-v2`
    entrada. Cada tarjeta lleva «Leer más» a su propia landing `servicio-<slug>.html`.
    ⚠️ El nombre de clase `.svc-ico` ya está cogido por el icono grande del hero de las landings;
    las tarjetas usan `.card-ico` / `.card-icobox`.
-3. **Proyectos** (`#casos`) — tres previews reales de web (prospectalo.com, app.svinvesting.com,
-   noemisarpe.com) en un marco de navegador, con degradado abajo para que la captura no corte a media
-   frase. Las capturas están en `casos/` y se generaron con un servicio externo; para actualizarlas,
-   vuelve a capturarlas y sustituye el JPG.
+3. **Proyectos** (`#casos`) — cinco previews reales de web en un marco de navegador, con degradado
+   abajo para que la captura no corte a media frase, más tres tarjetas «modelo» de casos de
+   algoritmo (kleinanzeigen, vitable, mable). Los tres primeros previews (prospectalo.com,
+   app.svinvesting.com, noemisarpe.com) enlazan a la web en producción; los dos añadidos en sep-2026
+   (theartventory.com, enfinnterrible.com) enlazan a su **ficha de caso propia** (`caso-*.html`) con
+   el CTA «Ver el caso» (`projects.caseCta`). Las capturas están en `casos/`; las nuevas se generaron
+   con Chrome headless (`--window-size=900,900`, recorte del 3:2 superior con PIL para dejar fuera el
+   banner de cookies). Para actualizar una, vuelve a capturarla y sustituye el JPG y el WebP.
 4. **Cómo trabajamos** — la línea de tiempo de cinco pasos.
 5. **Qué te cuesta hoy** (`#coste`, claves `calc.*`) — calculadora de coste del trabajo manual: tres
    deslizadores (horas/semana, coste/hora, % mecánico) y una tarjeta en tinta con el resultado.
@@ -333,11 +337,21 @@ En ago-2026 el tercer ejemplo de web de la home pasó de `orph.eus` a `noemisarp
 **confirmó expresamente que esa web es obra suya**, que es lo que permite mantenerla bajo el título
 «Esto ya está en producción». No la quites por dudar de la autoría: ya se preguntó y está respondida.
 
-**Dónde vive cada cosa:** la home enseña tres casos y un botón; `casos.html` es el índice completo,
-una fila por caso con «Ver más» que despliega en el sitio (`#casesList`, un abierto a la vez, mismo
-patrón que las FAQ). Las tres filas con ficha añaden dentro «Ver el caso completo». Esta división
-es deliberada y la pidió el cliente: la home no debe crecer con cada caso nuevo. Añadir un caso es
-una entrada en `content.json` y una fila en `casos.html`; la home no se toca.
+**Dónde vive cada cosa (actualizado sep-2026):** `casos.html` y las viejas `caso-*.html` de la etapa
+Action Labs son hoy redirecciones; el índice inline de casos se retiró con el rediseño v2. Los casos
+confidenciales B2B viven solo como datos en `content.json` (`cases.items` 0-7), sin página.
+
+En sep-2026 se **reactivó la ficha de caso propia** para dos proyectos web públicos y con nombre
+(theartventory.com y enfinnterrible.com): `caso-theartventory.html` y `caso-enfinnterrible.html`
+(+ sus `en/case-*.html`). No se clonó la ficha vieja (diseño pre-v2): se clonó una **landing de
+servicio actual** y se le cambió el `<main>` por la estructura de caso (hero con `.svc-hero`,
+problema/solución en `.svc-two`, «cómo funciona» y «tecnología» en `ul.svc-inc`, resultado, y la
+banda CTA). Todo el texto va con `data-i18n` a `cases.items.<N>.*` (theartventory=8, enfinn=9) y a
+las etiquetas `caseDetail.*`. Para añadir otra ficha así: rellena `cases.items` (ES+EN) con
+`slug`/`title`/`sector`/`lead`/`situation`/`built`/`how[]`/`outcome`/`stack[]` + su `meta.es/en`,
+clona una de estas dos páginas, añade la pareja a `PAGINAS` en `scripts/build_en.py`, mete cuatro
+`<url>` en `sitemap.xml` (ES+EN) y enlaza la tarjeta de la home a la ficha. **Regla dura intacta:**
+el contenido sale de la propia web del proyecto; nada de cifras de resultado inventadas.
 
 ## 6. Verificación antes de publicar
 
