@@ -1415,6 +1415,24 @@
           "built": "Qué construimos: web de portafolio con campañas, editoriales y obra, y tienda propia.",
           "alt": "Web de portafolio de noemisarpe.com, construida por Algoryme",
           "title": "Portafolio con tienda propia"
+        },
+        {
+          "img": "casos/artventory.jpg",
+          "domain": "theartventory.com",
+          "url": "https://theartventory.com/",
+          "problem": "El problema: artistas y galerías gestionan obra, ediciones, ventas y certificados en hojas de cálculo dispersas.",
+          "built": "Qué construimos: plataforma que reúne catálogo, ediciones numeradas, ventas, coleccionistas y certificados de autenticidad en un solo sitio.",
+          "alt": "Plataforma de gestión de arte de edición limitada theartventory.com, construida por Algoryme",
+          "title": "Plataforma de gestión de arte"
+        },
+        {
+          "img": "casos/enfinnterrible.jpg",
+          "domain": "enfinnterrible.com",
+          "url": "https://enfinnterrible.com/",
+          "problem": "El problema: un proyecto musical que necesita casa propia para lanzar música y vender merchandising sin depender de plataformas de terceros.",
+          "built": "Qué construimos: web de artista con música, tienda de merchandising propia y kit de prensa.",
+          "alt": "Web del proyecto musical enfinnterrible.com, construida por Algoryme",
+          "title": "Web de artista con tienda"
         }
       ],
       "cases": [
@@ -2678,6 +2696,24 @@
           "built": "What we built: a portfolio site with campaigns, editorials and artwork, plus its own shop.",
           "alt": "Portfolio website noemisarpe.com, built by Algoryme",
           "title": "Portfolio site with its own shop"
+        },
+        {
+          "img": "casos/artventory.jpg",
+          "domain": "theartventory.com",
+          "url": "https://theartventory.com/",
+          "problem": "The problem: artists and galleries manage works, editions, sales and certificates across scattered spreadsheets.",
+          "built": "What we built: a platform that brings catalogue, numbered editions, sales, collectors and certificates of authenticity into one place.",
+          "alt": "Limited-edition art management platform theartventory.com, built by Algoryme",
+          "title": "Art management platform"
+        },
+        {
+          "img": "casos/enfinnterrible.jpg",
+          "domain": "enfinnterrible.com",
+          "url": "https://enfinnterrible.com/",
+          "problem": "The problem: a music project that needs a home of its own to release music and sell merch without depending on third-party platforms.",
+          "built": "What we built: an artist site with music, its own merch store and a press kit.",
+          "alt": "Music project website enfinnterrible.com, built by Algoryme",
+          "title": "Artist site with its own shop"
         }
       ],
       "cases": [
