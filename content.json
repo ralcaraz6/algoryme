@@ -873,10 +873,12 @@
         "privacyNote": "Usamos tus datos solo para responderte. Nunca los compartimos con terceros.",
         "messagePlaceholder": "Qué proceso os come tiempo hoy, quién lo hace y con qué herramientas.",
         "noSpam": "Sin newsletter y sin llamadas comerciales. Solo respondemos a tu caso.",
+        "consent": "Acepto que Algoryme trate mis datos para responder a mi consulta, según la",
         "errors": {
           "name": "¿Con quién hablamos?",
           "emailRequired": "Necesitamos un email para responderte.",
-          "emailInvalid": "Ese email no parece válido. Revisa el formato."
+          "emailInvalid": "Ese email no parece válido. Revisa el formato.",
+          "consent": "Marca la casilla para que podamos tratar tus datos y responderte."
         }
       },
       "local": "Trabajamos con empresas de Barcelona y de toda España, presencial o en remoto."
@@ -2212,10 +2214,12 @@
         "privacyNote": "We use your details only to reply to you. We never share them with third parties.",
         "messagePlaceholder": "Which process eats your time today, who does it and with which tools.",
         "noSpam": "No newsletter and no sales calls. We only reply about your case.",
+        "consent": "I agree that Algoryme may process my data to reply to my enquiry, in line with the",
         "errors": {
           "name": "Who are we speaking with?",
           "emailRequired": "We need an email to reply to you.",
-          "emailInvalid": "That email doesn't look valid. Check the format."
+          "emailInvalid": "That email doesn't look valid. Check the format.",
+          "consent": "Tick the box so we can process your data and reply to you."
         }
       },
       "local": "We work with companies in Barcelona and across Spain, on site or remotely."

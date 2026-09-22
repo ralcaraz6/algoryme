@@ -126,11 +126,16 @@ bandas CTA «Reservar 30 minutos de diagnóstico» (`hero.cta1`, `ui.bookCta`), 
 minutos», formulario «Enviar mi caso», WhatsApp «Escribir por WhatsApp», email «Escribir un email».
 No volver a introducir «Agendar llamada» ni «Reservar» a secas.
 
-**Consentimiento:** se retiró la casilla «He leído y acepto la política de privacidad», también a
-petición del cliente. En su lugar queda un aviso permanente bajo el formulario con enlace a la
-política. Es una decisión suya y está tomada a conciencia; si algún día un asesor legal pide volver
-a la casilla marcable, el patrón anterior era un `input[type=checkbox]` obligatorio validado en el
-`submit`.
+**Consentimiento (sep-2026, casilla repuesta):** el formulario de contacto vuelve a llevar una
+casilla RGPD marcable y obligatoria (`#in-consent`, `.consent` con id `#f-consent`), validada en el
+`submit` igual que nombre y email: si no está marcada se bloquea el envío, se marca `#f-consent` como
+`.invalid` y sale el error `#err-consent` (`contact.form.errors.consent`). El texto de la etiqueta es
+`contact.form.consent` + el enlace `ui.privacyLink` a `privacidad.html`. Al enviar se incluye en el
+payload el campo `consentimiento`, para que quede constancia del consentimiento en el email del lead.
+Se había retirado en ago-2026 a petición del cliente (dejando solo un aviso permanente); ahora la
+repone él mismo «por si hay algún cabrón». El modal de reserva de llamada mantiene su aviso
+permanente «Al enviar aceptas nuestra política de privacidad» (`ui.consentPre` + `ui.privacyLink`),
+sin casilla.
 
 ## 4. Estructura de la home
 
