@@ -133,9 +133,13 @@ casilla RGPD marcable y obligatoria (`#in-consent`, `.consent` con id `#f-consen
 `contact.form.consent` + el enlace `ui.privacyLink` a `privacidad.html`. Al enviar se incluye en el
 payload el campo `consentimiento`, para que quede constancia del consentimiento en el email del lead.
 Se había retirado en ago-2026 a petición del cliente (dejando solo un aviso permanente); ahora la
-repone él mismo «por si hay algún cabrón». El modal de reserva de llamada mantiene su aviso
-permanente «Al enviar aceptas nuestra política de privacidad» (`ui.consentPre` + `ui.privacyLink`),
-sin casilla.
+repone él mismo para tener cobertura legal ante reclamaciones. El **modal de reserva de llamada
+lleva la misma casilla** (`#bk-consent`, `.consent` con id `#bf-consent`): el aviso pasivo «Al
+enviar aceptas...» se sustituyó por la casilla obligatoria, validada en el `submit` con
+`markField('bf-consent', ...)` como nombre y email (sin mensaje aparte, solo resalte), y el envío
+también incluye el campo `consentimiento`. La etiqueta usa `ui.consent` + `ui.privacyLink`. El texto
+del modal es compartido: la casilla vive en las 13 páginas ES (y sus 10 equivalentes EN generadas).
+La clave `ui.consentPre` queda huérfana tras el cambio.
 
 ## 4. Estructura de la home
 
