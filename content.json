@@ -973,6 +973,7 @@
       "privacyLink": "política de privacidad",
       "waFloat": "Escríbenos por WhatsApp",
       "consentPre": "Al enviar aceptas nuestra",
+      "consent": "Acepto que Algoryme trate mis datos para gestionar mi solicitud, según la",
       "bookShort": "Reservar llamada"
     },
     "team": {
@@ -2314,6 +2315,7 @@
       "privacyLink": "privacy policy",
       "waFloat": "Message us on WhatsApp",
       "consentPre": "By sending this you accept our",
+      "consent": "I agree that Algoryme may process my data to handle my request, in line with the",
       "bookShort": "Book a call"
     },
     "team": {
