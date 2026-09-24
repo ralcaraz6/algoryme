@@ -11,6 +11,13 @@
 | `algoryme-perfil-horizontal-siena.png` | Igual, fondo siena con letras claras | 1024×1024 |
 | `algoryme-perfil-caret-1024.png` | Alternativa con solo el símbolo, para cuando el espacio es muy pequeño | 1024×1024 |
 
+Iconos de la web (en la raíz del repo, mismo diseño que el favicon SVG incrustado en cada página: caret crema sobre tinta):
+
+| Fichero | Uso | Medidas |
+|---|---|---|
+| `/favicon.ico` | Navegadores antiguos y rastreadores que piden `/favicon.ico` sin mirar el HTML | 16, 32 y 48 px |
+| `/apple-touch-icon.png` | Icono al guardar la web en la pantalla de inicio (iPhone y Android). Cuadrado sin esquinas: el sistema las redondea | 180×180 |
+
 ## Colores
 
 - Tinta `#211D18` · Siena `#B5401C` · Papel `#FAF7F0` · Crema `#F2ECDE` · Tarjeta `#FEFCF8`
