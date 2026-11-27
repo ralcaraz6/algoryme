@@ -1511,14 +1511,6 @@
       ],
       "cases": [
         {
-          "company": "Kleinanzeigen",
-          "title": "Valor de cliente a 12 meses",
-          "problem": "El problema: no sabían cuánto llegaría a valer un usuario recién registrado, así que captación y retención iban a ciegas.",
-          "built": "Qué construimos: un modelo predictivo que estima el valor a 12 meses de cada usuario a partir de más de 80 señales.",
-          "logo": "kleinanzeigen",
-          "domain": "kleinanzeigen.de"
-        },
-        {
           "company": "Vitable",
           "title": "Envío por el transportista más barato",
           "problem": "El problema: cada pedido de vitaminas se enviaba sin optimizar el transportista, pagando de más en logística.",
@@ -2852,14 +2844,6 @@
         }
       ],
       "cases": [
-        {
-          "company": "Kleinanzeigen",
-          "title": "12-month customer value",
-          "problem": "The problem: they couldn't tell how much a newly registered user would be worth, so acquisition and retention ran blind.",
-          "built": "What we built: a predictive model that estimates each user's 12-month value from more than 80 signals.",
-          "logo": "kleinanzeigen",
-          "domain": "kleinanzeigen.de"
-        },
         {
           "company": "Vitable",
           "title": "Shipping via the cheapest carrier",
