@@ -152,8 +152,8 @@ Rehecha en ago-2026 con el diseño que se probó en el repositorio `algoryme-v2`
    ⚠️ El nombre de clase `.svc-ico` ya está cogido por el icono grande del hero de las landings;
    las tarjetas usan `.card-ico` / `.card-icobox`.
 3. **Proyectos** (`#casos`) — cinco previews reales de web en un marco de navegador, con degradado
-   abajo para que la captura no corte a media frase, más tres tarjetas «modelo» de casos de
-   algoritmo (kleinanzeigen, vitable, mable). Los tres primeros previews (prospectalo.com,
+   abajo para que la captura no corte a media frase, más dos tarjetas «modelo» de casos de
+   algoritmo (vitable, mable). Los tres primeros previews (prospectalo.com,
    app.svinvesting.com, noemisarpe.com) enlazan a la web en producción; los dos añadidos en sep-2026
    (theartventory.com, enfinnterrible.com) enlazan a su **ficha de caso propia** (`caso-*.html`) con
    el CTA «Ver el caso» (`projects.caseCta`). Las capturas están en `casos/`; las nuevas se generaron
@@ -305,10 +305,10 @@ Si añades una consulta de medios nueva, usa uno de los cuatro.
 
 ## 4d. Banda de logos de clientes (ago-2026)
 
-Debajo del hero, sección `.clients-band` (clave `clients.heading`): nueve marcas con las que ha
+Debajo del hero, sección `.clients-band` (clave `clients.heading`): siete marcas con las que ha
 trabajado la agencia, en tinta y a un solo tono. El cliente confirmó que puede mostrarlas.
 
-- Originales en `clientes/` (kleinanzeigen, mable, vitable, comercia, svi, refinefast,
+- Originales en `clientes/` (mable, vitable, comercia, svi, refinefast,
   problemperception, arbitrari, noemisarpe). Varios traían fondo de color pegado.
 - Las versiones que usa la web están en `clientes/mono/`: fondo quitado y logo recoloreado a
   `--ink` sobre transparente, generadas con un pase de PIL (muestrea el color de la esquina como

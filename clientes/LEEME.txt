@@ -3,7 +3,6 @@ Logos de la tira "marcas con las que hemos trabajado" (home).
 Deja aquí los ficheros con ESTOS nombres exactos (png o svg, fondo transparente
 o el que tengan; el sitio los mete en tarjeta blanca y los iguala en altura):
 
-  kleinanzeigen.png
   mable.png
   vitable.png
   comercia.png
